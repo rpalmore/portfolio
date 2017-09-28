@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rebecca Palmore portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpalmore/portfolio.git"
+  },
+  "author": "Rebecca Palmore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpalmore/portfolio/issues"
+  },
+  "homepage": "https://github.com/rpalmore/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "nodemailer": "^4.1.1"
+  }
+}
