@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import './About.css';
 
 class About extends Component {
   render() {
     return (
-      <div>
-	    <div>About Me</div>
+      <div className="container">
+	    <div className="mainContent">
+	     <div className="bio">
+	      <div className="accentDivBio">
+	      </div>
+	      <h3 className="markerHighlight">About Me</h3>
 	      <p><b><a href="/RebeccaPalmore_Resume.pdf" download>Download my resume</a></b></p>
 	      <p>Hi! I’m Rebecca. Thanks for checking out my portfolio. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
 
@@ -15,6 +20,24 @@ class About extends Component {
 	      <p>As a digital editor at <a href="http://wttw.com/chicagotonight" target="_blank" rel="noopener noreferrer">Chicago Tonight at WTTW-Channel 11</a>, I manage a small, driven team of reporters, produce compelling stories for digital platforms, edit and program a news website and&mdash;as many in my field do at all hours of the day and night&mdash;obsess over metrics.</p>
 
 	      <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
+	     </div>
+	     <div className="social">
+	     <div className="accentDivSocial">
+	      </div>
+	      <h3 className="markerHighlight">Connect with me</h3>
+	     </div>
+	    </div>
+	           <div className="one1">
+       </div>
+
+       <div className="two2">
+       </div>
+       <div className="three3">
+       </div>
+       <div className="four4">
+       </div>
+       <div className="five5">
+       </div>
     </div>
     );
   }

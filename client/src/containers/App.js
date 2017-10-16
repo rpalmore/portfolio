@@ -6,19 +6,19 @@ import {
 } from 'react-router-dom'
 import About from '../components/About.js';
 import Contact from './Contact.js';
-
+import './App.css';
 
 const Home = () => (
-  <div>
-    <h2>Home</h2>
+  <div className="rebeccaFont">
+   <p>rebecca palmore</p>
   </div>
 )
 
-const Test= () => (
-  <div>
-    <h2>Test</h2>
-  </div>
-)
+// const Test= () => (
+//   <div>
+//     <h2>Test</h2>
+//   </div>
+// )
 
 // This also works:
 ///////////////////
@@ -36,9 +36,9 @@ const Topic = ({ match }) => (
   </div>
 )
 
-const Topics = ({ match }) => (
+const Projects = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <h2>Projects</h2>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>
@@ -64,28 +64,38 @@ const Topics = ({ match }) => (
   </div>
 )
 
-const BasicExample = () => (
+const myRoutes = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-        <li><Link to="/sendemail">Test</Link></li>
-      </ul>
-
-      <hr/>
+     <div className="app">
+      <header className="app-header">
+       <div className="one">
+       </div>
+       <div className="two">
+       </div>
+        <div className="nameDiv">
+         <Link className="rebeccaFont" to="/">rebecca palmore</Link>
+        </div>
+        <div className="three">
+       </div>
+       <div className="four">
+       </div>
+        <div className="links">
+          <Link className="about" to="/about">About</Link>
+          <Link className="contact" to="/contact">Contact</Link>
+          <Link className="projects" to="/projects">Projects</Link>
+        </div>
+      </header>
+     </div>
 
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
-      <Route path="/topics" component={Topics}/>
-      <Route path="/sendemail" component={Test}/>
+      <Route path="/projects" component={Projects}/>
     </div>
   </Router>
 )
-export default BasicExample
+export default myRoutes;
 
 
 // import React, { Component } from 'react';
