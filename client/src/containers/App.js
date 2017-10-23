@@ -26,7 +26,7 @@ $(document).ready(function(){
         callback: function() {
             $('.tlt').textillate('out');
             $('.layer').fadeTo(1200, 1);
-            setTimeout(loadAbout, 1500);
+            setTimeout(loadHome, 1500);
         }
       },
       out: {
@@ -35,8 +35,8 @@ $(document).ready(function(){
     })
   })
 
-  function loadAbout() {
-    window.location.assign('/about');
+  function loadHome() {
+    window.location.assign('/home');
   }
 });
 
@@ -44,8 +44,13 @@ $(document).ready(function(){
 const Welcome = () => (
   <div className='background'>
    <div className='layer'>
-    <div className='tlt introText'>Welcome</div>
+    <div className='tlt welcomeText'>Welcome</div>
    </div>
+  </div>
+)
+
+const Home = () => (
+  <div className='homeBackground'>
   </div>
 )
 
@@ -87,6 +92,7 @@ const myRoutes = () => (
   <Router>
     <div>
       <Route exact path="/" component={Welcome}/>
+      <Route path="/home" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/projects" component={Projects}/>
