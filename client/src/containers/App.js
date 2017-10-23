@@ -7,28 +7,47 @@ import {
 import About from '../components/About.js';
 import Contact from './Contact.js';
 import './App.css';
+// import './App2.css';
 
-const Home = () => (
-  <div className="rebeccaFont">
-   <p>rebecca palmore</p>
+import $ from "jquery";
+window.jQuery = window.$ = $;
+require('textillate');
+require('letteringjs');
+require('animate.css');
+
+
+$(document).ready(function(){
+ console.log("Ready!");
+  $(function () {
+    $('.tlt').textillate({
+      loop: false,
+      in : {
+        effect: 'fadeIn',
+        callback: function() {
+            $('.tlt').textillate('out');
+            $('.layer').fadeTo(1200, 1);
+            setTimeout(loadAbout, 1500);
+        }
+      },
+      out: {
+        effect: 'fadeOut',
+      }
+    })
+  })
+
+  function loadAbout() {
+    window.location.assign('/about');
+  }
+});
+
+
+const Welcome = () => (
+  <div className='background'>
+   <div className='layer'>
+    <div className='tlt introText'>Welcome</div>
+   </div>
   </div>
 )
-
-// const Test= () => (
-//   <div>
-//     <h2>Test</h2>
-//   </div>
-// )
-
-// This also works:
-///////////////////
-// const About = () => (
-//       <div> 
-//         <li><a href="/index">Activity Feed</a></li>
-//         <li><a href="/givebadge">Give a Badge!</a></li>
-//         <li><a href="/logout">Log Out</a></li>
-//       </div>
-// )
 
 const Topic = ({ match }) => (
   <div>
@@ -67,28 +86,7 @@ const Projects = ({ match }) => (
 const myRoutes = () => (
   <Router>
     <div>
-     <div className="app">
-      <header className="app-header">
-       <div className="one">
-       </div>
-       <div className="two">
-       </div>
-        <div className="nameDiv">
-         <Link className="rebeccaFont" to="/">rebecca palmore</Link>
-        </div>
-        <div className="three">
-       </div>
-       <div className="four">
-       </div>
-        <div className="links">
-          <Link className="about" to="/about">About</Link>
-          <Link className="contact" to="/contact">Contact</Link>
-          <Link className="projects" to="/projects">Projects</Link>
-        </div>
-      </header>
-     </div>
-
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/" component={Welcome}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/projects" component={Projects}/>
@@ -96,7 +94,6 @@ const myRoutes = () => (
   </Router>
 )
 export default myRoutes;
-
 
 // import React, { Component } from 'react';
 // import logo from './images/logo.svg';
