@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
+  Redirect,
   Route,
   Link
 } from 'react-router-dom'
@@ -16,6 +17,9 @@ require('letteringjs');
 require('animate.css');
 
 
+var animation = false;
+
+
 $(document).ready(function(){
  console.log("Ready!");
   $(function () {
@@ -26,7 +30,8 @@ $(document).ready(function(){
         callback: function() {
             $('.tlt').textillate('out');
             $('.layer').fadeTo(1200, 1);
-            setTimeout(loadHome, 1500);
+            // setTimeout(loadHome, 1500);
+
         }
       },
       out: {
@@ -35,11 +40,24 @@ $(document).ready(function(){
     })
   })
 
+   // $('.tlt').on('end.tlt', function () {
+   //    console.log("Animation ended");
+   //      // alert("Done!");
+   //      setTimeout(loadHome, 1500);
+   //    });
+
+      $('.tlt').on('outAnimationEnd.tlt', function () {
+        console.log("Out animation ended");
+        // animation = true; // this doesnt impact anything
+        // console.log(animation);
+        // alert("Done!");
+        setTimeout(loadHome, 1000);
+      });
+
   function loadHome() {
     window.location.assign('/home');
   }
 });
-
 
 const Welcome = () => (
   <div className='background'>
@@ -49,10 +67,13 @@ const Welcome = () => (
   </div>
 )
 
+
+
 const Home = () => (
   <div className='homeBackground'>
   </div>
 )
+
 
 const Topic = ({ match }) => (
   <div>
@@ -101,24 +122,3 @@ const myRoutes = () => (
 )
 export default myRoutes;
 
-// import React, { Component } from 'react';
-// import logo from './images/logo.svg';
-// import './App.css';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;

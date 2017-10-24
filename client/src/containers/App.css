@@ -7,12 +7,12 @@
 
 .background {
   background-image: url("clouds.jpg");
-  height: 700px;
+  height: 800px;
 }
 
 .layer {
   background-color: #048BA8;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
