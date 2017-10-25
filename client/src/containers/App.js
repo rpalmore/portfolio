@@ -7,51 +7,9 @@ import {
 import About from '../components/About.js';
 import Contact from './Contact.js';
 import Home from '../components/Home.js';
-import './App.css';
+import Welcome from './Welcome.js';
+import './Welcome.css';
 // import './App2.css';
-
-import $ from "jquery";
-window.jQuery = window.$ = $;
-require('textillate');
-require('letteringjs');
-require('animate.css');
-
-
-$(document).ready(function(){
- console.log("Ready!");
-  $(function () {
-    $('.tlt').textillate({
-      loop: false,
-      in : {
-        effect: 'fadeIn',
-        callback: function() {
-            $('.tlt').textillate('out');
-            $('.layer').fadeTo(1200, 1);
-          }
-        },
-      out: {
-        effect: 'fadeOut',
-      }
-    })
-  })
-
-  $('.tlt').on('outAnimationEnd.tlt', function () {
-    console.log("Out animation ended");
-    setTimeout(loadHome, 400);
-  });
-
-  function loadHome() {
-    window.location.assign('/home');
-  }
-});
-
-const Welcome = () => (
-  <div className='background'>
-   <div className='layer'>
-   </div>
-   <div className='tlt welcomeText'>Welcome</div>
-  </div>
-)
 
 
 const Topic = ({ match }) => (
