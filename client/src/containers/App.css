@@ -1,13 +1,14 @@
-@font-face {
+/*@font-face {
   font-family: 'Myfont-Regular';
   src: url("RebeccaFont.ttf") format("opentype");
-}
+}*/
 
 /*************** || WELCOME ANIMATION || ***************/
 
 .background {
-  background-image: url("clouds.jpg");
-  height: 800px;
+  background-image: url("../images/clouds.jpg");
+  background-color: #048BA8;
+  height: 1000px;
 }
 
 .layer {
@@ -21,9 +22,9 @@
 }
 
 .welcomeText {
-  font-size: 47px;
+  font-size: 45px;
   color: #ffffff;
-  line-height:500px;
+  line-height: 500px;
   text-align: center;
 }
 
@@ -32,5 +33,5 @@
 
 .homeBackground {
   background-color: #048BA8;
-  height: 800px;
+  height: 1000px;
 }

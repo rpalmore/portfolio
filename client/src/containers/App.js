@@ -1,12 +1,12 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Redirect,
   Route,
   Link
 } from 'react-router-dom'
 import About from '../components/About.js';
 import Contact from './Contact.js';
+import Home from '../components/Home.js';
 import './App.css';
 // import './App2.css';
 
@@ -15,9 +15,6 @@ window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
 require('animate.css');
-
-
-var animation = false;
 
 
 $(document).ready(function(){
@@ -30,29 +27,18 @@ $(document).ready(function(){
         callback: function() {
             $('.tlt').textillate('out');
             $('.layer').fadeTo(1200, 1);
-            // setTimeout(loadHome, 1500);
-
-        }
-      },
+          }
+        },
       out: {
         effect: 'fadeOut',
       }
     })
   })
 
-   // $('.tlt').on('end.tlt', function () {
-   //    console.log("Animation ended");
-   //      // alert("Done!");
-   //      setTimeout(loadHome, 1500);
-   //    });
-
-      $('.tlt').on('outAnimationEnd.tlt', function () {
-        console.log("Out animation ended");
-        // animation = true; // this doesnt impact anything
-        // console.log(animation);
-        // alert("Done!");
-        setTimeout(loadHome, 1000);
-      });
+  $('.tlt').on('outAnimationEnd.tlt', function () {
+    console.log("Out animation ended");
+    setTimeout(loadHome, 400);
+  });
 
   function loadHome() {
     window.location.assign('/home');
@@ -62,15 +48,8 @@ $(document).ready(function(){
 const Welcome = () => (
   <div className='background'>
    <div className='layer'>
-    <div className='tlt welcomeText'>Welcome</div>
    </div>
-  </div>
-)
-
-
-
-const Home = () => (
-  <div className='homeBackground'>
+   <div className='tlt welcomeText'>Welcome</div>
   </div>
 )
 
