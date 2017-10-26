@@ -106,13 +106,23 @@
 	font-size: 30px;
 	color: #ffffff;
 	line-height: 75px;
-	padding-left: 25%;
+	padding-left: 22%;
 	/*text-align: center;*/
 	/*text-decoration: none;*/
 }
 
 .nav {
 	text-decoration: none;
+}
+
+/*.nav:hover {
+	-webkit-transform: scale(1.2);
+}*/
+
+.about:hover, .projects:hover, .contact:hover {
+	background-color: #F18F01;
+	color: #2E4057;
+	font-weight: bold;
 }
 
 /*.projects {
