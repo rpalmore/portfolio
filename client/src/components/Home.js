@@ -29,8 +29,10 @@ $(document).ready(function(){
 class Home extends Component {
   render() {
     return (
+     <div>
       <div className='container'>
        <div className='containerLayer'></div>
+       <div className='opaque'></div>
        <div className='headerBackground'>
         <div className='headerImage'>
          <div className='headerLayer'>
@@ -41,6 +43,14 @@ class Home extends Component {
       	</div>
        </div>
       </div>
+      <div className='menuContainer'></div>
+       <div className='imageContainer'>
+	      <div className='about'></div>
+	      <div className='projects'></div>
+	      <div className='contact'></div>
+	   
+      </div>
+     </div>
 	);
   }
 }
