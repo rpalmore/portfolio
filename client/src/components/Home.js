@@ -20,7 +20,7 @@ $(document).ready(function(){
   	$('.tltHome').textillate({ 
   		in: { 
   			effect: 'flash',  
-  			shuffle: true 
+  			shuffle: true
   		} 
   	});
   })
@@ -35,20 +35,19 @@ class Home extends Component {
        <div className='opaque'></div>
        <div className='headerBackground'>
         <div className='headerImage'>
-         <div className='headerLayer'>
+         <div className='headerLayer'></div>
       	  <div className='header'>
-      	   <Link className='tltHome nameLink' to='/home'>Rebecca Palmore</Link>
+      	   <Link className='tltHome nameLink' to='/home'>rebecca palmore</Link>
       	  </div>
-      	 </div>
+      	 
       	</div>
        </div>
       </div>
       <div className='menuContainer'></div>
        <div className='imageContainer'>
-	      <div className='about'></div>
-	      <div className='projects'></div>
-	      <div className='contact'></div>
-	   
+		<Link className='nav' to='/about'><div className='about'>about</div></Link>
+	    <Link className='nav' to='/projects'><div className='projects'>projects</div></Link>
+	    <Link className='nav' to='/contact'><div className='contact'>contact</div></Link>
       </div>
      </div>
 	);
