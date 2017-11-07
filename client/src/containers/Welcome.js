@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Welcome.css';
+import Home from '../components/Home.js';
 import $ from "jquery";
 window.jQuery = window.$ = $;
 require('textillate');
@@ -39,9 +40,8 @@ class Welcome extends Component {
   render() {
     return (
      <div className='background'>
-      <div className='layer'>
-      </div>
-        <div className='tlt welcomeText'>Welcome</div>
+       <div className='layer'></div>
+       <div className='tlt welcomeText'>Welcome</div>
      </div>
     );
   }

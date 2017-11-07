@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import helpers from '../utils/helpers';
+import './Contact.css';
 
 class Contact extends Component {
   constructor(props) {

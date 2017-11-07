@@ -4,8 +4,9 @@ import './About.css';
 class About extends Component {
   render() {
     return (
-      <div>
-	      <h3 className="markerHighlight">About Me</h3>
+      <div className='aboutContainer'>
+      	
+	      <h3 className="sectionTitle">About Me</h3>
 	      <p><b><a href="/RebeccaPalmore_Resume.pdf" download>Download my resume</a></b></p>
 	      <p>Hi! I’m Rebecca. Thanks for checking out my portfolio. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
 

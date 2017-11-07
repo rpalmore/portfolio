@@ -4,7 +4,7 @@
 }*/
 
 .container {
-  height: 1000px;
+  height: 540px;
 }
 
 .containerLayer {
@@ -128,3 +128,11 @@
 /*.projects {
 	background-color: #048BA8;
 }*/
+
+.sectionContainer {
+	width: 70%;
+/*	background-color: red;*/
+/*	padding: 20px;*/
+	margin-left: 15%;
+	padding-bottom: 30px;
+}

@@ -38,8 +38,8 @@ let transporter = nodemailer.createTransport({
 
 app.post('/api/sendemail', function(req, res) {
 	var email = req.body.email;
-  var name = req.body.name;
-  var message = req.body.message;
+    var name = req.body.name;
+    var message = req.body.message;
     var mailOptions = {
         to: "rkpalmore@gmail.com",
         subject: "Hey! Saw Your Profile",
@@ -66,4 +66,4 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port);
-console.log(`Password generator listening on ${port}`);
+console.log(`Portfolio listening on ${port}`);
