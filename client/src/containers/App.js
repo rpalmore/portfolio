@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 import Home from '../components/Home.js';
 import Welcome from './Welcome.js';
-import About from '../components/About.js';
-import Contact from './Contact.js';
-import Projects from '../components/Projects.js';
 
 
 const App = () => (

@@ -7,9 +7,9 @@ import {
 import './Home.css';
 import About from './About.js';
 import Contact from '../containers/Contact.js';
-import Welcome from '../containers/Welcome.js';
 import Projects from './Projects.js';
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
@@ -31,6 +31,7 @@ class Home extends Component {
 
   render() {
     return (
+    <Router>
    	<div>
       <div className='container'>
         <div className='containerLayer'></div>
@@ -63,6 +64,7 @@ class Home extends Component {
       <Route path="/contact" component={Contact}/>
 
     </div>
+    </Router>
 	);
   }
 }

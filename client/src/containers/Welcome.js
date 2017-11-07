@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Welcome.css';
-import Home from '../components/Home.js';
 import $ from "jquery";
 window.jQuery = window.$ = $;
 require('textillate');
