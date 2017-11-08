@@ -87,8 +87,6 @@
 	position: absolute;
 	top: 282px;
 	background-color: #048BA8;
-/*	background-color: #F18F01;
-	opacity: 0.6;*/
 }
 
 .imageContainer {
@@ -107,17 +105,11 @@
 	color: #ffffff;
 	line-height: 75px;
 	padding-left: 22%;
-	/*text-align: center;*/
-	/*text-decoration: none;*/
 }
 
 .nav {
 	text-decoration: none;
 }
-
-/*.nav:hover {
-	-webkit-transform: scale(1.2);
-}*/
 
 .about:hover, .projects:hover, .contact:hover {
 	background-color: #F18F01;
@@ -125,14 +117,9 @@
 	font-weight: bold;
 }
 
-/*.projects {
-	background-color: #048BA8;
-}*/
 
 .sectionContainer {
 	width: 70%;
-/*	background-color: red;*/
-/*	padding: 20px;*/
 	margin-left: 15%;
-	padding-bottom: 30px;
+	padding-bottom: 500px;
 }

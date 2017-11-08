@@ -3,12 +3,14 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 import './Home.css';
 import About from './About.js';
 import Contact from '../containers/Contact.js';
 import Projects from './Projects.js';
 import $ from "jquery";
+import {TweenMax, Power4, TweenLite} from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 window.jQuery = window.$ = $;
 require('textillate');
@@ -29,10 +31,14 @@ $(document).ready(function(){
 
 class Home extends Component {
 
+  handleClick() {
+      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:10}, ease:Power4.easeOut});
+  }
+
   render() {
     return (
     <Router>
-   	<div>
+   	<div className='top'>
       <div className='container'>
         <div className='containerLayer'></div>
         <div className='opaque'></div>
@@ -48,21 +54,23 @@ class Home extends Component {
 
       <div className='menuContainer'></div>
       <div className='imageContainer'>
-	    <Link className='nav' to='/about'>
+	    <Link onClick={this.handleClick} className='nav' to='/about'>
 		  <div className='about'>about</div>
 		</Link>
-	    <Link className='nav' to='/projects'>
+	    <Link onClick={this.handleClick} className='nav' to='/projects'>
 	      <div className='projects'>projects</div>
 	    </Link>
-	    <Link className='nav' to='/contact'>
+	    <Link onClick={this.handleClick} className='nav' to='/contact'>
 	      <div className='contact'>contact</div>
 	    </Link>
 	  </div>
-	     
-	  <Route path="/about" component={About}/>
-	  <Route path="/projects" component={Projects}/>
-      <Route path="/contact" component={Contact}/>
 
+	  
+	  <div className='sectionContainer'>
+		  <Route path="/about" component={About}/>
+		  <Route path="/projects" component={Projects}/>
+	      <Route path="/contact" component={Contact}/>
+      </div>
     </div>
     </Router>
 	);
