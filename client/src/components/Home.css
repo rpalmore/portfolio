@@ -121,5 +121,6 @@
 .sectionContainer {
 	width: 70%;
 	margin-left: 15%;
-	padding-bottom: 500px;
+  padding-top: 15px;
+	padding-bottom: 30px;
 }

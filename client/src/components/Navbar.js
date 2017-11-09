@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {TweenMax, Back, Bounce, Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-// import About from './About.js';
-// import Contact from '../containers/Contact.js';
-// import Projects from './Projects.js';
-// import './Projects.css';
 
 
 class Navbar extends Component {
@@ -19,7 +11,7 @@ class Navbar extends Component {
   }
 
   handleClickTop() {
-    TweenLite.to(window, .8, {scrollTo: {y:0}, ease:Power4.easeOut});
+    TweenLite.to(window, .8, {scrollTo: {y:0, offsetY:10}, ease:Power4.easeOut});
   }
 
   render() {

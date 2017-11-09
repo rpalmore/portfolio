@@ -38,7 +38,7 @@ class Home extends Component {
   render() {
     return (
     <Router>
-   	<div className='top'>
+   	<div>
       <div className='container'>
         <div className='containerLayer'></div>
         <div className='opaque'></div>
