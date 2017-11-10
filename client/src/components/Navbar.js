@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {TweenMax, Back, Bounce, Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-
+import './Navbar.css';
 
 class Navbar extends Component {
 
@@ -16,18 +16,14 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div>
-        <Link onClick={this.handleClickTop} className='secondaryNav' to='/home'>
-          <div className='homeSecondNav'>top</div>
+      <div className='secondaryNav'>
+        <Link onClick={this.handleClickTop} className='navLink' to='/home'><span>Top</span>
         </Link>
-        <Link onClick={this.handleClick} className='secondaryNav' to='/about'>
-          <div className='aboutSecondNav'>about</div>
+        <Link onClick={this.handleClick} className='navLink' to='/about'><span>About</span>
         </Link>
-        <Link onClick={this.handleClick} className='secondaryNav' to='/projects'>
-           <div className='projectsSecondNav'>projects</div>
+        <Link onClick={this.handleClick} className='navLink' to='/projects'><span>Projects</span>
         </Link>
-        <Link onClick={this.handleClick} className='secondaryNav' to='/contact'>
-           <div className='contactSecondNav'>contact</div>
+        <Link onClick={this.handleClick} className='navLink' to='/contact'><span>Contact</span>
         </Link>
       </div>
     );

@@ -1,30 +1,19 @@
-/*.container{
-	width: 70%;
-	background-color: red;
-	padding: 20px;
-	margin-left: 15%;
-}*/
 
 div[class^=form] {
 	/*background-color: red;*/
 	padding-bottom: 10px;
 }
 
-input, textarea {
+input, textarea, button {
 	background-color: #2E4057;
 	width: 96%;
 	height: 25px;
 	border-width: 0;
-	border-radius: 4px;
-	padding-left: 10px;
+	padding: 0 0 0 10px;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	color: #ffffff;
 }
-
-/*input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-	background-color: red;
-}*/
 
 /* CHANGE AUTOCOMPLETE STYLES */
 /* Source: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/*/
@@ -35,7 +24,7 @@ input, textarea {
   border: 1px solid #F18F01;
   -webkit-text-fill-color: #ffffff;
   -webkit-box-shadow: 0 0 0px 1000px #2E4057 inset;
-  transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 1s;
 }
 
 :focus {
@@ -51,7 +40,29 @@ input, textarea {
 
 textarea {
 	height: 100px;
+	padding-top: 10px;
 }
 
+button {
+	width: 25%;
+	color: #F18F01;
+	color: #ffffff;
+	/*opacity: 0.6;*/
+	background-color: #2E4057;
+	margin-left: 37.5%;
+	padding: 0;
+/*	background-image: url("../images/clouds.jpg");
+    overflow: hidden;
+    -webkit-animation-name: buttonMove;
+    -webkit-animation-duration: 35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;*/
+}
+    
+/*@-webkit-keyframes buttonMove {
+    from {top: 0px;}
+    to {bottom: 200px;}
+}*/
 
 
