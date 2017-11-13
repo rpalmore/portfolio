@@ -29,10 +29,15 @@ $(document).ready(function(){
   })
 });
 
+  //  handleClick() {
+  //   TweenLite.to('.sectionContainer', 1.5, {scrollTo: 10});
+  // }
+
+
 class Home extends Component {
 
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:10}, ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:20}, ease:Power4.easeOut});
   }
 
   render() {
@@ -65,7 +70,6 @@ class Home extends Component {
 	    </Link>
 	  </div>
 
-	  
 	  <div className='sectionContainer'>
 		  <Route path="/about" component={About}/>
 		  <Route path="/projects" component={Projects}/>

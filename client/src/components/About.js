@@ -5,9 +5,11 @@ import Navbar from './Navbar.js';
 class About extends Component {
   render() {
     return (
-      <div className='aboutContainer'>
-      	
-	      
+      <div className='test'>
+      <div className='imageLayer'></div>
+       <div className='aboutImage'>
+      	<div className='aboutLayer'></div>
+      	<div className='aboutContainer'>
 	      <p><b><a href="/RebeccaPalmore_Resume.pdf" download>Download my resume</a></b></p>
 	      <p>Hi! I’m Rebecca. Thanks for checking out my portfolio. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
 
@@ -19,6 +21,8 @@ class About extends Component {
 
 	      <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
 	      <Navbar />
+	    </div>
+	   </div>
     </div>
     );
   }

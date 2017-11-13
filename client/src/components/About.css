@@ -1,7 +1,60 @@
-/*.container{
-	width: 70%;
-	background-color: red;
-	padding: 20px;
-	margin-left: 15%;
-}*/
 
+.test {
+  height: 520px;
+  overflow: hidden;
+}
+
+.imageLayer {
+	height: 522px;
+	width: 100%;
+	background-color: #2E4057;
+	opacity: 0.3;
+	position: absolute;
+	top: 554px;
+}
+
+.aboutImage {
+	background-image: url("../images/trees.jpg");
+	height: 1000px;
+	background-size: contain;
+	background-repeat: repeat-y;
+	overflow: hidden;
+	-webkit-animation-name: moveAbout;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes moveAbout {
+  0% {
+	   margin-top: -150px;
+    	}
+  100% {
+    	margin-top: 0px;
+    	}
+    }
+
+.aboutContainer {
+	position: absolute;
+	top: 554px;
+	width: 64%;
+	color: #ffffff;
+	margin-left: 18%;
+}
+
+.aboutLayer {
+	background-color: #048BA8;
+	opacity: 1;
+	opacity: .9;
+	position: absolute;
+	top: 554px;
+	width: 70%;
+	margin-left: 15%;
+	height: 522px;
+}
+
+/*img {
+	max-width: 100%;
+    height: auto;
+}*/

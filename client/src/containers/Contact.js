@@ -28,7 +28,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div className='contactContainer'>
         <form onSubmit={this.handleSubmit}>
           <div className='formFieldName'>
             <input id="name" type="name" value={this.state.name} onChange={this.handleChange} placeholder="Your name" className="validate" required />
