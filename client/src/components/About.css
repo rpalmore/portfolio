@@ -8,6 +8,7 @@
 	height: 522px;
 	width: 100%;
 	background-color: #2E4057;
+	/*background-color: #F18F01;*/
 	opacity: 0.3;
 	position: absolute;
 	top: 554px;
@@ -15,6 +16,7 @@
 
 .aboutImage {
 	background-image: url("../images/trees.jpg");
+	/*background-image: url("../images/UM.jpg");*/
 	height: 1000px;
 	background-size: contain;
 	background-repeat: repeat-y;
@@ -35,18 +37,27 @@
     	}
     }
 
-.aboutContainer {
+.outerAboutLayer {
 	position: absolute;
 	top: 554px;
-	width: 64%;
-	color: #ffffff;
-	margin-left: 18%;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.aboutContainer {
+	position: absolute;
+	top: 0px;
+	/*width: 85%;*/
+	color: #F1F2EB;
+	/*margin-left: 7.5%;*/
+	background-color: #2E4057;
+	padding: 10px 20px 10px 20px;
 }
 
 .aboutLayer {
-	background-color: #048BA8;
+	background-color: #2E4057;
 	opacity: 1;
-	opacity: .9;
+	opacity: .6;
 	position: absolute;
 	top: 554px;
 	width: 70%;
