@@ -27,7 +27,7 @@ $(document).ready(function(){
 
   $('.tlt').on('outAnimationEnd.tlt', function () {
     console.log("Out animation ended");
-    setTimeout(loadHome, 400);
+    setTimeout(loadHome, 200);
   });
 
   function loadHome() {
