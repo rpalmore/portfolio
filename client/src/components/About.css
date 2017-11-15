@@ -1,28 +1,27 @@
 
-.test {
-  height: 520px;
+.aboutContainerOuter {
+  height: 521px;
   overflow: hidden;
 }
 
-.imageLayer {
+.aboutImageLayerFull {
 	height: 522px;
 	width: 100%;
 	background-color: #2E4057;
-	/*background-color: #F18F01;*/
-	opacity: 0.3;
+	opacity: 0.4;
 	position: absolute;
-	top: 554px;
+	/*top: 554px;*/
+	top: 690px;
 }
 
 .aboutImage {
-	background-image: url("../images/trees.jpg");
-	/*background-image: url("../images/UM.jpg");*/
-	height: 1000px;
+	background-image: url("../images/TreetopsLR.jpg");
+	height: 2000px;
 	background-size: contain;
 	background-repeat: repeat-y;
 	overflow: hidden;
 	-webkit-animation-name: moveAbout;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 50s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
     -webkit-animation-timing-function: linear;
@@ -30,39 +29,49 @@
 
 @-webkit-keyframes moveAbout {
   0% {
-	   margin-top: -150px;
+	   margin-top: -1000px;
     	}
   100% {
     	margin-top: 0px;
     	}
     }
 
-.outerAboutLayer {
-	position: absolute;
-	top: 554px;
-	width: 60%;
-	margin-left: 20%;
-}
-
-.aboutContainer {
-	position: absolute;
-	top: 0px;
-	/*width: 85%;*/
-	color: #F1F2EB;
-	/*margin-left: 7.5%;*/
-	background-color: #2E4057;
-	padding: 10px 20px 10px 20px;
-}
-
-.aboutLayer {
+.aboutImageLayerPartial {
 	background-color: #2E4057;
 	opacity: 1;
 	opacity: .6;
 	position: absolute;
-	top: 554px;
+	/*top: 554px;*/
+	top: 689px;
 	width: 70%;
 	margin-left: 15%;
 	height: 522px;
+}
+
+.aboutContainerInner {
+	position: absolute;
+	/*top: 554px;*/
+	top: 689px;
+	width: 60%;
+	height: 522px;
+	margin-left: 20%;
+}
+
+.aboutContainerBackground {
+	position: absolute;
+	top: 0px;
+	height: 512px;
+	color: #F1F2EB;
+	background-color: #2E4057;
+	padding: 10px 20px 0px 20px;
+}
+
+a {
+	color: #F1F2EB;
+}
+
+a:hover {
+	color: #F18F01;
 }
 
 /*img {

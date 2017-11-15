@@ -29,15 +29,11 @@ $(document).ready(function(){
   })
 });
 
-  //  handleClick() {
-  //   TweenLite.to('.sectionContainer', 1.5, {scrollTo: 10});
-  // }
-
 
 class Home extends Component {
 
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:20}, ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:-110}, ease:Power4.easeOut});
   }
 
   render() {

@@ -5,12 +5,12 @@ import Navbar from './Navbar.js';
 class About extends Component {
   render() {
     return (
-      <div className='test'>
-      <div className='imageLayer'></div>
+      <div className='aboutContainerOuter'>
+      <div className='aboutImageLayerFull'></div>
        <div className='aboutImage'>
-      	<div className='aboutLayer'></div>
-        <div className='outerAboutLayer'>
-      	<div className='aboutContainer'>
+      	<div className='aboutImageLayerPartial'></div>
+        <div className='aboutContainerInner'>
+      	<div className='aboutContainerBackground'>
 	      <p><b><a href="/RebeccaPalmore_Resume.pdf" download>Download my resume</a></b></p>
 	      <p>Hi! I’m Rebecca. Thanks for checking out my portfolio. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
 
