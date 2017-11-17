@@ -56,10 +56,9 @@ class Home extends Component {
       <div className='menuContainer'></div>
       <div className='imageContainer'>
 	    <Link onClick={this.handleClick} className='nav' to='/about'>
-		  <div className='about'>about</div>
-		</Link>
-	    <Link onClick={this.handleClick} className='nav' to='/projects'>
-	      <div className='projects'>projects</div>
+		  <div className='about'>about</div></Link>
+		<Link onClick={this.handleClick} className='nav' to='/projects'>
+		  <div className='projects'>projects</div>
 	    </Link>
 	    <Link onClick={this.handleClick} className='nav' to='/contact'>
 	      <div className='contact'>contact</div>

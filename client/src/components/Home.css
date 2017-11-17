@@ -30,7 +30,8 @@
 
  .headerImage {
    background-image: url("../images/clouds.jpg");
-   height: 1000px;
+   background-image: url("../images/CloudsLR.jpg");
+   height: 2000px;
    overflow: hidden;
    -webkit-animation-name: move;
    -webkit-animation-duration: 35s;
@@ -41,7 +42,7 @@
     
 @-webkit-keyframes move {
   0% {
-	   margin-top: -496px;
+	   margin-top: -700px;
     	}
   100% {
     	margin-top: 0px;
