@@ -17,6 +17,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className='secondaryNav'>
+       <div className='navLayer'></div>
         <Link onClick={this.handleHomeClick} className='navLink' to='/home'><span>Top</span>
         </Link>
         <Link onClick={this.handleClick} className='navLink' to='/about'><span>About</span>

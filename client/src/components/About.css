@@ -57,10 +57,10 @@
 .aboutContainerBackground {
 	position: absolute;
 	top: 0px;
-	height: 512px;
+	/*height: 512px;*/
 	color: #F1F2EB;
 	background-color: #2E4057;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 a {
