@@ -1,25 +1,27 @@
 .secondaryNav {
 	text-align: center;
-	margin-top: 30px;
-/*	width: 100%;*/
+/*	position: absolute;*/
+/*	top: 90%;*/
+/*	bottom: 4%;*/
+	width: 100%;
+/*	margin-top: 30px;*/
 }
 
 .navLayer {
-	position: absolute;
-	/*top: 572px;*/
-	bottom: 0;
-	width: 100%;
-	margin-left: -20px;
-	height: 35px;
+	position: relative;
+	bottom: -29px;
+	height: 37px;
 	background-color: #F18F01;
 	opacity: .8;
 }
 
 .navLink {
-	padding-left: 10px;
-	padding-right: 10px;
 	padding: .75em;
 	color: #ffffff;
 /*	font-family: 'Lato', sans-serif;*/
 	/*background-color: #F18F01;*/
 }
+
+/*.navLinks {
+	color: #ffffff;
+}*/

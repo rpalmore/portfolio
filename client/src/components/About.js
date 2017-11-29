@@ -9,9 +9,10 @@ class About extends Component {
       <div className='aboutImageLayerFull'></div>
        <div className='aboutImage'>
       	<div className='aboutImageLayerPartial'></div>
+       </div>
         <div className='aboutContainerInner'>
       	<div className='aboutContainerBackground'>
-        <div className='resumeLayer'></div>
+        {/*<div className='resumeLayer'></div>*/}
         <div className='resumeBox'><a className='resumeDownload' href="/RebeccaPalmore_Resume.pdf" download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i></a></div>
         <p>Hello! Thanks for visiting. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
 
@@ -22,11 +23,11 @@ class About extends Component {
 	      <p>As a digital editor at <a href="http://wttw.com/chicagotonight" target="_blank" rel="noopener noreferrer">Chicago Tonight at WTTW-Channel 11</a>, I manage a small, driven team of reporters, produce compelling stories for digital platforms, edit and program a news website and&mdash;as many in my field do at all hours of the day and night&mdash;obsess over metrics.</p>
 
 	      <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
-	      <Navbar />
-       </div>
+        </div>
+	     <Navbar />
 	    </div>
 	   </div>
-    </div>
+   
     );
   }
 }
