@@ -6,12 +6,12 @@ class About extends Component {
   render() {
     return (
     <div className='aboutContainerOuter'>
-      {/*<div className='aboutImage'></div>*/}
+      
        
         {/*<div className='aboutContainerInner'>*/}
 
         <div className='aboutContainerBackground'>
-        
+        <div className='aboutImage'></div>
         <div className='aboutImageLayerFull'></div>
         <div className='aboutImageLayerPartial'></div>
         <div className='text'>
