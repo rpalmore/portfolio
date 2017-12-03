@@ -2,7 +2,7 @@
 .aboutContainerOuter {
   /*height: 883px;*/
   overflow: hidden;
-  display: flex;
+/*  display: flex;*/
   /*position: relative;*/
 /*  padding-bottom: 10px;*/
 }
@@ -20,6 +20,7 @@
 .aboutImage {
 	background-image: url("../images/TreetopsLR.jpg");
 	height: 2000px;
+	width: 100%;
 	background-size: contain;
 	background-repeat: repeat-y;
 	overflow: hidden;
@@ -46,27 +47,44 @@
 	position: relative;*/
 /*	top: 689px;*/
 	width: 70%;
-	margin-left: 15%;
+	margin-left: 14%;
 	/*height: 522px;*/
 	height: 100%;
+	position: absolute;
+/*	padding-bottom: 10px;*/
 }
 
 .aboutContainerInner {
-	position: absolute;
+	/*position: absolute;*/
 /*	top: 690px;
 	top: 0;*/
-	width: 60%;
+	/*width: 60%;*/
 /*	height: 522px;*/
-	margin-left: 20%;
+	/*margin-left: 20%;*/
 	/*height: 100%;*/
 }
 
 .aboutContainerBackground {
-/*	position: absolute;*/
-	color: #F1F2EB;
+	position: absolute;
+	width: 100%;
+	/*color: #F1F2EB;*/
+	/*background-color: #2E4057;
+	padding: 10px 20px 10px 20px;*/
+/*	width: 60%;
+	margin-left: 15%;*/
+	/*height: 100%;*/
+}
+
+.text {
+	position: relative;
 	background-color: #2E4057;
+	width: 62%;
+	margin-left: 18%;
+}
+
+.textInner {
 	padding: 10px 20px 10px 20px;
-	height: 100%;
+	color: #F1F2EB;
 }
 
 a {

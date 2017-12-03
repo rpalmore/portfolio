@@ -115,6 +115,7 @@
 
 .sectionContainer {
 	width: 100%;
+  /*display: flex;*/
   margin-top: 150px;
   margin-bottom: 1130px;
 }

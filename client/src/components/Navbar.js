@@ -16,8 +16,11 @@ class Navbar extends Component {
 
   render() {
     return (
+     <div>
+     <div className='navLayer'></div>
       <div className='secondaryNav'>
-       <div className='navLayer'></div>
+       
+        
         <Link onClick={this.handleHomeClick} className='navLink' to='/home'><span>Top</span>
         </Link>
         <Link onClick={this.handleClick} className='navLink' to='/about'><span>About</span>
@@ -26,6 +29,7 @@ class Navbar extends Component {
         </Link>
         <Link onClick={this.handleClick} className='navLink' to='/contact'><span>Contact</span>
         </Link>
+       </div>
       </div>
     );
   }

@@ -6,12 +6,16 @@ class About extends Component {
   render() {
     return (
     <div className='aboutContainerOuter'>
-      <div className='aboutImageLayerFull'></div>
-       <div className='aboutImage'>
-      	<div className='aboutImageLayerPartial'></div>
-       </div>
-        <div className='aboutContainerInner'>
-      	<div className='aboutContainerBackground'>
+      {/*<div className='aboutImage'></div>*/}
+       
+        {/*<div className='aboutContainerInner'>*/}
+
+        <div className='aboutContainerBackground'>
+        
+        <div className='aboutImageLayerFull'></div>
+        <div className='aboutImageLayerPartial'></div>
+        <div className='text'>
+      	<div className='textInner'>
         {/*<div className='resumeLayer'></div>*/}
         <div className='resumeBox'><a className='resumeDownload' href="/RebeccaPalmore_Resume.pdf" download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i></a></div>
         <p>Hello! Thanks for visiting. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
@@ -25,6 +29,8 @@ class About extends Component {
 	      <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
         </div>
 	     <Navbar />
+       
+       </div>
 	    </div>
 	   </div>
    

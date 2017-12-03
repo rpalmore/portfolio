@@ -68,8 +68,8 @@ class Home extends Component {
 	  <div className='sectionContainer'>
 		  <Route path="/about" component={About}/>
 		  <Route path="/projects" component={Projects}/>
-	      <Route path="/contact" component={Contact}/>
-      </div>
+	    <Route path="/contact" component={Contact}/>
+    </div>
     </div>
     </Router>
 	);
