@@ -7,7 +7,7 @@ import './Navbar.css';
 class Navbar extends Component {
 
   handleClick() {
-    TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:-110}, ease:Power4.easeOut});
+    TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:10}, ease:Power4.easeOut});
   }
   
   handleHomeClick() {
