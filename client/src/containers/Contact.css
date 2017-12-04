@@ -83,11 +83,17 @@ button {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (min-width: 340px) and (max-width: 500px) {
  .formContainer {
 	width: 80%;
 	margin-left: 10%;
  }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 340px) {
+ .formContainer {
+	width: 85%;
+	margin-left: 7.5%;
+ }
+}
 
