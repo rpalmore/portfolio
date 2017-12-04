@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import helpers from '../utils/helpers';
 import './Contact.css';
 import Navbar from '../components/Navbar.js';
+import $ from "jquery";
 
 const initialState = {
   name: "",
   email: "",
   message: "" 
 };
+
+const thankYou = {
+  message: "Thank you for your message!"
+}
 
 class Contact extends Component {
   constructor(props) {
@@ -26,7 +31,7 @@ class Contact extends Component {
   handleSubmit(event) {
     event.preventDefault();
     helpers.postSendEmail(this.state.name, this.state.email, this.state.message);
-    this.setState(initialState);
+    this.setState(thankYou);
    }
 
   render() {

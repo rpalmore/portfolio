@@ -8,6 +8,7 @@
 	position: relative;
 	width: 62%;
 	margin-left: 18%;
+	padding-top: 20px;
 }
 
 div[class^=form] {
