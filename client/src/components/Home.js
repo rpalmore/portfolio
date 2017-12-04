@@ -33,7 +33,7 @@ $(document).ready(function(){
 class Home extends Component {
 
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: {y:'.sectionContainer', offsetY:10}, ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: {y:'.mainContainer', offsetY:10}, ease:Power4.easeOut});
   }
 
   render() {
@@ -65,7 +65,7 @@ class Home extends Component {
 	    </Link>
 	  </div>
 
-	  <div className='sectionContainer'>
+	  <div className='mainContainer'>
 		  <Route path="/about" component={About}/>
 		  <Route path="/projects" component={Projects}/>
 	    <Route path="/contact" component={Contact}/>
