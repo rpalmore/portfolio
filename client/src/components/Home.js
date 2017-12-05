@@ -53,11 +53,11 @@ class Home extends Component {
                 rebecca palmore
                 </Link>
                 <div className='socialLinks'>
-                  <Link className='social1' to='https://github.com/rpalmore' target='_blank'><img className='socialIcons' src={github} alt={"Github"}/>
+                  <Link to='https://github.com/rpalmore' target='_blank'><img className='socialIcons' src={github} alt={"Github"}/>
                   </Link>
-                  <Link className='social2' to='https://twitter.com/rebeccapalmore' target='_blank'><img className='socialIcons' src={twitter} alt={"Twitter"}/>
+                  <Link to='https://twitter.com/rebeccapalmore' target='_blank'><img className='socialIcons' src={twitter} alt={"Twitter"}/>
                   </Link>
-                  <Link className='social3' to='https://linkedin.com/in/rebecca-palmore' target='_blank'><img className='socialIcons' src={linkedIn} alt={"LinkedIn"}/>
+                  <Link to='https://linkedin.com/in/rebecca-palmore' target='_blank'><img className='socialIcons' src={linkedIn} alt={"LinkedIn"}/>
                   </Link>
                 </div>
       	      </div>
