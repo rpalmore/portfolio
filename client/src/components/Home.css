@@ -1,7 +1,6 @@
 
 .container {
   height: 540px;
-/*  margin-bottom: 150px;*/
 }
 
 .containerLayer {
@@ -78,6 +77,17 @@
 
 .nameLink:hover {
   color: #ffffff;
+}
+
+.socialLinks {
+  position: absolute;
+  left: 80%;
+  top: 20px;
+}
+
+.socialIcons {
+  height: 45px;
+  width: 45px;
 }
 
 .menuContainer {
