@@ -13,7 +13,7 @@ import {TweenMax, Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
-import linkedIn from "../images/logos/linkedIn.png";
+import linkedin from "../images/logos/linkedin.png";
 
 window.jQuery = window.$ = $;
 require('textillate');
@@ -57,7 +57,7 @@ class Home extends Component {
                   </Link>
                   <Link to='https://twitter.com/rebeccapalmore' target='_blank'><img className='socialIcons' src={twitter} alt={"Twitter"}/>
                   </Link>
-                  <Link to='https://linkedin.com/in/rebecca-palmore' target='_blank'><img className='socialIcons' src={linkedIn} alt={"LinkedIn"}/>
+                  <Link to='https://linkedin.com/in/rebecca-palmore' target='_blank'><img className='socialIcons' src={linkedin} alt={"LinkedIn"}/>
                   </Link>
                 </div>
       	      </div>
