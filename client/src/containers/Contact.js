@@ -12,7 +12,7 @@ const initialState = {
 
 const thankYou = {
   message: "Thank you for your message!"
-}
+};
 
 class Contact extends Component {
   constructor(props) {
