@@ -32,21 +32,71 @@
    background-image: url("../images/CloudsLR.jpg");
    height: 2000px;
    overflow: hidden;
+   /**** Safari 4.0 - 8.0 ****/
    -webkit-animation-name: move;
    -webkit-animation-duration: 35s;
    -webkit-animation-iteration-count: infinite;
    -webkit-animation-direction: normal;
    -webkit-animation-timing-function: linear;
+   /**** Firefox 5+ ****/
+   -moz-animation-name: move;
+   -moz-animation-duration: 35s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-direction: normal;
+   -moz-animation-timing-function: linear;
+   /**** Opera 12+ ****/
+   -o-animation-name: move;
+   -o-animation-duration: 35s;
+   -o-animation-iteration-count: infinite;
+   -o-animation-direction: normal;
+   -o-animation-timing-function: linear;
+   /**** Standard syntax ****/
+   animation-name: move;
+   animation-duration: 35s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-timing-function: linear;
 }
-    
+
+/**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes move {
   0% {
 	   margin-top: -700px;
-    	}
+  }
   100% {
     	margin-top: 0px;
-    	}
-    }
+  }
+}
+
+/**** Firefox 5+ ****/
+@-moz-keyframes move {
+  0% {
+     margin-top: -700px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
+
+/**** Opera 12+ ****/
+@-o-keyframes move {
+  0% {
+     margin-top: -700px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
+
+/**** Standard syntax ****/
+@keyframes move {
+  0% {
+     margin-top: -700px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
 
 .headerLayer {
   background-color: #048BA8;
@@ -154,3 +204,8 @@
  }
 }
 
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+.socialLinks {
+  left: 70%;
+ }
+}
