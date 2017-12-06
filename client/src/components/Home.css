@@ -1,4 +1,10 @@
 
+/*.test {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}*/
+
 .container {
   height: 540px;
 }
@@ -138,6 +144,9 @@
 .socialIcons {
   height: 45px;
   width: 45px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .socialIcons:hover {
@@ -180,7 +189,54 @@
 .mainContainer {
 	width: 100%;
   margin-top: 150px;
+/*  flex: 1;*/
   margin-bottom: 1130px;
+/*  flex: 1 1 auto;*/
+}
+
+.footerImage {
+  background-image: url("../images/clouds.jpg");
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerLayer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: #99C24D;
+  opacity: 0.6;
+  bottom: 0;
+}
+
+footer {
+/*  position: absolute;*/
+  height: 50px;
+  width: 100%;
+  transition: 200ms;
+/*  bottom: 0;*/
+}
+
+footer:hover {
+  box-shadow: 0 0 2rem #F18F01;
+}
+
+.copyright {
+  position: absolute;
+  font-size: .75em;
+  color: #F1F2EB;
+  left: 5%;
+  bottom: 18px;
+}
+
+.portfolioGithub {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 88%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
@@ -190,12 +246,12 @@
   }
 .socialLinks {
   position: relative;
-  top: -67px;
+  top: -69px;
   left: 0;
  }
 .socialIcons {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
  }
 .header {
   text-align: center;

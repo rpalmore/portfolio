@@ -1,6 +1,7 @@
 
 .sectionContainer {
     overflow: hidden;
+/*    margin-bottom: 1150px;*/
 }
 
 .sectionContainerInner {
@@ -121,10 +122,10 @@ a:hover {
 }
 
 .resume {
-	width: 100px;
-	height: 100px;
-	margin-left: 5px;
-	margin-bottom: 15px;
+	width: 85px;
+	height: 95px;
+	margin-left: 6px;
+	margin-bottom: 20px;
 	float: right;
 	position: relative;
 	top: 20px;

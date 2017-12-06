@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './About.css';
 import Navbar from './Navbar.js';
 
+// import {
+//   Link
+// } from 'react-router-dom';
+// import github from "../images/logos/github.png";
+
 class About extends Component {
   render() {
     return (

@@ -83,6 +83,17 @@ class Home extends Component {
 		      <Route path="/projects" component={Projects}/>
 	        <Route path="/contact" component={Contact}/>
         </div>
+
+        <div className='footerImage'></div>
+        <div className='footerLayer'></div>
+        <footer>
+          <div className='copyright'>
+            Copyright &copy; Rebecca Palmore 2017
+          </div>
+          <Link to='https://github.com/rpalmore/portfolio' target='_blank'><img className='portfolioGithub' src={github} alt={"Github"}/>
+          </Link>
+        </footer>
+
       </div>
     </Router>
 	);
