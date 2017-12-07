@@ -14,6 +14,7 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
+import Footer from './Footer.js';
 
 window.jQuery = window.$ = $;
 require('textillate');
@@ -83,16 +84,6 @@ class Home extends Component {
 		      <Route path="/projects" component={Projects}/>
 	        <Route path="/contact" component={Contact}/>
         </div>
-
-        <div className='footerImage'></div>
-        <div className='footerLayer'></div>
-        <footer>
-          <div className='copyright'>
-            Copyright &copy; Rebecca Palmore 2017
-          </div>
-          <Link to='https://github.com/rpalmore/portfolio' target='_blank'><img className='portfolioGithub' src={github} alt={"Github"}/>
-          </Link>
-        </footer>
 
       </div>
     </Router>

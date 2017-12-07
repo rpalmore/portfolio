@@ -1,8 +1,22 @@
-
-/*.test {
+/*
+.site {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.siteContent {
+  flex: 1 0 auto;
+  padding: var ( - space) var (- space) 0;
+  width: 100%;
+}
+
+.siteContent:after {
+  content: ‘\00a0’;
+  display: block;
+  margin-top: var( — space);
+  height: 0;
+  visibility: hidden;
 }*/
 
 .container {
@@ -35,7 +49,7 @@
 /*************** || ANIMATION || ***************/
 
  .headerImage {
-   background-image: url("../images/CloudsLR.jpg");
+   background-image: url("../images/clouds.jpg");
    height: 2000px;
    overflow: hidden;
    /**** Safari 4.0 - 8.0 ****/
@@ -185,58 +199,10 @@
 	font-weight: bold;
 }
 
-
 .mainContainer {
 	width: 100%;
   margin-top: 150px;
-/*  flex: 1;*/
-  margin-bottom: 1130px;
-/*  flex: 1 1 auto;*/
-}
-
-.footerImage {
-  background-image: url("../images/clouds.jpg");
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-}
-
-.footerLayer {
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  background-color: #99C24D;
-  opacity: 0.6;
-  bottom: 0;
-}
-
-footer {
-/*  position: absolute;*/
-  height: 50px;
-  width: 100%;
-  transition: 200ms;
-/*  bottom: 0;*/
-}
-
-footer:hover {
-  box-shadow: 0 0 2rem #F18F01;
-}
-
-.copyright {
-  position: absolute;
-  font-size: .75em;
-  color: #F1F2EB;
-  left: 5%;
-  bottom: 18px;
-}
-
-.portfolioGithub {
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  bottom: 10px;
-  left: 88%;
+  margin-bottom: 500px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {

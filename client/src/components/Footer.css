@@ -1,0 +1,49 @@
+.footerContainer {
+  margin-top: 20px;
+}
+
+.footerImage {
+  background-image: url("../images/cloudsLowRes.jpg");
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerLayer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+/*  background-color: #99C24D;
+  opacity: 0.6;*/
+  background-color: #2E4057;
+  bottom: 0;
+}
+
+footer {
+/*  position: absolute;*/
+  height: 50px;
+  width: 100%;
+  transition: 200ms;
+/*  bottom: 0;*/
+}
+
+footer:hover {
+  box-shadow: 0 0 2rem #F18F01;
+}
+
+.copyright {
+  position: absolute;
+  font-size: .75em;
+  color: #F1F2EB;
+  left: 5%;
+  bottom: 18px;
+}
+
+.portfolioGithub {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 88%;
+}
