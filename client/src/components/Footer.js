@@ -13,7 +13,7 @@ class Footer extends Component {
         <div className='footerLayer'></div>
         <footer>
           <div className='copyright'>
-              Copyright &copy; Rebecca Palmore 2017
+              Created and maintained by Rebecca Palmore
           </div>
           <Link to='https://github.com/rpalmore/portfolio' target='_blank'>
               <img className='portfolioGithub' src={github} alt={"Github"}/>

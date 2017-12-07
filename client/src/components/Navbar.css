@@ -20,7 +20,8 @@
 }
 
 .navLink {
-	padding: .75em;
+	/*padding: .75em;*/
+	line-height: 37px;
 	color: #F1F2EB;
 	margin: auto;
 	position: relative;

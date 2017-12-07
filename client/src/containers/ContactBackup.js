@@ -36,22 +36,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
       <div className='sectionContainer'>
-        <div className='sectionContainerInner2'>
+        <div className='sectionContainerInner'>
           <div className='sectionImage'></div>
-          <div className='sectionImageLayerFull2'></div>
-          <div className='contactHeader'>
-            <span className='sectionTitle'>
-              contact
-            </span>
-          </div>
-          {/*<div className='containerLayer2'></div>
-          <div className='opaque2'></div>
-
-          <div className='sectionImageLayerPartial2'></div>
-          <div className='sectionImageLayerPartial3'></div>*/}
-          <div className='formBackgroundLayer'></div>
+          <div className='sectionImageLayerFull'></div>
+          <div className='sectionImageLayerPartial'></div>
           <div className='formContainer'>
             <form onSubmit={this.handleSubmit}>
               <div className='formFieldName'>
@@ -65,14 +54,14 @@ class Contact extends Component {
               </div>
               <button type="submit">Submit</button>
             </form>
+            <Navbar />
           </div>
-          {/*<div className='test'>
+          <div className='test'>
             <div className='test2'>
             </div>
-          </div>*/}
+          </div>
         </div>
       </div>
-    </div>
     );
   }
 }

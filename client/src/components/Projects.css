@@ -1,17 +1,17 @@
-.contactContainer {
+/*.contactContainer {
 	width: 70%;
 	margin-left: 15%;
 	overflow: hidden;
-}
+}*/
 
-.formContainer {
+/*.formContainer {
 	position: relative;
 	width: 62%;
 	margin-left: 18%;
 	padding-top: 20px;
-}
+}*/
 
-div[class^=form] {
+/*div[class^=form] {
 	padding-bottom: 10px;
 }
 
@@ -24,12 +24,12 @@ input, textarea, button {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	color: #F1F2EB;
-}
+}*/
 
 /* CHANGE AUTOCOMPLETE STYLES */
 /* Source: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/*/
 
-:-webkit-autofill,
+/*:-webkit-autofill,
 :-webkit-autofill:hover,
 :-webkit-autofill:focus {
   border: 1px solid #F18F01;
@@ -96,5 +96,5 @@ button {
 	width: 85%;
 	margin-left: 7.5%;
  }
-}
+}*/
 

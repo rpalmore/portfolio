@@ -15,7 +15,7 @@
 	height: 2000px;
 	width: 100%;
 	position: absolute;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: repeat-y;
 	overflow: hidden;
     /**** Safari 4.0 - 8.0 ****/
