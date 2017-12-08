@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import {Back, Bounce, Power4, TweenLite} from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 import helpers from '../utils/helpers';
 import './Contact.css';
-import Navbar from '../components/Navbar.js';
-import $ from "jquery";
+// import $ from "jquery";
 
 const initialState = {
   name: "",
@@ -34,6 +36,10 @@ class Contact extends Component {
     this.setState(thankYou);
    }
 
+  handleClick() {
+    TweenLite.to(window, 1, {scrollTo: {y:0}, ease:Power4.easeOut});
+  }
+
   render() {
     return (
       <div>
@@ -42,15 +48,15 @@ class Contact extends Component {
           <div className='sectionImage'></div>
           <div className='sectionImageLayerFull2'></div>
           <div className='contactHeader'>
-            <span className='sectionTitle'>
+           <div className='headerNavigation'>
+            <div className='sectionTitle'>
               contact
-            </span>
+            </div>
+            <Link onClick={this.handleClick} className='returnTop' to='/home'>
+              top
+            </Link>
+           </div>
           </div>
-          {/*<div className='containerLayer2'></div>
-          <div className='opaque2'></div>
-
-          <div className='sectionImageLayerPartial2'></div>
-          <div className='sectionImageLayerPartial3'></div>*/}
           <div className='formBackgroundLayer'></div>
           <div className='formContainer'>
             <form onSubmit={this.handleSubmit}>
@@ -66,10 +72,6 @@ class Contact extends Component {
               <button type="submit">Submit</button>
             </form>
           </div>
-          {/*<div className='test'>
-            <div className='test2'>
-            </div>
-          </div>*/}
         </div>
       </div>
     </div>

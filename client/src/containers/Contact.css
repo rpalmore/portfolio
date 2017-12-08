@@ -1,8 +1,3 @@
-/*.contactContainer {
-	width: 70%;
-	margin-left: 15%;
-	overflow: hidden;
-}*/
 
 .sectionContainerInner2 {
 	position: absolute;
@@ -21,17 +16,37 @@
 }
 
 .contactHeader {
-	width: 93%;
+	width: 100%;
     line-height: 70px;
-    padding-left: 7%;
     position: absolute;
     top: 0;
     height: 70px;
 }
 
-.sectionTitle {
+.headerNavigation {
+	top: 0;
+	width: 31%;
+	height: 100%;
+	padding-left: 7%;
+}
+
+.sectionTitle, .returnTop {
 	font-size: 30px;
 	color: #ffffff;
+	display: inline-block;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.returnTop {
+	left: 22%;
+    border-left: 1px solid #048BA8;
+}
+
+.returnTop:hover {
+    background-color: #F18F01;
+    opacity: .6;
+    color: #2E4057;
+    font-weight: bold;
 }
 
 .containerLayer2 {
@@ -53,25 +68,6 @@
   height: 43px;
 }
 
-.sectionImageLayerPartial2 {
-	width: 15%;
-    /* margin-left: 14%; */
-    height: 100%;
-    background-color: #2E4057;
-    position: absolute;
-    top: 243px;
-}
-
-.sectionImageLayerPartial3 {
-	width: 15%;
-    /* margin-left: 14%; */
-    height: 100%;
-    background-color: #2E4057;
-    position: absolute;
-    top: 243px;
-    right: 0;
-}
-
 .formBackgroundLayer {
     background-color: #2e4057;
     width: 72%;
@@ -87,8 +83,6 @@
     top: 123px;
     width: 70%;
     margin-left: 16%;
-/*	padding-top: 40px;*/
-/*	margin-bottom: 500px;*/
 }
 
 div[class^=form] {
@@ -99,7 +93,8 @@ input, textarea, button {
 	background-color: #2E4057;
 	width: 96%;
 	height: 3rem;
-	border-width: 0;
+	border-width: 1px;
+	border-color: #2E4057;
 	padding: 0 0 0 10px;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
@@ -132,6 +127,7 @@ textarea {
 
 button {
 	width: 25%;
+	font-size: 1.5rem;
 	color: #F1F2EB;
 	color: #F18F01;
 	background-color: #2E4057;
@@ -143,7 +139,6 @@ button {
 .sectionImage {
 	background-image: url("../images/treetops.jpg");
 	height: 2000px;
-/*	width: 100%;*/
 	position: absolute;
 	background-size: contain;
 	background-repeat: repeat-y;
@@ -164,28 +159,30 @@ button {
   }
 }
 
-.test {
-	height: 500px;
-	width: 100%;
-}
-
-.test2 {
-	height: 50px;
-	width: 100%;
-	background-color: #2E4057;
-}
-
-@media only screen and (min-width: 340px) and (max-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 760px) {
  .formContainer {
 	width: 80%;
 	margin-left: 10%;
  }
+ .headerNavigation {
+	width: 100%;
+	padding-left: 0;
+ }
+ .formBackgroundLayer {
+ 	width: 92%;
+ 	margin-left: 4%;
+ }
+ button {
+ 	width: 40%;
+ 	margin-left: 30%;
+ }
+ .returnTop, .sectionTitle {
+ 	padding: 0;
+ 	width: 49%;
+ 	text-align: center;
+ }
+
 }
 
-@media only screen and (min-width: 320px) and (max-width: 340px) {
- .formContainer {
-	width: 85%;
-	margin-left: 7.5%;
- }
-}
+
 
