@@ -8,6 +8,7 @@
 	position: absolute;
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 300px;
 }
 
 .sectionImage {
@@ -15,7 +16,7 @@
 	height: 2000px;
 	width: 100%;
 	position: absolute;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: repeat-y;
 	overflow: hidden;
     /**** Safari 4.0 - 8.0 ****/
@@ -88,8 +89,10 @@
 	height: 100%;
 	width: 100%;
 	background-color: #2E4057;
-	opacity: 0.4;
+	opacity: 0.2;
 	position: absolute;
+	top: 70px;
+	padding-bottom: 100px;
 }
 
 .sectionImageLayerPartial {
@@ -99,6 +102,8 @@
 	margin-left: 14%;
 	height: 100%;
 	position: absolute;
+	top: 100px;
+	padding-bottom:45px;
 }
 
 .textContainer {
@@ -106,6 +111,8 @@
 	background-color: #2E4057;
 	width: 62%;
 	margin-left: 18%;
+	margin-bottom: 123px;
+	top: 123px;
 }
 
 .text {
@@ -124,8 +131,8 @@ a:hover {
 .resume {
 	width: 85px;
 	height: 95px;
-	margin-left: 6px;
-	margin-bottom: 20px;
+	margin-left: 1rem;
+	margin-bottom: 2rem;
 	float: right;
 	position: relative;
 	top: 20px;

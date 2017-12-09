@@ -7,7 +7,7 @@
     margin-bottom: 300px;
 }
 
-.sectionImageLayerFull2 {
+/*.sectionHeaderLayer {
 	height: 70px;
     background-color: #2e4057;
     position: absolute;
@@ -23,7 +23,7 @@
     height: 70px;
 }
 
-.headerNavigation {
+.sectionHeaderNavigation {
 	top: 0;
 	width: 31%;
 	height: 100%;
@@ -47,7 +47,7 @@
     opacity: .6;
     color: #2E4057;
     font-weight: bold;
-}
+}*/
 
 .containerLayer2 {
   background-color: #2e4057;
@@ -91,11 +91,11 @@ div[class^=form] {
 
 input, textarea, button {
 	background-color: #2E4057;
-	width: 96%;
+	width: 95.5%;
 	height: 3rem;
 	border-width: 1px;
 	border-color: #2E4057;
-	padding: 0 0 0 10px;
+	padding-left: 1%;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	color: #F1F2EB;
@@ -139,17 +139,38 @@ button {
 .sectionImage {
 	background-image: url("../images/treetops.jpg");
 	height: 2000px;
+	width: 100%;
 	position: absolute;
 	background-size: contain;
 	background-repeat: repeat-y;
 	overflow: hidden;
-	-webkit-animation-name: moveAbout;
+    /**** Safari 4.0 - 8.0 ****/
+    -webkit-animation-name: moveAbout;
     -webkit-animation-duration: 50s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
     -webkit-animation-timing-function: linear;
+    /**** Firefox 5+ ****/
+    -moz-animation-name: moveAbout;
+    -moz-animation-duration: 50s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-timing-function: linear;
+    /**** Opera 12+ ****/
+    -o-animation-name: moveAbout;
+    -o-animation-duration: 50s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: normal;
+    -o-animation-timing-function: linear;
+    /**** Standard syntax ****/
+    animation-name: moveAbout;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
 }
 
+/**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes moveAbout {
   0% {
 	margin-top: -1000px;
@@ -158,6 +179,37 @@ button {
     margin-top: 0px;
   }
 }
+
+/**** Firefox 5+ ****/
+@-moz-keyframes moveAbout {
+  0% {
+     margin-top: -1000px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
+
+/**** Opera 12+ ****/
+@-o-keyframes moveAbout {
+  0% {
+     margin-top: -1000px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
+
+/**** Standard syntax ****/
+@keyframes moveAbout {
+  0% {
+     margin-top: -1000px;
+  }
+  100% {
+      margin-top: 0px;
+  }
+}
+
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
  .formContainer {
@@ -180,6 +232,13 @@ button {
  	padding: 0;
  	width: 49%;
  	text-align: center;
+ }
+
+}
+
+@media only screen and (min-width: 1330px) {
+ .sectionImage {
+	background-size: cover;
  }
 
 }

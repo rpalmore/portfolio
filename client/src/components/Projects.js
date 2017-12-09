@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import Navbar from './Navbar.js';
+// import Navbar from './Navbar.js';
 
 
 class Projects extends Component {
@@ -16,7 +16,7 @@ class Projects extends Component {
               <p>Hello! Thanks for visiting. I’ve been a full-stack web developer since 2017, and a multimedia journalist and editor since 2002.</p>
             </div>
 
-	       <Navbar />
+	       
           </div>
 	     </div>
 	    </div>

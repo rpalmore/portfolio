@@ -1,0 +1,41 @@
+.sectionHeaderLayer {
+	height: 70px;
+    background-color: #2e4057;
+    position: absolute;
+    width: 100%;
+    opacity: .6;
+}
+
+.sectionHeaderContainer {
+	width: 100%;
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    height: 70px;
+}
+
+.sectionHeaderNavigation {
+	top: 0;
+	width: 31%;
+	height: 100%;
+	padding-left: 7%;
+}
+
+.sectionTitle, .returnTop {
+	font-size: 30px;
+	color: #ffffff;
+	display: inline-block;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.returnTop {
+	left: 22%;
+    border-left: 1px solid #048BA8;
+}
+
+.returnTop:hover {
+    background-color: #F18F01;
+    opacity: .6;
+    color: #2E4057;
+    font-weight: bold;
+}

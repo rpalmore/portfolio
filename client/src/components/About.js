@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './About.css';
-import {
-  Link
-} from 'react-router-dom';
-import Navbar from './Navbar.js';
+import Subnav from './Subnav.js';
 import Footer from './Footer.js';
-// import github from "../images/logos/github.png";
+
 
 class About extends Component {
   render() {
@@ -13,6 +10,7 @@ class About extends Component {
       <div className='sectionContainer'>
         <div className='sectionContainerInner'>
           <div className='sectionImage'></div>
+          <Subnav section='about'/>
           <div className='sectionImageLayerFull'></div>
           <div className='sectionImageLayerPartial'></div>
           <div className='textContainer'>
@@ -31,9 +29,9 @@ class About extends Component {
 	            <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
             </div>
 
-	          <Navbar />
+	          {/*<Navbar />*/}
           </div>
-         <Footer />
+         {/*<Footer />*/}
 	      </div>
 	    </div>
     );

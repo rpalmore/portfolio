@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {Back, Bounce, Power4, TweenLite} from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 import helpers from '../utils/helpers';
 import './Contact.css';
-// import $ from "jquery";
+import Subnav from '../components/Subnav.js';
 
 const initialState = {
   name: "",
@@ -15,6 +12,7 @@ const initialState = {
 const thankYou = {
   message: "Thank you for your message!"
 };
+
 
 class Contact extends Component {
   constructor(props) {
@@ -36,27 +34,13 @@ class Contact extends Component {
     this.setState(thankYou);
    }
 
-  handleClick() {
-    TweenLite.to(window, 1, {scrollTo: {y:0}, ease:Power4.easeOut});
-  }
-
   render() {
     return (
       <div>
       <div className='sectionContainer'>
         <div className='sectionContainerInner2'>
           <div className='sectionImage'></div>
-          <div className='sectionImageLayerFull2'></div>
-          <div className='contactHeader'>
-           <div className='headerNavigation'>
-            <div className='sectionTitle'>
-              contact
-            </div>
-            <Link onClick={this.handleClick} className='returnTop' to='/home'>
-              top
-            </Link>
-           </div>
-          </div>
+          <Subnav section='contact' />
           <div className='formBackgroundLayer'></div>
           <div className='formContainer'>
             <form onSubmit={this.handleSubmit}>
