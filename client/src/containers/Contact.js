@@ -36,13 +36,16 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+    <div>
       <div className='sectionContainer'>
         <div className='sectionContainerInner2'>
           <div className='sectionImage'></div>
+
           <Subnav section='contact' />
+
           <div className='formBackgroundLayer'></div>
           <div className='formContainer'>
+
             <form onSubmit={this.handleSubmit}>
               <div className='formFieldName'>
                 <input id="name" type="name" value={this.state.name} onChange={this.handleChange} placeholder="Your name" className="validate" required />
@@ -53,9 +56,13 @@ class Contact extends Component {
               <div className='formFieldMessage'>
                 <textarea id="message" type="message" value={this.state.message} onChange={this.handleChange} placeholder="Your message" className="validate" required />
               </div>
-              <button type="submit">Submit</button>
+              <div className='submitButton'>
+                <button type="submit">Submit</button>
+              </div>
             </form>
+
           </div>
+
         </div>
       </div>
     </div>

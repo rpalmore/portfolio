@@ -28,8 +28,6 @@ class About extends Component {
 
 	            <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
             </div>
-
-	          {/*<Navbar />*/}
           </div>
          {/*<Footer />*/}
 	      </div>

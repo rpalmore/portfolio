@@ -30,17 +30,17 @@
     background-color: #2e4057;
     width: 72%;
     height: 70%;
-    margin-left: 14%;
-    position: absolute;
+    margin: auto;
+    position: relative;
     top: 100px;
     opacity: .6;
 }
 
 .formContainer {
-    position: absolute;
-    top: 123px;
-    width: 70%;
-    margin-left: 16%;
+    position: relative;
+    top: -260px;
+    width: 68%;
+    margin: auto;
 }
 
 div[class^=form] {
@@ -49,12 +49,12 @@ div[class^=form] {
 
 input, textarea, button {
 	background-color: #2E4057;
-	width: 95.5%;
+	width: 97.5%;
 	height: 3rem;
 	border-width: 1px;
 	border-color: #2E4057;
-	padding-left: 1%;
-	font-size: 16px;
+    padding-left: 1rem;
+    font-size: 1.3rem;
 	font-family: 'Lato', sans-serif;
 	color: #F1F2EB;
 }
@@ -83,13 +83,16 @@ textarea {
 	padding-top: 10px;
 }
 
-button {
+.submitButton {
 	width: 25%;
+	margin: auto;
+}
+
+button {
+	width: 100%;
 	font-size: 1.5rem;
-	color: #F1F2EB;
 	color: #F18F01;
 	background-color: #2E4057;
-	margin-left: 37.5%;
 	margin-bottom: 15px;
 	padding: 0;
 }
@@ -172,15 +175,12 @@ button {
 @media only screen and (min-width: 320px) and (max-width: 760px) {
  .formContainer {
 	width: 80%;
-	margin-left: 10%;
  }
  .formBackgroundLayer {
  	width: 92%;
- 	margin-left: 4%;
  }
  button {
  	width: 40%;
- 	margin-left: 30%;
  }
 
 }
