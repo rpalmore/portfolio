@@ -179,10 +179,6 @@ button {
  .formBackgroundLayer {
  	width: 92%;
  }
- button {
- 	width: 40%;
- }
-
 }
 
 @media only screen and (min-width: 1330px) {

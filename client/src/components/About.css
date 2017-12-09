@@ -92,24 +92,24 @@
 	opacity: 0.2;
 	position: absolute;
 	top: 70px;
-	/*padding-bottom: 100px;*/
 }
 
 .sectionImageLayerPartial {
 	background-color: #2E4057;
 	opacity: .6;
-	width: 70%;
-	margin: auto;
-	height: 100%;
-	position: relative;
+	position: absolute;
+    margin-left: 14%;
 	top: 65px;
-	/*padding-bottom:45px;*/
+	opacity: .6;
+    width: 72%;
+    height: 84%;
+    top: 84px;
 }
 
 .textContainer {
 	position: relative;
 	background-color: #2E4057;
-	width: 62%;
+	width: 68%;
 	margin: auto;
 	margin-bottom: 125px;
 	top: 95px;
@@ -158,19 +158,37 @@ a:hover {
 	padding-top: 10px;
 }
 
+@media only screen and (min-width: 1350px) {
+  .sectionImageLayerPartial {
+    height: 80%;
+    width: 65%;
+    margin-left: 17.5%;
+ }
+  .textContainer {
+	width: 62%;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1350px) {
+  .sectionImageLayerPartial {
+    height: 81%;
+ }
+}
+
 @media only screen and (min-width: 340px) and (max-width: 500px) {
  .textContainer {
 	width: 80%;
  }
  .sectionImageLayerPartial {
 	width: 86%;
+    margin-left: 7%;
+    height: 89.5%;
  }
  .header {
  	text-align: center;
  	width: 100%;
  	padding-left: 0;
  }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 340px) {
@@ -179,5 +197,7 @@ a:hover {
  }
   .sectionImageLayerPartial {
 	width: 90%;
+    margin-left: 5%;
+    height: 90.5%;
  }
 }
