@@ -30,11 +30,9 @@
 }
 
 .projectText {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  position: relative;
+  top: 33%;
+  text-align: center;
 }
 
 .projectName {
@@ -44,7 +42,7 @@
 }
 
 .projectLinks {
-	top: 62%;
+	top: 66%;
 	width: 50%;
 	position: absolute;
 	left: 50%;
@@ -98,13 +96,16 @@ a[class^=projectLink] {
  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
  .projectColumnLayer {
     height: 27.5%;
  }
  .projectLinks {
  	top: 72%;
-    width: 75%;
+    width: 92%;
+ }
+ .projectText {
+ 	top: 17%;
  }
 }
 
