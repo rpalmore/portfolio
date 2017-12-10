@@ -34,9 +34,12 @@ $(document).ready(function(){
 });
 
 class Home extends Component {
+
+  // TweenLite.to(myDiv, 2, {scrollTo:{y:400, x:200}, ease:Power2.easeOut});
+  // TweenLite.to(window, 2, {scrollTo:"#someID"});
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: {y:'.mainContainer', offsetY:0}, ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: '.sectionContainer', ease:Power4.easeOut});
   }
 
   render() {
