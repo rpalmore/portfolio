@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <div className='sectionContainer'>
         <div className='sectionContainerInner'>
-          <div className='sectionImage'></div>
+          {/*<div className='sectionImage'></div>*/}
           <Subnav section='about'/>
           <div className='sectionImageLayerFull'></div>
           <div className='sectionImageLayerPartial'></div>

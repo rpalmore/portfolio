@@ -12,7 +12,7 @@ class Projects extends Component {
     <div>
       <div className='sectionContainer'>
         <div className='sectionContainerInner'>
-          <div className='sectionImage'></div>
+          {/*<div className='sectionImage'></div>*/}
 
           <Subnav section='projects' />
 

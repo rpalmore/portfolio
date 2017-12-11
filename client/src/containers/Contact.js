@@ -39,7 +39,7 @@ class Contact extends Component {
     <div>
       <div className='sectionContainer'>
         <div className='sectionContainerInner2'>
-          <div className='sectionImage'></div>
+          {/*<div className='sectionImage'></div>*/}
 
           <Subnav section='contact' />
 
