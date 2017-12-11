@@ -36,7 +36,6 @@ class Contact extends Component {
 
   render() {
     return (
-    <div>
       <div className='sectionContainer'>
         <div className='sectionContainerInner2'>
           {/*<div className='sectionImage'></div>*/}
@@ -65,7 +64,6 @@ class Contact extends Component {
 
         </div>
       </div>
-    </div>
     );
   }
 }

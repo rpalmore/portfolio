@@ -38,14 +38,15 @@ class Home extends Component {
   // TweenLite.to(myDiv, 2, {scrollTo:{y:400, x:200}, ease:Power2.easeOut});
   // TweenLite.to(window, 2, {scrollTo:"#someID"});
   // TweenLite.to(myDiv, 2, {scrollTo:"max"});
+
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', autoKill:false, ease:Power4.easeOut});
   }
 
-   handleClickProjects() {
-      TweenLite.to(window, 1.5, {scrollTo: '.greensockProjects', ease:Power4.easeOut});
-  }
+  //  handleClickProjects() {
+  //     TweenLite.to(window, 1.5, {scrollTo: '.greensockProjects', ease:Power4.easeOut});
+  // }
 
   render() {
     return (
@@ -77,7 +78,7 @@ class Home extends Component {
 	        <Link onClick={this.handleClick} to='/about'>
 		        <div className='about'>about</div>
           </Link>
-		      <Link onClick={this.handleClickProjects} to='/projects'>
+		      <Link onClick={this.handleClick} to='/projects'>
 		        <div className='projects'>projects</div>
 	        </Link>
 	        <Link onClick={this.handleClick} to='/contact'>
