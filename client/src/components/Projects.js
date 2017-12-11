@@ -17,8 +17,8 @@ class Projects extends Component {
           <Subnav section='projects' />
 
           <div className='sectionImageLayerFull'></div>
-          <div className='sectionImageLayerPartial'></div>
-          <div className='textContainer'>
+          <div className='projectsLayerPartial'></div>
+          <div className='projectsContainer'>
             <div className='overlay'></div>
 
             {/* === PROJECT ONE === */}

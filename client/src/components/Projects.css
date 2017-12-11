@@ -1,5 +1,22 @@
-.projectImage {
-	width: 100%;
+.projectsLayerPartial {
+	background-color: #2e4057;
+    position: absolute;
+    margin-left: 14%;
+    opacity: .6;
+    width: 72%;
+    height: 90.5%;
+    top: 84px;
+}
+
+.projectsContainer {
+	position: relative;
+	background-color: #2E4057;
+	width: 68%;
+	max-width: 550px;
+	min-width: 245px;
+	margin: auto;
+	margin-bottom: 125px;
+	top: 95px;
 }
 
 .overlay {
@@ -29,6 +46,10 @@
   opacity: 0.9;
 }
 
+.projectImage {
+	width: 100%;
+}
+
 .projectText {
   position: relative;
   top: 33%;
@@ -36,7 +57,7 @@
 }
 
 .projectName {
-	font-size: 30px;
+	font-size: 2.5rem;
 	font-weight: bold;
     color: #fff;
 }
@@ -73,11 +94,11 @@ div[class^=box]:hover {
 	color: #2E4057;
 }
 
-.boxRight:hover {
-	width: 50%;
+/*.boxRight:hover {
+	width: 49%;
 	background-color: #99C24D;
 	color: #2E4057;
-}
+}*/
 
 a[class^=projectLink] {
 	font-size: 20px;
@@ -107,11 +128,27 @@ a[class^=projectLink] {
  .projectText {
  	top: 17%;
  }
+ .projectName {
+ 	font-size: 1.5rem;
+ }
+ .projectsLayerPartial {
+    height: 82.5%;
+    width: 88%;
+    margin-left: 6%;
+ }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
  .projectColumnLayer {
     height: 30.5%;
+ }
+ .projectsLayerPartial {
+    height: 91%;
+    width: 58%;
+    margin-left: 21%;
+ }
+ .projectsContainer {
+	width: 52%;
  }
 }
 

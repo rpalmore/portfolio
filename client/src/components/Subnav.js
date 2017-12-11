@@ -7,9 +7,6 @@ import './Subnav.css';
 class Subnav extends Component {
 
   handleClick() {
-
-      // TweenLite.to(window, 2, {scrollTo:400});
-    // TweenLite.to(window, 1, {scrollTo: {y:0}, ease:Power4.easeOut});
     TweenLite.to(window, 1, {scrollTo: 0, ease:Power4.easeOut});
   }
 

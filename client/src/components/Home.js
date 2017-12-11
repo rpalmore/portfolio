@@ -46,7 +46,6 @@ class Home extends Component {
     return (
     <Router>
    	  <div>
-        <div>
           <div className='containerLayer'></div>
           <div className='opaque'></div>
           <div className='headerBackground'>
@@ -66,7 +65,6 @@ class Home extends Component {
                 </div>
       	      </div>
       	    </div>
-          </div>
         </div>
 
         <div className='menuContainer'></div>

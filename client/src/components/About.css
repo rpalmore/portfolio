@@ -13,7 +13,7 @@
 
 .sectionImage {
 	background-image: url("../images/treetops.jpg");
-	height: 2000px;
+	height: 2500px;
 	width: 100%;
 	position: absolute;
 	background-size: contain;
@@ -48,7 +48,7 @@
 /**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes moveAbout {
   0% {
-	margin-top: -1000px;
+	margin-top: -900px;
   }
   100% {
     margin-top: 0px;
@@ -58,7 +58,7 @@
 /**** Firefox 5+ ****/
 @-moz-keyframes moveAbout {
   0% {
-     margin-top: -1000px;
+     margin-top: -900px;
   }
   100% {
       margin-top: 0px;
@@ -68,7 +68,7 @@
 /**** Opera 12+ ****/
 @-o-keyframes moveAbout {
   0% {
-     margin-top: -1000px;
+     margin-top: -900px;
   }
   100% {
       margin-top: 0px;
@@ -78,7 +78,7 @@
 /**** Standard syntax ****/
 @keyframes moveAbout {
   0% {
-     margin-top: -1000px;
+     margin-top: -900px;
   }
   100% {
       margin-top: 0px;
