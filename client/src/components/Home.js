@@ -39,7 +39,7 @@ class Home extends Component {
   // TweenLite.to(window, 2, {scrollTo:"#someID"});
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: '.sectionHeaderContainer', ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', ease:Power4.easeOut});
   }
 
   render() {
