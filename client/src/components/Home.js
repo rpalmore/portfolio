@@ -37,9 +37,10 @@ class Home extends Component {
 
   // TweenLite.to(myDiv, 2, {scrollTo:{y:400, x:200}, ease:Power2.easeOut});
   // TweenLite.to(window, 2, {scrollTo:"#someID"});
+  // TweenLite.to(myDiv, 2, {scrollTo:"max"});
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', ease:Power2.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', y: 'max', ease:Power4.easeOut});
   }
 
   render() {
