@@ -40,7 +40,11 @@ class Home extends Component {
   // TweenLite.to(myDiv, 2, {scrollTo:"max"});
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', y: 'max', ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', ease:Power4.easeOut});
+  }
+
+   handleClickProjects() {
+      TweenLite.to(window, 1.5, {scrollTo: '.greensockProjects', ease:Power4.easeOut});
   }
 
   render() {
@@ -73,7 +77,7 @@ class Home extends Component {
 	        <Link onClick={this.handleClick} to='/about'>
 		        <div className='about'>about</div>
           </Link>
-		      <Link onClick={this.handleClick} to='/projects'>
+		      <Link onClick={this.handleClickProjects} to='/projects'>
 		        <div className='projects'>projects</div>
 	        </Link>
 	        <Link onClick={this.handleClick} to='/contact'>
