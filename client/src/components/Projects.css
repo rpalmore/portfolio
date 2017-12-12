@@ -5,7 +5,7 @@
     opacity: .6;
     width: 72%;
     height: 90.5%;
-    top: 84px;
+    top: 90px;
 }
 
 .projectsContainer {
@@ -15,8 +15,8 @@
 	max-width: 550px;
 	min-width: 245px;
 	margin: auto;
-	margin-bottom: 125px;
-	top: 95px;
+	margin-bottom: 137px;
+	top: 105px;
 }
 
 .overlay {
@@ -28,15 +28,15 @@
 }
 
 .projectColumn {
-	padding: 1rem;
+	padding: .75rem;
 	border-bottom: 1px solid #048ba8;
 }
 
 .projectColumnLayer {
 	background-color: #048BA8;
 	opacity: 0;
-	left: 1rem;
-    right: 1rem;
+	left: .75rem;
+    right: .75rem;
     position: absolute;
     height: 29.5%;
 }
@@ -84,11 +84,6 @@ div[class^=box] {
 	border-right: 1px solid #048BA8;
 }
 
-.boxRight {
-	/*border-left: 1px solid #048BA8;*/
-	/*width: 50%;*/
-}
-
 div[class^=box]:hover {
 	background-color: #99C24D;
 	color: #2E4057;
@@ -105,27 +100,13 @@ a[class^=projectLink] {
 	color: #ffffff;
 }
 
-@media only screen and (min-width: 761px) and (max-width: 787px) {
- .sectionHeaderNavigation {
-    width: 100%;
-    padding-left: 0;
- }
- .returnTop, .sectionTitle {
-    padding: 0;
-    width: 49%;
-    text-align: center;
- }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 362px) {
- .projectColumnLayer {
-    width: 214px;
- }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+ .projectsContainer {
+	width: 80%;
+ }
  .projectColumnLayer {
     height: 27.5%;
+    opacity: 0.9;
  }
  .projectLinks {
  	top: 72%;
@@ -138,9 +119,21 @@ a[class^=projectLink] {
  	font-size: 1.5rem;
  }
  .projectsLayerPartial {
-    height: 82.5%;
-    width: 88%;
-    margin-left: 6%;
+    height: 83%;
+    width: 90%;
+    margin-left: 5%;
+ }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 787px) {
+ .sectionHeaderNavigation {
+    width: 100%;
+    padding-left: 0;
+ }
+ .returnTop, .sectionTitle {
+    padding: 0;
+    width: 49%;
+    text-align: center;
  }
 }
 

@@ -103,7 +103,7 @@
 	opacity: .6;
     width: 72%;
     height: 84%;
-    top: 84px;
+    top: 90px;
 }
 
 .textContainer {
@@ -111,8 +111,8 @@
 	background-color: #2E4057;
 	width: 68%;
 	margin: auto;
-	margin-bottom: 125px;
-	top: 95px;
+	margin-bottom: 137px;
+	top: 105px;
 }
 
 .text {
@@ -176,9 +176,6 @@ a:hover {
 }
 
 @media only screen and (min-width: 340px) and (max-width: 500px) {
- .textContainer {
-	width: 80%;
- }
  .sectionImageLayerPartial {
 	width: 86%;
     margin-left: 7%;
@@ -193,11 +190,11 @@ a:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 340px) {
   .textContainer {
-	width: 85%;
+	width: 80%;
  }
   .sectionImageLayerPartial {
 	width: 90%;
     margin-left: 5%;
-    height: 90.5%;
+    height: 91%;
  }
 }
