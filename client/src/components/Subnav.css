@@ -16,7 +16,7 @@
 
 .sectionHeaderNavigation {
 	top: 0;
-	width: 31%;
+	width: 32%;
 	height: 100%;
 	padding-left: 7%;
 }
@@ -40,7 +40,7 @@
     font-weight: bold;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 760px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
  .sectionHeaderNavigation {
     width: 100%;
     padding-left: 0;

@@ -9,7 +9,7 @@ import About from './About.js';
 import Contact from '../containers/Contact.js';
 import Projects from './Projects.js';
 import $ from "jquery";
-import {TweenMax, Power4, Power2, TweenLite} from "gsap";
+import {TweenMax, Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
@@ -35,18 +35,9 @@ $(document).ready(function(){
 
 class Home extends Component {
 
-  // TweenLite.to(myDiv, 2, {scrollTo:{y:400, x:200}, ease:Power2.easeOut});
-  // TweenLite.to(window, 2, {scrollTo:"#someID"});
-  // TweenLite.to(myDiv, 2, {scrollTo:"max"});
-
-  
-  handleClick() {
+ handleClick() {
       TweenLite.to(window, 1.5, {scrollTo: {y:1007}, autoKill:false, ease:Power4.easeOut});
   }
-
-  //  handleClickProjects() {
-  //     TweenLite.to(window, 1.5, {scrollTo: '.greensockProjects', ease:Power4.easeOut});
-  // }
 
   render() {
     return (
