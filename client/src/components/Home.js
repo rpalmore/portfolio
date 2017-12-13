@@ -41,7 +41,7 @@ class Home extends Component {
 
   
   handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: '.mainContainer', autoKill:false, ease:Power4.easeOut});
+      TweenLite.to(window, 1.5, {scrollTo: {y:1007}, autoKill:false, ease:Power4.easeOut});
   }
 
   //  handleClickProjects() {
