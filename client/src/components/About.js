@@ -7,9 +7,8 @@ import Footer from './Footer.js';
 class About extends Component {
   render() {
     return (
-      <div className='sectionContainer'>
-        <div className='sectionContainerInner'>
-          {/*<div className='sectionImage'></div>*/}
+        <div className='sectionContainer'>
+          <div className='sectionImage'></div>
           <Subnav section='about'/>
           <div className='sectionImageLayerFull'></div>
           <div className='sectionImageLayerPartial'></div>
@@ -31,7 +30,6 @@ class About extends Component {
           </div>
          {/*<Footer />*/}
 	      </div>
-	    </div>
     );
   }
 }

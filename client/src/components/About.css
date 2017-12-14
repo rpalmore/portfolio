@@ -1,13 +1,8 @@
 
 .sectionContainer {
-/*    overflow: hidden;*/
-/*    margin-bottom: 1150px;*/
-}
-
-.sectionContainerInner {
 	position: absolute;
 	width: 100%;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	margin-bottom: 300px;
 }
 
@@ -21,25 +16,25 @@
 	overflow: hidden;
     /**** Safari 4.0 - 8.0 ****/
     -webkit-animation-name: moveAbout;
-    -webkit-animation-duration: 50s;
+    -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
     -webkit-animation-timing-function: linear;
     /**** Firefox 5+ ****/
     -moz-animation-name: moveAbout;
-    -moz-animation-duration: 50s;
+    -moz-animation-duration: 30s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: normal;
     -moz-animation-timing-function: linear;
     /**** Opera 12+ ****/
     -o-animation-name: moveAbout;
-    -o-animation-duration: 50s;
+    -o-animation-duration: 30s;
     -o-animation-iteration-count: infinite;
     -o-animation-direction: normal;
     -o-animation-timing-function: linear;
     /**** Standard syntax ****/
     animation-name: moveAbout;
-    animation-duration: 50s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -48,7 +43,7 @@
 /**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes moveAbout {
   0% {
-	margin-top: -900px;
+	  margin-top: -875px;
   }
   100% {
     margin-top: 0px;
@@ -58,7 +53,7 @@
 /**** Firefox 5+ ****/
 @-moz-keyframes moveAbout {
   0% {
-     margin-top: -900px;
+     margin-top: -875px;
   }
   100% {
       margin-top: 0px;
@@ -68,7 +63,7 @@
 /**** Opera 12+ ****/
 @-o-keyframes moveAbout {
   0% {
-     margin-top: -900px;
+     margin-top: -875px;
   }
   100% {
       margin-top: 0px;
@@ -78,7 +73,7 @@
 /**** Standard syntax ****/
 @keyframes moveAbout {
   0% {
-     margin-top: -900px;
+     margin-top: -875px;
   }
   100% {
       margin-top: 0px;
@@ -98,20 +93,25 @@
 	background-color: #2E4057;
 	opacity: .6;
 	position: absolute;
-    margin-left: 14%;
-	top: 65px;
+  left: 0;
+  right: 0;
+  margin: auto;
 	opacity: .6;
-    width: 72%;
-    height: 93%;
-    top: 90px;
+  width: 72%;
+  max-width: 610px;
+  min-width: 288px;
+  height: 82%;
+  top: 90px;
 }
 
 .textContainer {
 	position: relative;
 	background-color: #2E4057;
 	width: 68%;
+  max-width: 550px;
+  min-width: 245px;
 	margin: auto;
-	margin-bottom: 75px;
+	margin-bottom: 150px;
 	top: 105px;
 }
 
@@ -159,29 +159,12 @@ a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .textContainer {
+.textContainer {
 	width: 80%;
  }
-  .sectionImageLayerPartial {
+.sectionImageLayerPartial {
 	width: 90%;
-    margin-left: 5%;
-    height: 96%;
+  height: 90%;
  }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1350px) {
-  .sectionImageLayerPartial {
-    height: 81%;
- }
-}
-
-@media only screen and (min-width: 1350px) {
-  .sectionImageLayerPartial {
-    height: 80%;
-    width: 65%;
-    margin-left: 17.5%;
- }
-  .textContainer {
-	width: 62%;
- }
-}

@@ -9,9 +9,8 @@ import videoGladiators from "../images/gladiator.jpg";
 class Projects extends Component {
   render() {
     return (
-      <div className='sectionContainer'>
-        <div className='sectionContainerInner'>
-          {/*<div className='sectionImage'></div>*/}
+        <div className='sectionContainer'>
+          <div className='sectionImage'></div>
 
           <Subnav section='projects' />
 
@@ -106,7 +105,6 @@ class Projects extends Component {
 
           </div>
         </div>
-      </div>
     );
   }
 }

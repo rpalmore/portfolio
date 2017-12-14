@@ -29,13 +29,12 @@
 }
 
 .returnTop {
-	/*left: 22%;*/
     border-left: 1px solid #048BA8;
 }
 
 .returnTop:hover {
     background-color: #F18F01;
-    opacity: .6;
+    opacity: .8;
     color: #2E4057;
     font-weight: bold;
 }

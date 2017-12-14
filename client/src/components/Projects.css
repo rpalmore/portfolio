@@ -1,10 +1,14 @@
 .projectsLayerPartial {
 	background-color: #2e4057;
     position: absolute;
-    margin-left: 14%;
+    left: 0;
+    right: 0;
+    margin: auto;
     opacity: .6;
     width: 72%;
-    height: 95.5%;
+    max-width: 610px;
+    min-width: 288px;
+    height: 89%;
     top: 90px;
 }
 
@@ -13,9 +17,9 @@
 	background-color: #2E4057;
 	width: 68%;
 	max-width: 550px;
-	min-width: 245px;
+	min-width: 260px;
 	margin: auto;
-	margin-bottom: 75px;
+	margin-bottom: 150px;
 	top: 105px;
 }
 
@@ -101,9 +105,6 @@ a[class^=projectLink] {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
- .projectsContainer {
-	width: 80%;
- }
  .projectColumnLayer {
     height: 29%;
     opacity: 0.9;
@@ -119,35 +120,15 @@ a[class^=projectLink] {
  	font-size: 1.5rem;
  }
  .projectsLayerPartial {
-    height: 93%;
+    height: 82%;
     width: 90%;
-    margin-left: 5%;
  }
 }
 
-/*@media only screen and (min-width: 761px) and (max-width: 787px) {
- .sectionHeaderNavigation {
-    width: 100%;
-    padding-left: 0;
- }
- .returnTop, .sectionTitle {
-    padding: 0;
-    width: 49%;
-    text-align: center;
- }
-}*/
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
  .projectColumnLayer {
     height: 30.5%;
- }
- .projectsLayerPartial {
-    height: 91%;
-    width: 58%;
-    margin-left: 21%;
- }
- .projectsContainer {
-	width: 52%;
  }
 }
 
