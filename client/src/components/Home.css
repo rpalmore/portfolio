@@ -192,15 +192,14 @@
 	padding-left: 20%;
 }
 
-/*.about:hover, .projects:hover, .contact:hover {
+.about:hover, .projects:hover, .contact:hover {
 	background-color: #F18F01;
 	color: #2E4057;
 	font-weight: bold;
-}*/
+}
 
 .mainContainer {
 	width: 100%;
-/*  padding-top: 500px;*/
   margin-top: 500px;
 }
 
