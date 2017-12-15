@@ -1,6 +1,6 @@
 
 .sectionContainer {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 300px;
@@ -34,7 +34,7 @@
     -o-animation-timing-function: linear;
     /**** Standard syntax ****/
     animation-name: moveAbout;
-    animation-duration: 30s;
+    animation-duration: 45s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -43,7 +43,7 @@
 /**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes moveAbout {
   0% {
-	  margin-top: -875px;
+	  margin-top: -1200px;
   }
   100% {
     margin-top: 0px;
@@ -53,7 +53,7 @@
 /**** Firefox 5+ ****/
 @-moz-keyframes moveAbout {
   0% {
-     margin-top: -875px;
+     margin-top: -1200px;
   }
   100% {
       margin-top: 0px;
@@ -63,7 +63,7 @@
 /**** Opera 12+ ****/
 @-o-keyframes moveAbout {
   0% {
-     margin-top: -875px;
+     margin-top: -1200px;
   }
   100% {
       margin-top: 0px;
@@ -73,7 +73,7 @@
 /**** Standard syntax ****/
 @keyframes moveAbout {
   0% {
-     margin-top: -875px;
+     margin-top: -1200px;
   }
   100% {
       margin-top: 0px;
@@ -165,6 +165,12 @@ a:hover {
 .sectionImageLayerPartial {
 	width: 90%;
   height: 90%;
+ }
+}
+
+@media only screen and (min-width: 1330px) {
+ .sectionImage {
+  background-size: cover;
  }
 }
 

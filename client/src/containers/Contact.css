@@ -1,6 +1,6 @@
 
 .sectionContainerContact {
-	position: absolute;
+	position: relative;
   width: 100%;
   overflow: hidden;
   height: 500px;
@@ -37,15 +37,17 @@ input, textarea, button {
 	height: 3rem;
 	border-width: 1px;
 	border-color: #2E4057;
+  box-shadow: none;
   font-size: 1.3rem;
 	font-family: 'Lato', sans-serif;
 	color: #F1F2EB;
+  box-sizing: border-box;
 }
 
 /* CHANGE AUTOCOMPLETE STYLES */
 /* Source: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/*/
 
-/*:-webkit-autofill,
+:-webkit-autofill,
 :-webkit-autofill:hover,
 :-webkit-autofill:focus {
   border: 1px solid #F18F01;
@@ -59,7 +61,7 @@ input, textarea, button {
     outline-color: #F18F01;
     outline-style: auto;
     outline-width: 3px;
-}*/
+}
 
 textarea {
 	height: 100px;
@@ -90,13 +92,6 @@ button {
  .submitButton {
   width: 40%;
  }
-}
-
-@media only screen and (min-width: 1330px) {
- .sectionImage {
-	background-size: cover;
- }
-
 }
 
 
