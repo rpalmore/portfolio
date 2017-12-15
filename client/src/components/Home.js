@@ -33,10 +33,18 @@ $(document).ready(function(){
   })
 });
 
+const scrollToSection = () => {
+  TweenLite.to(window, 1.5, {scrollTo: {y:1007}, autoKill:false, ease:Power4.easeOut});
+  }
+
 class Home extends Component {
 
- handleClick() {
-      TweenLite.to(window, 1.5, {scrollTo: {y:1007}, autoKill:false, ease:Power4.easeOut});
+ // handleClick() {
+ //      TweenLite.to(window, 1.5, {scrollTo: {y:1007}, autoKill:false, ease:Power4.easeOut});
+ //  }
+
+  handleClick = () => {
+    scrollToSection();
   }
 
   render() {
