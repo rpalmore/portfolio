@@ -8,7 +8,7 @@
     width: 72%;
     max-width: 610px;
     min-width: 288px;
-    height: 89%;
+    height: 89.5%;
     top: 90px;
 }
 
@@ -122,6 +122,30 @@ a[class^=projectLink] {
  .projectsLayerPartial {
     height: 82%;
     width: 90%;
+ }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+ .projectsLayerPartial {
+    height: 84%;
+ }
+}
+
+@media only screen and (min-width: 515px) and (max-width: 695px) {
+ .projectColumnLayer {
+    height: 30%;
+ }
+ .projectsLayerPartial {
+    height: 85%;
+ }
+}
+
+@media only screen and (min-width: 695px) and (max-width: 767px) {
+ .projectColumnLayer {
+    height: 31%;
+ }
+ .projectsLayerPartial {
+    height: 88%;
  }
 }
 
