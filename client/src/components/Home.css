@@ -190,6 +190,7 @@
 	color: #ffffff;
 	line-height: 75px;
 	padding-left: 20%;
+  cursor: pointer;
 }
 
 .about:hover, .projects:hover, .contact:hover {
