@@ -15,23 +15,24 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
+import tapOrClick from 'react-tap-or-click';
 
-window.jQuery = window.$ = $;
-require('textillate');
-require('letteringjs');
-require('animate.css');
+// window.jQuery = window.$ = $;
+// require('textillate');
+// require('letteringjs');
+// require('animate.css');
 
-$(document).ready(function(){
- console.log("Ready!");
-  $(function () {
-  	$('.tltHome').textillate({ 
-  		in: { 
-  			effect: 'flash',  
-  			shuffle: true
-  		} 
-  	});
-  })
-});
+// $(document).ready(function(){
+//  console.log("Ready!");
+//   $(function () {
+//   	$('.tltHome').textillate({ 
+//   		in: { 
+//   			effect: 'flash',  
+//   			shuffle: true
+//   		} 
+//   	});
+//   })
+// });
 
 class Home extends Component {
 
