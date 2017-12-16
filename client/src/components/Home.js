@@ -17,26 +17,40 @@ import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
 // import tapOrClick from 'react-tap-or-click';
 
-// window.jQuery = window.$ = $;
-// require('textillate');
-// require('letteringjs');
-// require('animate.css');
+window.jQuery = window.$ = $;
+require('textillate');
+require('letteringjs');
+require('animate.css');
 
-// $(document).ready(function(){
-//  console.log("Ready!");
-//   $(function () {
-//   	$('.tltHome').textillate({ 
-//   		in: { 
-//   			effect: 'flash',  
-//   			shuffle: true
-//   		} 
-//   	});
-//   })
-// });
+$(document).ready(function(){
+ console.log("Ready!");
+  $(function () {
+  	$('.tltHome').textillate({ 
+  		in: { 
+  			effect: 'flash',  
+  			shuffle: true
+  		} 
+  	});
+  })
+});
+
+// const YourComponent = React.createClass({
+//     handleClick(event) {
+//         alert(event.type)
+//     },
+
+//     render() {
+//         return <div {...tapOrClick(this.handleClick)}>
+//             My Component
+//         </div>  
+//     }
+// })
+
+// export default YourComponent
 
 class Home extends Component {
 
-  handleClick = () => {
+  handleClick = (event) => {
      TweenLite.to(window, 1, {scrollTo: 1007, autokill: false, ease:Power4.easeOut});
   }
 
@@ -67,8 +81,8 @@ class Home extends Component {
 
         <div className='menuContainer'></div>
         <div className='imageContainer'>
-	        <Link onClick={this.handleClick} to='/about'>
-		        <div className='about'>about</div>
+          <Link onClick={this.handleClick} to='/about'>
+            <div className='about'>about</div>
           </Link>
 		      <Link onClick={this.handleClick} to='/projects'>
 		        <div className='projects'>projects</div>
