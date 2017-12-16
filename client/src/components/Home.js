@@ -36,7 +36,7 @@ $(document).ready(function(){
 class Home extends Component {
 
   handleClick = () => {
-     TweenLite.to(window, 1, {scrollTo: 1007});
+     TweenLite.to(window, 1, {scrollTo: 1007, autokill: false});
   }
 
   render() {

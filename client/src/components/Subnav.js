@@ -7,7 +7,7 @@ import './Subnav.css';
 class Subnav extends Component {
 
   handleClick = () => {
-    TweenLite.to(window, .5, {scrollTo: 0});
+    TweenLite.to(window, .5, {scrollTo: 0, autokill: false});
   }
 
   render() {
