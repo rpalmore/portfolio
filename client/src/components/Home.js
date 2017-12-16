@@ -34,23 +34,9 @@ $(document).ready(function(){
   })
 });
 
-// const YourComponent = React.createClass({
-//     handleClick(event) {
-//         alert(event.type)
-//     },
-
-//     render() {
-//         return <div {...tapOrClick(this.handleClick)}>
-//             My Component
-//         </div>  
-//     }
-// })
-
-// export default YourComponent
-
 class Home extends Component {
 
-  handleClick = (event) => {
+  handleClick = () => {
      TweenLite.to(window, 1, {scrollTo: 1007, autokill: false, ease:Power4.easeOut});
   }
 
