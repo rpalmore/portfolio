@@ -15,7 +15,7 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
-import tapOrClick from 'react-tap-or-click';
+// import tapOrClick from 'react-tap-or-click';
 
 // window.jQuery = window.$ = $;
 // require('textillate');
