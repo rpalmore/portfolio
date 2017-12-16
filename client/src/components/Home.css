@@ -193,7 +193,7 @@
   cursor: pointer;
 }
 
-.about:hover {
+.about:hover, .projects:hover, .contact:hover {
 	background-color: #F18F01;
 	color: #2E4057;
 	font-weight: bold;
