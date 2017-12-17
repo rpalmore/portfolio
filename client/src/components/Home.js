@@ -15,7 +15,6 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
-// import tapOrClick from 'react-tap-or-click';
 
 window.jQuery = window.$ = $;
 require('textillate');
@@ -82,8 +81,8 @@ class Home extends Component {
 		      <Route path="/about" component={About}/>
 		      <Route path="/projects" component={Projects}/>
 	        <Route path="/contact" component={Contact}/>
+          <Footer />
         </div>
-
       </div>
     </Router>
 	);
