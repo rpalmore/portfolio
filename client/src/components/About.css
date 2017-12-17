@@ -3,7 +3,8 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: 300px;
+	margin-bottom: 25%;
+  margin-top: 400px;
 }
 
 .sectionImage {
@@ -168,4 +169,11 @@ a:hover {
   background-size: cover;
  }
 }
+
+@media only screen and (min-width: 1024px) {
+ .sectionContainer {
+  margin-bottom: 40%;
+ }
+}
+
 

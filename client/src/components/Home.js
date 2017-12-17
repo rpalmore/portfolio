@@ -36,13 +36,14 @@ $(document).ready(function(){
 class Home extends Component {
 
   handleClick = () => {
-     TweenLite.to(window, 1, {scrollTo: 1007, autokill: false, ease:Power4.easeOut});
+     TweenLite.to(window, 1, {scrollTo: '.mainContainer', autokill: false, ease:Power4.easeOut});
   }
 
   render() {
     return (
     <Router>
-   	  <div>
+     <div>
+   	  <div className='wrapper'>
           <div className='containerLayer'></div>
           <div className='opaque'></div>
           <div className='headerBackground'>
@@ -81,9 +82,11 @@ class Home extends Component {
 		      <Route path="/about" component={About}/>
 		      <Route path="/projects" component={Projects}/>
 	        <Route path="/contact" component={Contact}/>
-          <Footer />
         </div>
+
       </div>
+      <Footer />
+     </div>
     </Router>
 	);
   }
