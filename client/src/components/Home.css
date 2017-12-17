@@ -25,6 +25,9 @@
 
 .wrapper {
   min-height: calc(100vh - 50px);
+  max-width: 1440px;
+  min-width: 320px;
+  margin: auto;
 }
 
 .containerLayer {
@@ -48,7 +51,7 @@
 .headerBackground {
   height: 507px;
   overflow: hidden;
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   margin: auto;
 }
 
@@ -173,17 +176,16 @@
 .menuContainer {
 	width: 30%;
 	height: 225px;
-	position: absolute;
-	top: 282px;
+	position: relative;
+	top: -225px;
 	background-color: #048BA8;
 }
 
 .imageContainer {
 	width: 70%;
-  max-width: 1232px;
 	margin-left: 30%;
-	position: absolute;
-	top: 282px;
+	position: relative;
+	top: -450px;
   cursor: pointer;
 }
 
@@ -205,10 +207,7 @@
 }
 
 .mainContainer {
-	/*width: 100%;*/
-  max-width: 1440px;
   margin: auto;
-/*  margin-top: 500px;*/
 }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
@@ -240,7 +239,6 @@
 
 @media only screen and (min-width: 769px) {
 .mainContainer {
-/*  margin-top: 740px;*/
  }
 }
 

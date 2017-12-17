@@ -1,3 +1,12 @@
+
+/*.sectionContainer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 25%;
+    margin-top: 400px;
+}*/
+
 .projectsLayerPartial {
 	background-color: #2e4057;
     position: absolute;
