@@ -7,9 +7,10 @@ import Footer from './Footer.js';
 class About extends Component {
   render() {
     return (
+        <div>
+        <Subnav section='about'/>
         <div className='sectionContainer'>
           <div className='sectionImage'></div>
-          <Subnav section='about'/>
           <div className='sectionImageLayerFull'></div>
           <div className='sectionImageLayerPartial'></div>
           <div className='textContainer'>
@@ -28,8 +29,8 @@ class About extends Component {
 	            <p>Here, you’ll find class projects and homework from the 24-week full-stack web development program at Northwestern. I'll add new projects as I build them.</p>
             </div>
           </div>
-         {/*<Footer />*/}
 	      </div>
+        </div>
     );
   }
 }

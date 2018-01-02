@@ -31,32 +31,36 @@ class Contact extends Component {
 
   render() {
     return (
-        <div className='sectionContainerContact'>
-          <div className='sectionImage'></div>
-
-          <Subnav section='contact' />
+      <div>
+      <Subnav section='contact' />
+      
+        <div className='sectionContainer'>
+        <div className='sectionImage'></div>
 
           <div className='formBackgroundLayer'></div>
           <div className='formContainer'>
 
             <form onSubmit={this.handleSubmit}>
-              <div className='formFieldName'>
+              <div className='formField'>
                 <input id="name" type="name" value={this.state.name} onChange={this.handleChange} placeholder="Your name" className="validate" required />
-              </div>
-              <div className='formFieldEmail'>
+              
+              
                 <input id="email" type="email" value={this.state.email} onChange={this.handleChange} placeholder="Your email" className="validate" required />
+              
               </div>
-              <div className='formFieldMessage'>
+              <div className='formText'>
                 <textarea id="message" type="message" value={this.state.message} onChange={this.handleChange} placeholder="Your message" className="validate" required />
               </div>
+              
               <div className='submitButton'>
                 <button type="submit">Submit</button>
               </div>
             </form>
 
           </div>
-
-        </div>
+          </div>
+          </div>
+        
     );
   }
 }

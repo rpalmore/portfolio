@@ -1,12 +1,4 @@
 
-/*.sectionContainer {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	margin-bottom: 25%;
-    margin-top: 400px;
-}*/
-
 .projectsLayerPartial {
 	background-color: #2e4057;
     position: absolute;
@@ -17,8 +9,12 @@
     width: 72%;
     max-width: 610px;
     min-width: 288px;
-    height: 89.5%;
-    top: 90px;
+    height: 96%;
+    max-height: 1070px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .projectsContainer {
@@ -28,8 +24,6 @@
 	max-width: 550px;
 	min-width: 260px;
 	margin: auto;
-	margin-bottom: 150px;
-	top: 105px;
 }
 
 .overlay {
@@ -129,14 +123,18 @@ a[class^=projectLink] {
  	font-size: 1.5rem;
  }
  .projectsLayerPartial {
-    height: 82%;
+    height: 90%;
     width: 90%;
+ }
+ .projectsContainer {
+ 	margin-top: 50px;
+ 	margin-bottom: 50px;
  }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
  .projectsLayerPartial {
-    height: 84%;
+    height: 93%;
  }
 }
 

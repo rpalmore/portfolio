@@ -3,9 +3,8 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	/*margin-bottom: 25%;*/
-  min-height: calc(100vh - 50px);
-  margin-top: 400px;
+  min-height: calc(100vh - 120px);
+  display: flex;
 }
 
 .sectionImage {
@@ -83,22 +82,22 @@
 	background-color: #2E4057;
 	opacity: 0.2;
 	position: absolute;
-	top: 70px;
 }
 
 .sectionImageLayerPartial {
-	background-color: #2E4057;
-	opacity: .6;
-	position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-	opacity: .6;
-  width: 72%;
-  max-width: 610px;
-  min-width: 288px;
-  height: 82%;
-  top: 90px;
+    background-color: #2e4057;
+    width: 72%;
+    max-width: 610px;
+    height: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: .6;
 }
 
 .textContainer {
@@ -108,8 +107,8 @@
   max-width: 550px;
   min-width: 245px;
 	margin: auto;
-	margin-bottom: 150px;
-	top: 105px;
+/*  margin-bottom: 100px;
+  top: 50px;*/
 }
 
 .text {
@@ -158,10 +157,12 @@ a:hover {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 .textContainer {
 	width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
  }
 .sectionImageLayerPartial {
 	width: 90%;
-  height: 90%;
+  height: 95%;
  }
 }
 
@@ -172,9 +173,9 @@ a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-/* .sectionContainer {
-  margin-bottom: 40%;
- }*/
+.sectionImageLayerPartial {
+  max-height: 570px;
+ }
 }
 
 

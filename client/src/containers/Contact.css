@@ -1,36 +1,80 @@
-
+/*
 .sectionContainerContact {
 	position: relative;
   width: 100%;
   overflow: hidden;
   height: 500px;
-/*  margin-bottom: 55%;*/
+  margin-bottom: 55%;
   min-height: calc(100vh - 50px);
   margin-top: 400px;
-}
+}*/
 
 .formBackgroundLayer {
     background-color: #2e4057;
     width: 72%;
     max-width: 610px;
-    height: 70%;
+    height: 83%;
+    max-height: 526px;
+    right: 0;
+    left: 0;
     margin: auto;
-    position: relative;
-    top: 90px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     opacity: .6;
 }
 
 .formContainer {
-    position: relative;
-    top: -270px;
     width: 68%;
     max-width: 550px;
     min-width: 245px;
+    position: relative;
     margin: auto;
 }
 
-div[class^=form] {
-	padding-bottom: 25px;
+/*.formContainer {
+    width: 68%;
+    max-width: 550px;
+    min-width: 245px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}*/
+
+/*div[class^=formField] {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  display: block;
+}*/
+
+form {
+/*  display: flex;
+  flex-direction: column;*/
+  flex: 1 1 auto;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+ form {
+  flex-direction: row;
+ }
+}
+
+.formField, .formText {
+/*  display: flex;
+  flex-direction: column;*/
+  flex: 1 1 auto;
 }
 
 input, textarea, button {
@@ -44,6 +88,7 @@ input, textarea, button {
 	font-family: 'Lato', sans-serif;
 	color: #F1F2EB;
   box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 /* CHANGE AUTOCOMPLETE STYLES */
@@ -59,14 +104,14 @@ input, textarea, button {
 }
 
 :focus {
-    outline: -webkit-focus-ring-color auto 5px;
-    outline-color: #F18F01;
-    outline-style: auto;
-    outline-width: 3px;
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-color: #F18F01;
+  outline-style: auto;
+  outline-width: 3px;
 }
 
 textarea {
-	height: 200px;
+	height: 158px;
 	padding-top: 10px;
 }
 
@@ -80,7 +125,7 @@ button {
 	font-size: 1.5rem;
 	color: #F18F01;
 	background-color: #2E4057;
-	margin-bottom: 15px;
+/*	margin-bottom: 15px;*/
 	padding: 0;
 }
 
@@ -90,11 +135,13 @@ button {
  }
  .formBackgroundLayer {
  	width: 90%;
+  height: 90%;
  }
  .submitButton {
   width: 40%;
  }
 }
+
 
 
 
