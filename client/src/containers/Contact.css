@@ -55,9 +55,7 @@
   display: block;
 }*/
 
-form {
-/*  display: flex;
-  flex-direction: column;*/
+/*form {
   flex: 1 1 auto;
 }
 
@@ -72,10 +70,8 @@ form {
 }
 
 .formField, .formText {
-/*  display: flex;
-  flex-direction: column;*/
   flex: 1 1 auto;
-}
+}*/
 
 input, textarea, button {
 	background-color: #2E4057;
@@ -125,7 +121,6 @@ button {
 	font-size: 1.5rem;
 	color: #F18F01;
 	background-color: #2E4057;
-/*	margin-bottom: 15px;*/
 	padding: 0;
 }
 
@@ -139,6 +134,16 @@ button {
  }
  .submitButton {
   width: 40%;
+ }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 760px) 
+  and (orientation: landscape) {
+ .formContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
  }
 }
 
