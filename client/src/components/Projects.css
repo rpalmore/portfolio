@@ -23,7 +23,10 @@
 	width: 68%;
 	max-width: 550px;
 	min-width: 260px;
-	margin: auto;
+	margin-top: 50px;
+	margin-right: auto;
+ 	margin-bottom: 50px;
+ 	margin-left: auto;
 }
 
 .overlay {
@@ -50,6 +53,9 @@
 
 .projectColumnLayer:hover {
   transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
   opacity: 0.9;
 }
 
@@ -126,10 +132,6 @@ a[class^=projectLink] {
     height: 90%;
     width: 90%;
  }
- .projectsContainer {
- 	margin-top: 50px;
- 	margin-bottom: 50px;
- }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
@@ -142,20 +144,16 @@ a[class^=projectLink] {
  .projectColumnLayer {
     height: 30%;
  }
- .projectsLayerPartial {
+/* .projectsLayerPartial {
     height: 85%;
- }
+ }*/
 }
 
 @media only screen and (min-width: 695px) and (max-width: 767px) {
  .projectColumnLayer {
     height: 31%;
  }
- .projectsLayerPartial {
-    height: 88%;
- }
 }
-
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
  .projectColumnLayer {
@@ -168,3 +166,11 @@ a[class^=projectLink] {
     height: 31%;
  }
 }
+
+/*@media only screen and (min-width: 1370px) {
+ .projectsContainer {
+    margin: auto;
+ }
+}*/
+
+

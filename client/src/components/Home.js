@@ -51,7 +51,7 @@ class Home extends Component {
             <div className='containerLayer'></div>
             <div className='opaque'></div>
             <div className='headerBackground'>
-              <div className='headerImage'>
+              <div className='headerImage'></div>
               <div className='headerLayer'></div>
       	        <div className='header'>
       	          <Link className='tltHome nameLink' to='/home'>
@@ -68,7 +68,7 @@ class Home extends Component {
                       <img className='socialIcons' src={linkedin} alt={"LinkedIn"}/>
                     </Link>
                   </div>
-      	        </div>
+      	        
       	      </div>
             </div>
 

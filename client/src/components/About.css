@@ -16,64 +16,48 @@
 	overflow: hidden;
     /**** Safari 4.0 - 8.0 ****/
     -webkit-animation-name: moveAbout;
-    -webkit-animation-duration: 26s;
+    -webkit-animation-duration: 50s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     /**** Firefox 5+ ****/
     -moz-animation-name: moveAbout;
-    -moz-animation-duration: 26s;
+    -moz-animation-duration: 50s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     /**** Opera 12+ ****/
     -o-animation-name: moveAbout;
-    -o-animation-duration: 26s;
+    -o-animation-duration: 50s;
     -o-animation-iteration-count: infinite;
     -o-animation-timing-function: linear;
     /**** Standard syntax ****/
     animation-name: moveAbout;
-    animation-duration: 26s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 /**** Safari 4.0 - 8.0 ****/
 @-webkit-keyframes moveAbout {
-  0% {
-	  margin-top: 700px;
-  }
-  100% {
-    margin-top: 0px;
-  }
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
 }
 
 /**** Firefox 5+ ****/
 @-moz-keyframes moveAbout {
-  0% {
-     margin-top: -700px;
-  }
-  100% {
-      margin-top: 0px;
-  }
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
 }
 
 /**** Opera 12+ ****/
 @-o-keyframes moveAbout {
-  0% {
-     margin-top: -700px;
-  }
-  100% {
-      margin-top: 0px;
-  }
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
 }
 
 /**** Standard syntax ****/
 @keyframes moveAbout {
-  0% {
-     margin-top: -700px;
-  }
-  100% {
-      margin-top: 0px;
-  }
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
 }
 
 .sectionImageLayerFull {
@@ -174,7 +158,7 @@ a:hover {
 
 @media only screen and (min-width: 1024px) {
 .sectionImageLayerPartial {
-  max-height: 570px;
+  height: 560px;
  }
 }
 
