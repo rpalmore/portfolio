@@ -9,6 +9,7 @@ import About from './About.js';
 import Contact from '../containers/Contact.js';
 import Projects from './Projects.js';
 import $ from "jquery";
+// import PointTarget from 'react-point';
 import {Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
@@ -34,20 +35,13 @@ $(document).ready(function(){
 });
 
 class Home extends Component {
-
+ 
   handleClick = () => {
+    // alert("click!");
      TweenLite.to(window, 1, 
       {scrollTo: {y:'.mainContainer'}, 
-       autokill: false, 
-       ease:Power4.easeOut
-     });
-}
-
-  handleClickProject = () => {
-     TweenLite.to(window, 1, 
-      {scrollTo: {y:'.mainContainer'}, 
-       autokill: false, 
-       ease:Power4.easeOut
+       // autokill: false, 
+       ease: Power4.easeOut
      });
   }
 
@@ -82,15 +76,15 @@ class Home extends Component {
 
             <div className='menuContainer'></div>
             <div className='imageContainer'>
-              <Link onClick={this.handleClick} to='/about'>
-                <div className='about'>about</div>
+              <Link to='/about'>
+                <div className='sectionLinks' onClick={this.handleClick}>about</div>
               </Link>
-		          <Link onClick={this.handleClickProject} to='/projects'>
-		            <div className='projects'>projects</div>
-	            </Link>
-	            <Link onClick={this.handleClick} to='/contact'>
-	              <div className='contact'>contact</div>
-	            </Link>
+              <Link to='/projects'>
+                <div className='sectionLinks' onClick={this.handleClick}>projects</div>
+              </Link>
+	            <Link to='/contact'>
+                <div className='sectionLinks' onClick={this.handleClick}>contact</div>
+              </Link>
 	          </div>
 
 	          <div className='mainContainer'>

@@ -150,7 +150,7 @@
   cursor: pointer;
 }
 
-.about, .projects, .contact {
+.sectionLinks {
 	height: 75px;
 	opacity: 0.6;
 	background-color: #2E4057;
@@ -161,15 +161,11 @@
   cursor: pointer;
 }
 
-.about:hover, .projects:hover, .contact:hover {
+.sectionLinks:hover {
 	background-color: #F18F01;
 	color: #2E4057;
 	font-weight: bold;
 }
-
-/*.mainContainer {
-  margin: auto;
-}*/
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 .nameLink {

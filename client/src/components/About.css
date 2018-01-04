@@ -91,13 +91,12 @@
   max-width: 550px;
   min-width: 245px;
 	margin: auto;
-/*  margin-bottom: 100px;
-  top: 50px;*/
 }
 
 .text {
 	padding: 10px 20px 10px 20px;
 	color: #F1F2EB;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -156,7 +155,8 @@ a:hover {
  }
 }
 
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {*/
+@media only screen and (min-width: 768px) {
 .sectionImageLayerPartial {
   height: 560px;
  }
