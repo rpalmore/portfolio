@@ -10,100 +10,94 @@ class Projects extends Component {
   render() {
     return (
       <div>
-      <Subnav section='projects' />
+        <Subnav section='projects' />
         <div className='sectionContainer'>
-
+        
           <div className='sectionImage'></div>
-
           <div className='sectionImageLayerFull'></div>
-          <div className='projectsLayerPartial'></div>
-          <div className='projectsContainer'>
-            <div className='overlay'></div>
+          
+          <div className='sectionContainerInner'>
+            <div className='contentContainer'>
 
-            {/* === PROJECT ONE === */}
+              {/* === PROJECT ONE === */}
 
-            <div className='projectColumn'>
-              <div className='projectColumnLayer'>
-
-                <div className='projectText'>
-                  <div className='projectName'>
-                    Plaudit!
+              <div className='projectItem'>
+                <div className='projectItemLayer1'></div>
+                <div className='projectItemLayer2'>
+                  <div className='projectDetails'>
+                    <div className='projectName'>
+                      Plaudit!
+                    </div>
+                  </div>
+                  <div className='projectLinks'>
+                    <Link className='projectLinkLive' to='https://plauditlive.herokuapp.com/' target='_blank'>
+                      <div className='boxLeft'>
+                        Live
+                      </div>
+                    </Link>
+                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' target='_blank'>
+                      <div className='boxRight'>
+                        Github
+                      </div>
+                    </Link>
                   </div>
                 </div>
-
-                <div className='projectLinks'>
-                  <Link className='projectLinkLive' to='https://plauditlive.herokuapp.com/' target='_blank'>
-                    <div className='boxLeft'>
-                      Live
-                    </div>
-                  </Link>
-                  <Link className='projectLinkGithub' to='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' target='_blank'>
-                    <div className='boxRight'>
-                      Github
-                    </div>
-                  </Link>
-                </div>
-
+                <img className="projectImage" src={plaudit} alt={"Plaudit"}/>
               </div>
-              <img className="projectImage" src={plaudit} alt={"Plaudit"}/>
-            </div>
 
-            {/* === PROJECT TWO === */}
+              {/* === PROJECT TWO === */}
 
-            <div className='projectColumn'>
-              <div className='projectColumnLayer'>
-
-                <div className='projectText'>
-                  <div className='projectName'>
-                    Book Love
+              <div className='projectItem'>
+                <div className='projectItemLayer1'></div>
+                <div className='projectItemLayer2'>
+                  <div className='projectDetails'>
+                    <div className='projectName'>
+                      Book Love
+                    </div>
+                  </div>
+                  <div className='projectLinks'>
+                    <Link className='projectLinkLive' to='https://booklovelive.herokuapp.com/' target='_blank'>
+                      <div className='boxLeft'>
+                        Live
+                      </div>
+                    </Link>
+                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/BookLove/blob/master/README.md' target='_blank'>
+                      <div className='boxRight'>
+                        Github
+                      </div>
+                    </Link>
                   </div>
                 </div>
-
-                <div className='projectLinks'>
-                  <Link className='projectLinkLive' to='https://booklovelive.herokuapp.com/' target='_blank'>
-                    <div className='boxLeft'>
-                      Live
-                    </div>
-                  </Link>
-                  <Link className='projectLinkGithub' to='https://github.com/rpalmore/BookLove/blob/master/README.md' target='_blank'>
-                    <div className='boxRight'>
-                      Github
-                    </div>
-                  </Link>
-                </div>
-
+                <img className="projectImage" src={bookLove} alt={"Book Love"}/>
               </div>
-              <img className="projectImage" src={bookLove} alt={"Book Love"}/>
-            </div>
 
-            {/* === PROJECT THREE === */}
+              {/* === PROJECT THREE === */}
 
-            <div className='projectColumn'>
-              <div className='projectColumnLayer'>
-
-                <div className='projectText'>
-                  <div className='projectName'>
-                    Video Gladiators
+              <div className='projectItem'>
+                <div className='projectItemLayer1'></div>
+                <div className='projectItemLayer2'>
+                  <div className='projectDetails'>
+                    <div className='projectName'>
+                      Video Gladiators
+                    </div>
+                  </div>
+                  <div className='projectLinks'>
+                    <Link className='projectLinkLive' to='https://warm-shore-89552.herokuapp.com/' target='_blank'>
+                      <div className='boxLeft'>
+                        Live
+                      </div>
+                    </Link>
+                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' target='_blank'>
+                      <div className='boxRight'>
+                        Github
+                      </div>
+                    </Link>
                   </div>
                 </div>
-
-                <div className='projectLinks'>
-                  <Link className='projectLinkLive' to='https://warm-shore-89552.herokuapp.com/' target='_blank'>
-                    <div className='boxLeft'>
-                      Live
-                    </div>
-                  </Link>
-                  <Link className='projectLinkGithub' to='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' target='_blank'>
-                    <div className='boxRight'>
-                      Github
-                    </div>
-                  </Link>
-                </div>
-
+                <img className="projectImage" src={videoGladiators} alt={"Video Gladiators"}/>
               </div>
-              <img className="projectImage" src={videoGladiators} alt={"Video Gladiators"}/>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>

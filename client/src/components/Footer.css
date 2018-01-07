@@ -5,11 +5,11 @@ footer {
 }
 
 .footerLayer {
-  background-color: #2E4057;
+  background: #2E4057;
   opacity: .3;
+  position: absolute;
   width: 100%;
   height: 50px;
-  position: absolute;
 }
 
 footer, .footerLayer {
@@ -22,21 +22,23 @@ footer, .footerLayer {
 }
 
 .portfolioGithub {
+  position: relative;
   height: 30px;
   bottom: -9px;
   margin-right: 15px;
-  position: relative;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
 }
 
 .portfolioGithub:hover {
-  background-color: #99C24D;
+  background: #99C24D;
 }
 
+/*************** || RESPONSIVE DESIGN || ***************/
+
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-.portfolioGithub {
-  display: none;
- }
+  .portfolioGithub {
+    display: none;
+  }
 }

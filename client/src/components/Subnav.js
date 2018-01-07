@@ -19,7 +19,7 @@ class Subnav extends Component {
             <div className='sectionTitle'>
               {this.props.section}
             </div>
-            <Link onClick={this.handleClick} className='returnTop' to='/home'>
+            <Link className='returnTop' onClick={this.handleClick} to='/home'>
               top
             </Link>
           </div>

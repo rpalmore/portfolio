@@ -16,7 +16,7 @@ $(document).ready(function(){
         effect: 'fadeIn',
         callback: function() {
             $('.tlt').textillate('out');
-            $('.layer').fadeTo(1200, 1);
+            $('.welcomeLayer').fadeTo(1200, 1);
           }
         },
       out: {
@@ -38,8 +38,8 @@ $(document).ready(function(){
 class Welcome extends Component {
   render() {
     return (
-     <div className='background'>
-       <div className='layer'></div>
+     <div className='welcomeBackground'>
+       <div className='welcomeLayer'></div>
        <div className='tlt welcomeText'>Welcome</div>
      </div>
     );

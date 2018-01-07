@@ -1,4 +1,3 @@
-
 .sectionContainer {
 	position: relative;
 	width: 100%;
@@ -7,33 +6,40 @@
   display: flex;
 }
 
+.sectionContainerInner {
+  width: 100%;
+  margin: auto;
+}
+
+/*************** || IMAGE ANIMATION || ***************/
+
 .sectionImage {
 	background-image: url("../images/treetopsLowRes.jpg");
-	height: 2500px;
-	width: 100%;
 	position: absolute;
+	width: 100%;
+  height: 2500px;
 	background-size: contain;
 	overflow: hidden;
-    /**** Safari 4.0 - 8.0 ****/
-    -webkit-animation-name: moveAbout;
-    -webkit-animation-duration: 50s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    /**** Firefox 5+ ****/
-    -moz-animation-name: moveAbout;
-    -moz-animation-duration: 50s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    /**** Opera 12+ ****/
-    -o-animation-name: moveAbout;
-    -o-animation-duration: 50s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear;
-    /**** Standard syntax ****/
-    animation-name: moveAbout;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  /**** Safari 4.0 - 8.0 ****/
+  -webkit-animation-name: moveAbout;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  /**** Firefox 5+ ****/
+  -moz-animation-name: moveAbout;
+  -moz-animation-duration: 50s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  /**** Opera 12+ ****/
+  -o-animation-name: moveAbout;
+  -o-animation-duration: 50s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  /**** Standard syntax ****/
+  animation-name: moveAbout;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 /**** Safari 4.0 - 8.0 ****/
@@ -60,43 +66,34 @@
   to { transform: translateY(0); }
 }
 
-.sectionImageLayerFull {
-	height: 100%;
-	width: 100%;
+.sectionLayer1 {
 	background-color: #2E4057;
 	opacity: 0.2;
 	position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.sectionImageLayerPartial {
-    background-color: #2e4057;
-    width: 72%;
-    max-width: 610px;
-    height: 90%;
-    right: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    opacity: .6;
-}
+/*.profilePhoto {
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}*/
 
-.textContainer {
+.contentContainer {
+  background: #2E4057;
 	position: relative;
-	background-color: #2E4057;
 	width: 68%;
-  max-width: 550px;
+  max-width: 620px;
   min-width: 245px;
-	margin: auto;
+	margin: 50px auto 50px auto;
+  box-shadow: 0px 0px 0px 25px rgba(46, 64, 87, 0.6);
 }
 
 .text {
 	padding: 10px 20px 10px 20px;
 	color: #F1F2EB;
-  font-family: 'Roboto', sans-serif;
+/*  font-family: 'Roboto', sans-serif;*/
 }
 
 a {
@@ -107,59 +104,63 @@ a:hover {
 	color: #F18F01;
 }
 
+/*************** || RESUME BOX || ***************/
+
 .resume {
+  background: #F18F01;
+  opacity: .8;
+  position: relative;
 	width: 85px;
 	height: 95px;
 	margin-left: 1rem;
 	margin-bottom: 2rem;
 	float: right;
-	position: relative;
 	top: 20px;
 	text-align: center;
 	font-size: 20px;
-	background-color: #F18F01;
-	opacity: .8;
 }
 
 .resumeDownload {
-	color: #000000;
-	font-weight: bold;
-	position: relative;
-	top: 10px;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
 }
 
-.resumeDownload:hover, .fa:hover {
-	color: #F1F2EB;
+.resumeDownload, .fa {
+	color: #000000;
 }
 
 .fa {
-	color: #000000;
-	padding-top: 10px;
+  padding-top: 10px;
+}
+
+.resumeDownload:hover {
+  color: #000000;
+}
+
+.fa:hover {
+	color: #F1F2EB;
+}
+
+/*************** || RESPONSIVE DESIGN || ***************/
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .contentContainer {
+    box-shadow: 0 0 0 20px rgba(46,64,87,.6);
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-.textContainer {
-	width: 80%;
-  margin-top: 50px;
-  margin-bottom: 50px;
- }
-.sectionImageLayerPartial {
-	width: 90%;
-  height: 95%;
- }
+  .contentContainer {
+	  width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1330px) {
- .sectionImage {
-  background-size: cover;
- }
+  .sectionImage {
+    background-size: cover;
+  }
 }
 
-/*@media only screen and (min-width: 1024px) {*/
-@media only screen and (min-width: 768px) {
-.sectionImageLayerPartial {
-  height: 560px;
- }
-}
 
 

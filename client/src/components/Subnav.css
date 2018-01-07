@@ -1,55 +1,55 @@
 .sectionHeaderLayer {
-	height: 70px;
-    background-color: #2e4057;
-    position: absolute;
-    width: 100%;
-    max-width: 1440px;
-    opacity: .3;
+  background: #2e4057;
+  opacity: .3;
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  height: 70px;
 }
 
 .sectionHeaderContainer {
-	width: 100%;
-    line-height: 70px;
-    position: relative;
-    top: 0;
-    height: 70px;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  top: 0;
 }
 
 .sectionHeaderNavigation {
-	top: 0;
-	width: 32%;
-    min-width: 320px;
-	height: 100%;
-	padding-left: 7%;
+  width: 32%;
+  min-width: 320px;
+  height: 100%;
+  padding-left: 7%;
+  top: 0;
 }
 
 .sectionTitle, .returnTop {
-	font-size: 30px;
-	color: #ffffff;
-	display: inline-block;
-	padding: 0 1.5rem 0 1.5rem;
+  display: inline-block;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 0 1.5rem 0 1.5rem;
 }
 
 .returnTop {
-    border-left: 1px solid #048BA8;
+  border-left: 1px solid #048BA8;
 }
 
 .returnTop:hover {
-    background-color: #F18F01;
-    opacity: .8;
-    color: #2E4057;
-    font-weight: bold;
+  background: #F18F01;
+  opacity: .8;
+  color: #2E4057;
+  font-weight: bold;
 }
+/*************** || RESPONSIVE DESIGN || ***************/
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
- .sectionHeaderNavigation {
+  .sectionHeaderNavigation {
     width: 100%;
     padding-left: 0;
- }
- .returnTop, .sectionTitle {
+  }
+   .returnTop, .sectionTitle {
     padding: 0;
     width: 49%;
     text-align: center;
- }
-
+  }
 }

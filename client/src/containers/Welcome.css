@@ -1,14 +1,11 @@
-
-/*************** || WELCOME ANIMATION || ***************/
-
-.background {
-  background-image: url("../images/clouds.jpg");
+.welcomeBackground {
+  background-image: url("../images/cloudsLR.jpg");
   background-color: #048BA8;
   height: 1000px;
 }
 
-.layer {
-  background-color: #048BA8;
+.welcomeLayer {
+  background: #048BA8;
   opacity: 0.6;
   position: absolute;
   top: 0;
