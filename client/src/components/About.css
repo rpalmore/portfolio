@@ -102,12 +102,27 @@
   font-style: italic;
 }
 
-a {
-	color: #F1F2EB;
+.effect {
+  color: #F1F2EB;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 }
+  
+.effect:before {
+  background-color: #F1F2EB;
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+  width: 100%;
+  }
 
-a:hover {
-	color: #F18F01;
+.effect:hover:before {
+  width: 0;
 }
 
 /*************** || RESUME BOX || ***************/

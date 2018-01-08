@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import './Home.css';
 import About from './About.js';
-import Contact from '../containers/Contact.js';
+import Contact from './Contact.js';
 import Projects from './Projects.js';
 import $ from "jquery";
 import {Power4, TweenLite} from "gsap";

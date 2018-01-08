@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import helpers from '../utils/helpers';
 import './Contact.css';
-import Subnav from '../components/Subnav.js';
+import Subnav from './Subnav.js';
 
 const initialState = {
   name: "",

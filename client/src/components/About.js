@@ -24,20 +24,27 @@ class About extends Component {
                 <p className='aboutIntro'>Well hello there!
                 </p>
 
-                <p>The short version: I’m a full-stack web developer with a background in journalism, first at the Chicago Tribune and now at <a className='highlight' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
+                <p>I’m a full-stack web developer with a background in journalism at the Chicago Tribune and now at <a className='effect' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
                 </p>
 
-	              <p>OK: Now the (slightly) longer version: I spent six months in 2017 studying web development at <a href="https://codingbootcamp.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University’s Coding Bootcamp</a>, learning how to create and design websites, work with data and servers, develop apps and complete individual and group project milestones.
+	              <p>How I got here: I spent six months in 2017 studying web development at <a className='effect' href="https://codingbootcamp.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University</a>, learning how to create and design websites, work with data and servers, develop apps and complete individual and group project milestones.
                 </p>
 
-	              <p>Since 2002 I’ve worked extensively on news websites in Chicago. I was always really interested in the technology behind the page: the database, the CMS, the CSS, the responsiveness, the UX. I learned what I could on my own, and worked with developers on countless projects as a client. I wanted to really study these things, but a computer science education seemed out of reach.
+	              <p>Why? Since 2002 I’ve worked extensively on news websites in Chicago. I was always really interested in the technology behind the page: the code, the styling, the database, the CMS, the responsiveness, the UX. I learned what I could on my own, and worked with developers on countless projects as a client. I wanted to really study these things, but a full-on computer science education seemed out of reach.
                 </p>
 
-                <p>Newsrooms really did prepared me for web development, where focus, intense attention to detail and quick problem-solving skills are essential. Bootcamp was hard, but it opened up a new world to me, and graduating the program was a huge boost to me, both personally and professionally.
+                <p>Enter the age of bootcamps. I was immediately intrigued and applied as soon as I found out about Northwestern’s new program. Suddenly it seemed like a not-so-crazy pursuit.
                 </p>
 
-	              <p>Here, you’ll find class projects from the 24-week full-stack web development program at Northwestern (I’m still tinkering with BookLove).
+                <p>And ... What I now know is that newsrooms really did prepare me for web development. Both require focus, intense attention to detail and quick problem-solving skills. Bootcamp was really hard, but it opened up a new world to me, and graduating the program was a personal and professional boost.
                 </p>
+
+	              <p>Here, you’ll find class projects from the 24-week full-stack coding bootcamp at Northwestern&mdash;I’m still tinkering with most of them&mdash;and new projects as I tackle them.
+                </p>
+
+                <p>Thanks for visiting!
+                </p>
+
               </div>
             </div>
           </div>
