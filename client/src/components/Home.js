@@ -37,7 +37,7 @@ class Home extends Component {
   
   handleClick = () => {
     TweenLite.to(window, 1, 
-      {scrollTo: {y:'.sectionHeaderLayer'}, 
+      {scrollTo: {y:'.sectionHeaderLayer', autoKill: false, autoRound: false, force3D: true}, 
        ease: Power4.easeOut
      });
   };
@@ -74,13 +74,13 @@ class Home extends Component {
 
             <div className='menuBlock'></div>
             <div className='menuContainer'>
-              <Link to='/about' onClick={this.handleClick}>
+              <Link onClick={this.handleClick} to='/about'>
                 <div className='sectionLinks'>about</div>
               </Link>
-              <Link to='/projects' onClick={this.handleClick}>
+              <Link onClick={this.handleClick} to='/projects'>
                 <div className='sectionLinks'>projects</div>
               </Link>
-	            <Link to='/contact' onClick={this.handleClick}>
+	            <Link onClick={this.handleClick} to='/contact'>
                 <div className='sectionLinks'>contact</div>
               </Link>
 	          </div>

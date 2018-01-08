@@ -21,10 +21,13 @@ class About extends Component {
                   <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i>
                   </a>
                 </div>
-                <p>OK, here’s the short version: I’m a full-stack web developer with a background in journalism, first at the Chicago Tribune and now at <a className='highlight' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
+                <p className='aboutIntro'>Well hello there!
                 </p>
 
-	              <p>Longer version: I spent six months in 2017 studying web development at <a href="https://codingbootcamp.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University’s Coding Bootcamp</a>, learning how to create and design websites, work with data and servers, develop apps and complete individual and group project milestones.
+                <p>The short version: I’m a full-stack web developer with a background in journalism, first at the Chicago Tribune and now at <a className='highlight' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
+                </p>
+
+	              <p>OK: Now the (slightly) longer version: I spent six months in 2017 studying web development at <a href="https://codingbootcamp.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University’s Coding Bootcamp</a>, learning how to create and design websites, work with data and servers, develop apps and complete individual and group project milestones.
                 </p>
 
 	              <p>Since 2002 I’ve worked extensively on news websites in Chicago. I was always really interested in the technology behind the page: the database, the CMS, the CSS, the responsiveness, the UX. I learned what I could on my own, and worked with developers on countless projects as a client. I wanted to really study these things, but a computer science education seemed out of reach.

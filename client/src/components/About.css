@@ -96,6 +96,12 @@
 /*  font-family: 'Roboto', sans-serif;*/
 }
 
+.aboutIntro {
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+}
+
 a {
 	color: #F1F2EB;
 }

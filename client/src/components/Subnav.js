@@ -7,8 +7,10 @@ import './Subnav.css';
 class Subnav extends Component {
 
   handleClick = () => {
-    TweenLite.to(window, .5, {scrollTo: 0, autokill: false, ease:Power4.easeOut});
-  }
+    TweenLite.to(window, 1, {scrollTo: {y:0, autoKill: false, autoRound: false, force3D: true}, 
+       ease: Power4.easeOut
+     });
+  };
 
   render() {
     return (
