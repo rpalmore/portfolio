@@ -11,6 +11,7 @@
   transform: translateY(-50%);
   width: 72%;
   max-width: 610px;
+  min-width: 320px;
   height: 125%;
   max-height: 526px;
 }
@@ -63,6 +64,7 @@ textarea {
 
 .submitButton {
 	width: 25%;
+  min-width: 80px;
 	margin: auto;
 }
 
