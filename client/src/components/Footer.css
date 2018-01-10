@@ -23,6 +23,7 @@ footer, .footerLayer {
 
 .portfolioGithub {
   position: relative;
+  width: 30px;
   height: 30px;
   bottom: -9px;
   margin-right: 15px;

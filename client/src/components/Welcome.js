@@ -6,10 +6,13 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
+const welcome = "Welcome";
 
 $(document).ready(function(){
  console.log("Ready!");
+
   $(function () {
+    $('.welcomeText').append(welcome);
     $('.tlt').textillate({
       loop: false,
       in : {
@@ -30,17 +33,22 @@ $(document).ready(function(){
     setTimeout(loadHome, 200);
   });
 
-  function loadHome() {
-    window.location.assign('/home');
-  }
+  // function loadHome() {
+  //   window.location.assign('/home');
+  // }
 });
 
+const loadHome = () => {
+    window.location.assign('/home');
+  }
+
 class Welcome extends Component {
+
   render() {
     return (
      <div className='welcomeBackground'>
        <div className='welcomeLayer'></div>
-       <div className='tlt welcomeText'>Welcome</div>
+       <div className='tlt welcomeText'></div>
      </div>
     );
   }

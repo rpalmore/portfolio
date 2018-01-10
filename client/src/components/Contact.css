@@ -11,8 +11,9 @@
   transform: translateY(-50%);
   width: 72%;
   max-width: 610px;
-  min-width: 320px;
-  height: 125%;
+  min-width: 290px;
+  /*height: 125%;*/
+  height: 92%;
   max-height: 526px;
 }
 
@@ -84,7 +85,7 @@ button {
  }
   .formBackgroundLayer {
  	  width: 90%;
-    height: 93%;
+/*    height: 93%;*/
  }
   .submitButton {
     width: 40%;
