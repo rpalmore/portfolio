@@ -1,16 +1,28 @@
 import React, { Component } from 'react';
 import './Welcome.css';
 import $ from "jquery";
+import 'raf/polyfill';
 window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
 require('animate.css');
 
+
 const welcome = "Welcome";
+
+const loadHome = () => {
+    window.location.assign('/home');
+  }
+
+// const raf = require('raf')
+
+//   raf(function tick() {
+//   // Animation logic
+//   raf(tick)
+// });
 
 $(document).ready(function(){
  console.log("Ready!");
-
   $(function () {
     $('.welcomeText').append(welcome);
     $('.tlt').textillate({
@@ -18,6 +30,7 @@ $(document).ready(function(){
       in : {
         effect: 'fadeIn',
         callback: function() {
+            console.log("Inside callback");
             $('.tlt').textillate('out');
             $('.welcomeLayer').fadeTo(1200, 1);
           }
@@ -28,19 +41,12 @@ $(document).ready(function(){
     })
   })
 
-  $('.tlt').on('outAnimationEnd.tlt', function () {
+  $('.tlt').on('outAnimationEnd.tlt', function() {
     console.log("Out animation ended");
     setTimeout(loadHome, 200);
   });
-
-  // function loadHome() {
-  //   window.location.assign('/home');
-  // }
 });
 
-const loadHome = () => {
-    window.location.assign('/home');
-  }
 
 class Welcome extends Component {
 

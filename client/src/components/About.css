@@ -93,12 +93,17 @@
 .text {
 	padding: 10px 20px 10px 20px;
 	color: #F1F2EB;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 .aboutIntro {
   font-size: 1.5rem;
   font-weight: bold;
-  font-style: italic;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Mono', monospace;
+/*  font-style: italic;*/
 }
 
 /*************** || LINK UNDERLINE EFFECT || ***************/
