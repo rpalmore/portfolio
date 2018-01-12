@@ -37,7 +37,7 @@ class Home extends Component {
   
   handleClick = () => {
     TweenLite.to(window, 1, 
-      {scrollTo: {y:'.sectionHeaderLayer', autoKill: false, autoRound: false, force3D: true}, 
+      {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true}, 
        ease: Power4.easeOut
      });
   };
