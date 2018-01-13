@@ -36,7 +36,7 @@ class About extends Component {
                 <p>Enter the age of bootcamps. Suddenly it seemed like a not-so-crazy pursuit.
                 </p>
 
-                <p>What I now know is that newsrooms and web development have a lot in common. Both require focus, intense attention to detail and quick problem-solving skills. Bootcamp opened up a new world to me, and graduating the program was a personal and professional boost.
+                <p>What I now know is that newsrooms and web development have a lot in common. Both require intense attention to detail, efficient communication and quick problem-solving skills. Bootcamp opened up a new world to me, and graduating the program was a personal and professional boost.
                 </p>
 
 	              <p>Here, you’ll find class projects from the 24-week full-stack coding bootcamp at Northwestern&mdash;I’m still tinkering with most of them&mdash;and new projects as I tackle them.
