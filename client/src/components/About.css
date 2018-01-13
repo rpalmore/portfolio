@@ -9,6 +9,7 @@
 .sectionContainerInner {
   width: 100%;
   margin: auto;
+  position: relative;
 }
 
 /*************** || IMAGE ANIMATION || ***************/
