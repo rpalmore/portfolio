@@ -27,7 +27,7 @@ class Contact extends Component {
   handleSubmit(event) {
     event.preventDefault();
     helpers.postSendEmail(this.state.name, this.state.email, this.state.message);
-    this.setState({message: "Thank you for your message, " + this.state.name + "!"});
+    this.setState({name: "", email: "", message: "Thank you for your message, " + this.state.name + "!"});
    }
 
   render() {
