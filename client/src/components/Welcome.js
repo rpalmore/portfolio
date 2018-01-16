@@ -36,7 +36,7 @@ $(document).ready(function(){
           }
         },
       out: {
-        effect: 'fadeOut',
+        effect: 'fadeOut'
       }
     })
   })

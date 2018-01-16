@@ -15,14 +15,13 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
-
 window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
 require('animate.css');
 
 $(document).ready(function(){
- console.log("Ready!");
+ console.log("Home Ready!");
   $(function () {
   	$('.tltHome').textillate({ 
   		in: { 
@@ -35,10 +34,10 @@ $(document).ready(function(){
 
 class Home extends Component {
   
-  handleClick = () => {
-        // prevent page refresh (ie 9)
-    // e.stopPropagation();
-    // e.nativeEvent.stopImmediatePropagation();
+  handleClick = (e) => {
+    // prevent page refresh (ie 9)
+    e.stopPropagation();
+    e.nativeEvent.stopImmediatePropagation();
     TweenLite.to(window, 1, 
       {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true}, 
        ease: Power4.easeOut
