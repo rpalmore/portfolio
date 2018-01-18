@@ -33,16 +33,24 @@ $(document).ready(function(){
 });
 
 class Home extends Component {
-  
-  handleClick = (e) => {
+
+  handleClick(e) {
     // prevent page refresh (ie 9)
     e.stopPropagation();
     e.nativeEvent.stopImmediatePropagation();
-    TweenLite.to(window, 1, 
-      {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true}, 
+    TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true},
        ease: Power4.easeOut
      });
   };
+  
+  // handleClick = (e) => {
+  //   // prevent page refresh (ie 9)
+  //   e.stopPropagation();
+  //   e.nativeEvent.stopImmediatePropagation();
+  //   TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true},
+  //      ease: Power4.easeOut
+  //    });
+  // };
 
   render() {
     return (
