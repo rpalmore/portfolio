@@ -21,25 +21,47 @@ const loadHome = () => {
 //   raf(tick)
 // });
 
+// $(document).ready(function(){
+//  console.log("Ready!");
+//   $(function () {
+//     $('.welcomeText').append(welcome);
+//     $('.tlt').textillate({
+//       loop: false,
+//       in : {
+//         effect: 'fadeIn',
+//         callback: function() {
+//             console.log("Inside callback");
+//             $('.tlt').textillate('out');
+//             $('.welcomeLayer').fadeTo(1200, 1);
+//           }
+//         },
+//       out: {
+//         effect: 'fadeOut'
+//       }
+//     })
+//   })
+
 $(document).ready(function(){
  console.log("Ready!");
   $(function () {
     $('.welcomeText').append(welcome);
     $('.tlt').textillate({
       loop: false,
-      in : {
-        effect: 'fadeIn',
-        callback: function() {
-            console.log("Inside callback");
-            $('.tlt').textillate('out');
-            $('.welcomeLayer').fadeTo(1200, 1);
-          }
+      in: {
+        effect: 'fadeIn'
         },
       out: {
         effect: 'fadeOut'
       }
     })
   })
+
+
+  $('.tlt').on('inAnimationEnd.tlt', function() {
+    console.log("In animation ended");
+    $('.tlt').textillate('out');
+    $('.welcomeLayer').fadeTo(1200, 1);
+  });
 
   $('.tlt').on('outAnimationEnd.tlt', function() {
     console.log("Out animation ended");
