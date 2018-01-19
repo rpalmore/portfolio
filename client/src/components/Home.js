@@ -24,6 +24,7 @@ $(document).ready(function(){
  console.log("Home Ready!");
   $(function () {
   	$('.tltHome').textillate({ 
+      loop: false,
   		in: { 
   			effect: 'flash',  
   			shuffle: true
@@ -34,11 +35,11 @@ $(document).ready(function(){
 
 class Home extends Component {
 
-  handleClick(e) {
+  handleClick = (e) => {
     // prevent page refresh (ie 9)
     e.stopPropagation();
     e.nativeEvent.stopImmediatePropagation();
-    TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', autoKill: false, autoRound: false, force3D: true},
+    TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
        ease: Power4.easeOut
      });
   };
