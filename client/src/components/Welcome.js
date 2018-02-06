@@ -2,26 +2,33 @@ import React, { Component } from 'react';
 import './Welcome.css';
 import $ from "jquery";
 import 'raf/polyfill';
-window.jQuery = window.$ = $;
+// window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
 require('animate.css');
 
+const modernBrowser = true;
 
 const welcome = "Welcome";
 
 const loadHome = () => {
-    window.location.assign('/home');
-  }
+  window.location.assign('/home');
+}
 
-// const raf = require('raf')
-
-//   raf(function tick() {
-//   // Animation logic
-//   raf(tick)
-// });
+const runOutAnimation = () => {
+  $('.tlt').textillate('out');
+  $('.welcomeLayer').fadeTo(1200, 1);
+}
 
 $(document).ready(function(){
+
+  /*@cc_on
+    // conditional IE < 9 only fix
+    @if (@_jscript_version <= 9)
+    modernBrowser = false;
+    @end
+  @*/
+
  console.log("Ready!");
   $(function () {
     $('.welcomeText').append(welcome);
@@ -36,12 +43,18 @@ $(document).ready(function(){
     })
   })
 
-
-  $('.tlt').on('inAnimationEnd.tlt', function() {
-    console.log("In animation ended");
-    $('.tlt').textillate('out');
-    $('.welcomeLayer').fadeTo(1200, 1);
-  });
+  if (modernBrowser == false) {
+    $('.tlt').on('inAnimationBegin.tlt', function() {
+      console.log("In animation begins");
+      setTimeout(runOutAnimation, 1200);
+    });
+  } else {
+    $('.tlt').on('inAnimationEnd.tlt', function() {
+      console.log("In animation ended");
+      $('.tlt').textillate('out');
+      $('.welcomeLayer').fadeTo(1200, 1);
+    });
+  }
 
   $('.tlt').on('outAnimationEnd.tlt', function() {
     console.log("Out animation ended");
