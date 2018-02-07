@@ -8,35 +8,35 @@ import './Home.css';
 import About from './About.js';
 import Contact from './Contact.js';
 import Projects from './Projects.js';
-import $ from "jquery";
+// import $ from "jquery";
 import {Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
-window.jQuery = window.$ = $;
-require('textillate');
-require('letteringjs');
-require('animate.css');
+// window.jQuery = window.$ = $;
+// require('textillate');
+// require('letteringjs');
+// require('animate.css');
 
-$(document).ready(function(){
- console.log("Home Ready!");
-  $(function () {
-  	$('.tltHome').textillate({ 
-      loop: false,
-  		in: { 
-  			effect: 'flash',  
-  			shuffle: true
-  		} 
-  	});
-  })
-});
+
+// $(document).ready(function(){
+//  console.log("Home Ready!");
+//   $(function () {
+//   	$('.tltHome').textillate({ 
+//       loop: false,
+//   		in: { 
+//   			effect: 'flash',  
+//   			shuffle: true
+//   		} 
+//   	});
+//   })
+// });
 
 class Home extends Component {
 
   handleClick = (e) => {
-    // prevent page refresh (ie 9)
     e.stopPropagation();
     e.nativeEvent.stopImmediatePropagation();
     TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
