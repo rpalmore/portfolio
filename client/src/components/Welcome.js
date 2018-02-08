@@ -7,7 +7,7 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-let modernBrowser = true;
+let modernBrowser = false;
 
 const welcome = "Welcome";
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
   })
 
   if (modernBrowser == false) {
-    $('.tlt').on('inAnimationBegin.tlt', function() {
+    $('.tlt').on('start.tlt', function() {
       console.log("In animation begins");
       const timeoutID = window.setTimeout(runOutAnimation, 1200);
     });
