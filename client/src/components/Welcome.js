@@ -7,7 +7,7 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-let modernBrowser = false;
+let modernBrowser = true;
 
 const welcome = "Welcome";
 
@@ -28,6 +28,7 @@ $(document).ready(function(){
     // conditional IE < 9 only fix
     @if (@_jscript_version <= 9)
     let modernBrowser = false;
+    console.log("testing");
     @end
   @*/
 
