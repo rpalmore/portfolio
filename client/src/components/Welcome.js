@@ -27,7 +27,7 @@ $(document).ready(function(){
   /*@cc_on
     // conditional IE < 9 only fix
     @if (@_jscript_version <= 9)
-    let modernBrowser = false;
+    modernBrowser = false;
     console.log("testing");
     @end
   @*/
