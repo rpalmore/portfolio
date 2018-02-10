@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Welcome.css';
 import $ from "jquery";
-import 'raf/polyfill';
 window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
@@ -32,7 +31,6 @@ $(document).ready(function(){
     @end
   @*/
 
- console.log("Ready!");
   $(function () {
     $('.welcomeText').append(welcome);
     $('.tlt').textillate({
