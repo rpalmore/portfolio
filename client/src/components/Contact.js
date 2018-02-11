@@ -49,7 +49,7 @@ class Contact extends Component {
                   <textarea id="message" type="message" value={this.state.message} onChange={this.handleChange} placeholder="Message" className="validate" required />
                 </div>
                 <div className='submitButton'>
-                  <button type="submit">Submit</button>
+                  <button className='close' type="submit">Send</button>
                 </div>
               </form>
 
