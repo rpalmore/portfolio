@@ -1,9 +1,46 @@
 import React, { Component } from 'react';
 import './About.css';
 import Subnav from './Subnav.js';
-// import profilePhoto from "../images/MixyCat.png";
+
+// ADD "effect" to about intro for code to work
+function ShowPhoto(props) {
+  return "Hello!";
+}
+
+function ClosePhoto(props) {
+  return "Close";
+}
+
+function PhotoDisplay(props) {
+  const isShowingPhoto = props.isShowingPhoto;
+  if (isShowingPhoto) {
+    return <ClosePhoto />;
+  }
+  return <ShowPhoto />;
+}
+
+const componentClasses = ['contentContainerImage'];
 
 class About extends Component {
+
+  constructor () {
+    super()
+    this.state = {
+      show: false,
+      message: false
+    }
+  }
+
+  toggleShow () {
+    this.setState({
+      show: !this.state.show,
+      message: !this.state.message
+    })
+    if (!this.state.show) { componentClasses.push('show'); }
+    else { componentClasses.pop('show'); }
+  } 
+
+
   render() {
     return (
       <div>
@@ -15,15 +52,14 @@ class About extends Component {
             
           <div className='sectionContainerInner'>
             <div className='contentContainer'>
+             <div className={componentClasses.join(' ')}></div>
       	      <div className='text'>
-                {/*<img className="profilePhoto" src={profilePhoto} alt={"Rebecca Palmore Photo"}/>*/}
                 <div className='resume'>
                   <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i>
                   </a>
                 </div>
-                <p className='aboutIntro'>Hello!
+                <p onClick={this.toggleShow.bind(this)} className='aboutIntro'><PhotoDisplay isShowingPhoto={this.state.message} />
                 </p>
-
                 <p>I’m a full-stack web developer with a journalism background at the Chicago Tribune and now at <a className='effect' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
                 </p>
 

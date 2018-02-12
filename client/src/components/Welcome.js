@@ -28,6 +28,7 @@ $(document).ready(function(){
     @if (@_jscript_version <= 9)
     modernBrowser = false;
     console.log("testing");
+    window.location.assign('/home');
     @end
   @*/
 
