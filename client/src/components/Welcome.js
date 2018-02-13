@@ -23,15 +23,6 @@ const runOutAnimation = () => {
 
 $(document).ready(function(){
 
-  /*@cc_on
-    // conditional IE < 9 only fix
-    @if (@_jscript_version <= 9)
-    modernBrowser = false;
-    console.log("testing");
-    window.location.assign('/home');
-    @end
-  @*/
-
   $(function () {
     $('.welcomeText').append(welcome);
     $('.tlt').textillate({

@@ -21,6 +21,8 @@ function PhotoDisplay(props) {
 
 const componentClasses = ['contentContainerImage'];
 
+const componentClassesText = ['text'];
+
 class About extends Component {
 
   constructor () {
@@ -36,8 +38,8 @@ class About extends Component {
       show: !this.state.show,
       message: !this.state.message
     })
-    if (!this.state.show) { componentClasses.push('show'); }
-    else { componentClasses.pop('show'); }
+    if (!this.state.show) { componentClasses.push('show'); componentClassesText.push('textHide')}
+    else { componentClasses.pop('show'); componentClassesText.pop('textHide')}
   } 
 
 
@@ -53,7 +55,7 @@ class About extends Component {
           <div className='sectionContainerInner'>
             <div className='contentContainer'>
              <div className={componentClasses.join(' ')}></div>
-      	      <div className='text'>
+      	      <div className={componentClassesText.join(' ')}>
                 <div className='resume'>
                   <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i>
                   </a>
