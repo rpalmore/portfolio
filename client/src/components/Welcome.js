@@ -6,7 +6,7 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-let modernBrowser = true;
+var modernBrowser = true;
 
 const welcome = "Welcome";
 
@@ -22,6 +22,13 @@ const runOutAnimation = () => {
 }
 
 $(document).ready(function(){
+
+/*@cc_on
+  // conditional IE < 9 only fix
+  @if (@_jscript_version <= 9)
+  var modernBrowser = false;
+  @end
+ @*/
 
   $(function () {
     $('.welcomeText').append(welcome);
