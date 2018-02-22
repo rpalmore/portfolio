@@ -6,7 +6,7 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-var modernBrowser = true;
+var modernBrowser;
 
 const welcome = "Welcome";
 
@@ -14,12 +14,17 @@ const loadHome = () => {
   window.location.assign('/home');
 }
 
-const runOutAnimation = () => {
-  $('.tlt').textillate('out');
+// For older IE browsers
+function runOutAnimation() {
   $('.welcomeLayer').fadeTo(1200, 1);
+  $('.welcomeText').fadeTo(1200, 0);
   console.log(modernBrowser);
-  window.setTimeout(loadHome, 1200);
-}
+  window.setTimeout(loadAltHome, 1200);
+};
+
+function loadAltHome() {
+  window.location.assign('/home');
+};
 
 $(document).ready(function(){
 
@@ -46,7 +51,7 @@ $(document).ready(function(){
   if (modernBrowser == false) {
     $('.tlt').on('start.tlt', function() {
       console.log("In animation begins");
-      const timeoutID = window.setTimeout(runOutAnimation, 1200);
+      var timeoutID = window.setTimeout(runOutAnimation, 1200);
     });
   } else {
     $('.tlt').on('inAnimationEnd.tlt', function() {
