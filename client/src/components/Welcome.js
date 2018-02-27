@@ -6,7 +6,6 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-var modernBrowser;
 
 const welcome = "Welcome";
 
@@ -18,7 +17,6 @@ const loadHome = () => {
 function runOutAnimation() {
   $('.welcomeLayer').fadeTo(1200, 1);
   $('.welcomeText').fadeTo(1200, 0);
-  console.log(modernBrowser);
   window.setTimeout(loadAltHome, 1200);
 };
 
@@ -31,7 +29,7 @@ $(document).ready(function(){
 /*@cc_on
   // conditional IE < 9 only fix
   @if (@_jscript_version <= 9)
-  var modernBrowser = false;
+  var timeoutID = window.setTimeout(runOutAnimation, 1200);
   @end
  @*/
 
@@ -48,25 +46,17 @@ $(document).ready(function(){
     })
   })
 
-  if (modernBrowser == false) {
-    $('.tlt').on('start.tlt', function() {
-      console.log("In animation begins");
-      var timeoutID = window.setTimeout(runOutAnimation, 1200);
-    });
-  } else {
-    $('.tlt').on('inAnimationEnd.tlt', function() {
-      console.log("In animation ended", modernBrowser);
-      $('.tlt').textillate('out');
-      $('.welcomeLayer').fadeTo(1200, 1);
-    });
+  $('.tlt').on('inAnimationEnd.tlt', function() {
+    console.log("In animation ended");
+    $('.tlt').textillate('out');
+    $('.welcomeLayer').fadeTo(1200, 1);
+  });
 
-    $('.tlt').on('outAnimationEnd.tlt', function() {
-      console.log("Out animation ended");
-      setTimeout(loadHome, 200);
-    });
-  }
+  $('.tlt').on('outAnimationEnd.tlt', function() {
+    console.log("Out animation ended");
+    setTimeout(loadHome, 200);
+  });
 });
-
 
 class Welcome extends Component {
 
