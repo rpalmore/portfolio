@@ -171,11 +171,11 @@
   font-weight: bold;
 }
 
-.resumeDownload, .fa {
+.resumeDownload, .fas {
 	color: #000000;
 }
 
-.fa {
+.fas {
   padding-top: 10px;
 }
 
@@ -183,7 +183,7 @@
   color: #000000;
 }
 
-.fa:hover {
+.fas:hover {
 	color: #F1F2EB;
 }
 

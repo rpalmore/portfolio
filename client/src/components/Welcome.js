@@ -11,13 +11,6 @@ const welcome = "Welcome";
 
 const loadHome = () => {
   window.location.assign('/home');
-}
-
-// For older IE browsers
-function runOutAnimation() {
-  $('.welcomeLayer').fadeTo(1200, 1);
-  $('.welcomeText').fadeTo(1200, 0);
-  window.setTimeout(loadAltHome, 1200);
 };
 
 function loadAltHome() {
@@ -25,13 +18,6 @@ function loadAltHome() {
 };
 
 $(document).ready(function(){
-
-/*@cc_on
-  // conditional IE < 9 only fix
-  @if (@_jscript_version <= 9)
-  var timeoutID = window.setTimeout(runOutAnimation, 1200);
-  @end
- @*/
 
   $(function () {
     $('.welcomeText').append(welcome);

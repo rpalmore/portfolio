@@ -57,7 +57,8 @@ class About extends Component {
              <div className={componentClasses.join(' ')}></div>
       	      <div className={componentClassesText.join(' ')}>
                 <div className='resume'>
-                  <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume<i className="fa fa-download fa-2x" aria-hidden="true"></i>
+                  <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume
+                    <i className="fas fa-download fa-2x"></i>
                   </a>
                 </div>
                 <p onClick={this.toggleShow.bind(this)} className='aboutIntro'><PhotoDisplay isShowingPhoto={this.state.message} />
