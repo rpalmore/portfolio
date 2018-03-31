@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './About.css';
 import Subnav from './Subnav.js';
+import downloadsvg from "../images/fontawesome-5.0.9/advanced-options/raw-svg/solid/download.svg";
+
 
 // ADD "effect" to about intro for code to work
 function ShowPhoto(props) {
@@ -58,7 +60,7 @@ class About extends Component {
       	      <div className={componentClassesText.join(' ')}>
                 <div className='resume'>
                   <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume
-                    <i className="fa fa-download fa-2x"></i>
+                    <img className="fas" src={downloadsvg} alt={"Download"}/>
                   </a>
                 </div>
                 <p onClick={this.toggleShow.bind(this)} className='aboutIntro'><PhotoDisplay isShowingPhoto={this.state.message} />
