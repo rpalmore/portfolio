@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './Welcome.css';
 import $ from "jquery";
-window.jQuery = window.$ = $;
+
 require('textillate');
 require('letteringjs');
 require('animate.css');
-
+window.jQuery = window.$ = $;
 
 const welcome = "Welcome";
 
