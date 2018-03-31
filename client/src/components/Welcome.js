@@ -13,10 +13,6 @@ const loadHome = () => {
   window.location.assign('/home');
 };
 
-function loadAltHome() {
-  window.location.assign('/home');
-};
-
 $(document).ready(function(){
 
   $(function () {
