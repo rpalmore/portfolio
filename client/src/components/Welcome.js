@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Welcome.css';
 import $ from "jquery";
-
 require('textillate');
 require('letteringjs');
 require('animate.css');

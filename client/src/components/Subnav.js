@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Power4, TweenLite} from "gsap";
+import {TweenLite} from "gsap/TweenLite";
+import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import './Subnav.css';
 
