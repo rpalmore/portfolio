@@ -1,3 +1,4 @@
+const compression = require('compression');
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
@@ -13,7 +14,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(compression(express.static(path.join(__dirname, 'client/build')));
 
 
 //------------------Determine Connection------------------//
@@ -42,7 +43,7 @@ app.post('/api/sendemail', function(req, res) {
     var message = req.body.message;
     var mailOptions = {
         to: "rkpalmore@gmail.com",
-        subject: "Hey! Saw Your Profile",
+        subject: "Hey! Saw Your Website",
         text: message,
         html: "<b>Sender: </b>" + name + "<br> <b>Email: </b>" + email + "<p>" + "<hr />" + message + "</p>"
     }
