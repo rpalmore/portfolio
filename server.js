@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 5000;
 
-
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 if (port === 5000) {
     var keys = require("./keys.js");
 } else {
-    console.log("Heroku connection");
     var keys = process.env
 };
 
@@ -68,3 +66,4 @@ app.get('*', (req, res) => {
 
 app.listen(port);
 console.log(`Portfolio listening on ${port}`);
+console.log('NODE_ENV: '+ process.env.NODE_ENV);
