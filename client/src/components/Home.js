@@ -21,27 +21,24 @@ require('textillate');
 require('letteringjs');
 require('animate.css');
 
-
-$(document).ready(function(){
-  $(function () {
-  	$('.tltHome').textillate({ 
-      loop: false,
-  		in: { 
-  			effect: 'flash',  
-  			shuffle: true
-  		} 
-  	});
-  })
-});
-
 class Home extends Component {
+
+  componentDidMount() {
+    let textillate = $.fn.textillate;
+    $('.tltHome').textillate({
+      loop: false,
+      in: { 
+        effect: 'flash',  
+        shuffle: true
+      } 
+    })
+  };
 
   handleClick = () => {
     TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
        ease: Power4.easeOut
      });
   };
-  
 
   render() {
     return (

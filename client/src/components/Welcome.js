@@ -12,9 +12,10 @@ const loadHome = () => {
   window.location.assign('/home');
 };
 
-$(document).ready(function(){
+class Welcome extends Component {
 
-  $(function () {
+  componentDidMount() {
+    let textillate = $.fn.textillate;
     $('.welcomeText').append(welcome);
     $('.tlt').textillate({
       loop: false,
@@ -25,21 +26,16 @@ $(document).ready(function(){
         effect: 'fadeOut'
       }
     })
-  })
 
-  $('.tlt').on('inAnimationEnd.tlt', function() {
-    console.log("In animation ended");
-    $('.tlt').textillate('out');
-    $('.welcomeLayer').fadeTo(1200, 1);
-  });
+    $('.tlt').on('inAnimationEnd.tlt', function() {
+      $('.tlt').textillate('out');
+      $('.welcomeLayer').fadeTo(1200, 1);
+    });
 
-  $('.tlt').on('outAnimationEnd.tlt', function() {
-    console.log("Out animation ended");
-    setTimeout(loadHome, 200);
-  });
-});
-
-class Welcome extends Component {
+    $('.tlt').on('outAnimationEnd.tlt', function() {
+      setTimeout(loadHome, 200);
+    });
+  }
 
   render() {
     return (
