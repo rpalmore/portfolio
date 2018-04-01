@@ -24,9 +24,6 @@
 .projectItemLayer2:hover {
   opacity: 0.9;
   transition: .5s ease;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -o-transition: .5s ease;
 }
 
 .projectImage {
@@ -53,7 +50,6 @@
   left: 50%;
 	line-height: 3rem;
 	transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #F18F01;
 }
 
