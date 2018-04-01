@@ -1,15 +1,49 @@
 import React, { Component } from 'react';
-import './Welcome.css';
+// import './Welcome.css';
 import $ from "jquery";
+import Background from '../images/cloudsLR.jpg';
 require('textillate');
 require('letteringjs');
 require('animate.css');
 window.jQuery = window.$ = $;
 
+
 const welcome = "Welcome";
 
 const loadHome = () => {
   window.location.assign('/home');
+};
+
+const containerStyle = {
+  backgroundImage: `url(${Background})`,
+  backgroundColor: '#048BA8',
+  position: 'absolute',
+  width: '100%',
+  height: '100%'
+};
+
+const layerStyle = {
+  background: '#048BA8',
+  opacity: 0.6,
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: 1000
+};
+
+const textStyle = {
+  position: 'absolute',
+  right: 0,
+  left: 0,
+  margin: 'auto',
+  top: '35%',
+  width: '100%',
+  textAlign: 'center',
+  fontSize: '3rem',
+  color: '#ffffff',
+  fontFamily: "'Lato', sans-serif",
+  fontWeight: 400,
 };
 
 $(document).ready(function(){
@@ -43,9 +77,9 @@ class Welcome extends Component {
 
   render() {
     return (
-     <div className='welcomeBackground'>
-       <div className='welcomeLayer'></div>
-       <div className='tlt welcomeText'></div>
+     <div style={containerStyle}>
+       <div style={layerStyle}></div>
+       <div style={textStyle} className='tlt welcomeText'></div>
      </div>
     );
   }
