@@ -16,6 +16,7 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
+
 window.jQuery = window.$ = $;
 require('textillate');
 require('letteringjs');
