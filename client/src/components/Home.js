@@ -8,10 +8,11 @@ import './Home.css';
 import About from './About.js';
 import Contact from './Contact.js';
 import Projects from './Projects.js';
-import $ from "jquery";
+// import $ from "jquery";
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+// import TextPlugin from "gsap/TextPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
@@ -24,23 +25,27 @@ WebFont.load({
   }
 });
 
-window.jQuery = window.$ = $;
-require('textillate');
-require('letteringjs');
-require('animate.css');
+// window.jQuery = window.$ = $;
+// require('textillate');
+// require('letteringjs');
+// require('animate.css');
 
 class Home extends Component {
 
   componentDidMount() {
-    let textillate = $.fn.textillate;
-    $('.tltHome').textillate({
-      loop: false,
-      in: { 
-        effect: 'flash',  
-        shuffle: true
-      } 
-    })
+    TweenLite.to('.nameLink', 2, {autoAlpha:1});
   };
+
+  // componentDidMount() {
+  //   let textillate = $.fn.textillate;
+  //   $('.tltHome').textillate({
+  //     loop: false,
+  //     in: { 
+  //       effect: 'flash',  
+  //       shuffle: true
+  //     } 
+  //   })
+  // };
 
   handleClick = () => {
     TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
@@ -62,7 +67,7 @@ class Home extends Component {
               <div className='imageLayer1'></div>
       	      <div className='header'>
       	        <Link className='tltHome nameLink' to='/home'>
-                  rebecca palmore
+                 rebecca palmore
                 </Link>
                 <div className='socialLinks'>
                   <Link to='https://github.com/rpalmore' target='_blank'>

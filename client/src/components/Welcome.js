@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './Welcome.css';
-import $ from "jquery";
-require('textillate');
-require('letteringjs');
-require('animate.css');
-window.jQuery = window.$ = $;
+import {CSSPlugin} from 'gsap/CSSPlugin';
+import {TweenLite} from "gsap/TweenLite";
+// import TextPlugin from "gsap/TextPlugin";
 
-const welcome = "Welcome";
 
 const loadHome = () => {
   window.location.assign('/home');
@@ -15,33 +12,19 @@ const loadHome = () => {
 class Welcome extends Component {
 
   componentDidMount() {
-    let textillate = $.fn.textillate;
-    $('.welcomeText').append(welcome);
-    $('.tlt').textillate({
-      loop: false,
-      in: {
-        effect: 'fadeIn'
-        },
-      out: {
-        effect: 'fadeOut'
-      }
-    })
+    TweenLite.to('.welcomeText', 2, {autoAlpha:1});
+    TweenLite.to('.welcomeText', 1, {autoAlpha:0, delay:2});
+    TweenLite.to('.welcomeLayer', 2, {autoAlpha:.3, delay:1});
+    TweenLite.to('.welcomeLayer', 1.3, {autoAlpha:1, delay:2});
+    setTimeout(loadHome, 3500);
+  };
 
-    $('.tlt').on('inAnimationEnd.tlt', function() {
-      $('.tlt').textillate('out');
-      $('.welcomeLayer').fadeTo(1200, 1);
-    });
-
-    $('.tlt').on('outAnimationEnd.tlt', function() {
-      setTimeout(loadHome, 200);
-    });
-  }
 
   render() {
     return (
      <div className='welcomeBackground'>
        <div className='welcomeLayer'></div>
-       <div className='tlt welcomeText'></div>
+       <div className='tlt welcomeText'>Welcome</div>
      </div>
     );
   }
