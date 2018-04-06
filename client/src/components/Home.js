@@ -34,7 +34,7 @@ class Home extends Component {
     TweenLite.to('.c', 2, {autoAlpha:1, delay:.8});
     TweenLite.to('.c2', 2, {autoAlpha:1, delay:.9});
     TweenLite.to('.a', 2, {autoAlpha:1, delay:1});
-    TweenLite.to('.nameLink', 2, {autoAlpha:1, delay:1.2});
+    TweenLite.to('.palmore', 2, {autoAlpha:1, delay:1.2});
   };
 
   handleClick = () => {
@@ -56,7 +56,7 @@ class Home extends Component {
               <div className='homeImage'></div>
               <div className='imageLayer1'></div>
       	      <div className='header'>
-      	        <Link to='/home'>
+      	        <Link className='nameLink' to='/home'>
                  <span className='r'>r</span>
                  <span className='e'>e</span>
                  <span className='b'>b</span>
@@ -64,7 +64,7 @@ class Home extends Component {
                  <span className='c'>c</span>
                  <span className='c2'>c</span>
                  <span className='a'>a </span>
-                 <span className='nameLink'>palmore</span>
+                 <span className='palmore'>palmore</span>
                 </Link>
                 <div className='socialLinks'>
                   <Link to='https://github.com/rpalmore' target='_blank'>

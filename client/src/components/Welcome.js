@@ -19,7 +19,7 @@ class Welcome extends Component {
     TweenLite.to('.m', 2, {autoAlpha:1, delay:.6});
     TweenLite.to('.e4', 2, {autoAlpha:1, delay:.7});
     TweenLite.to('.welcomeLayer', 1, {autoAlpha:.3, delay:.7});
-    TweenLite.to('.welcomeLayer', 2.2, {autoAlpha:1, delay:1.8});
+    TweenLite.to('.welcomeLayer', 2.2, {autoAlpha:1, delay:2});
     TweenLite.to('.w', 1, {autoAlpha:0, delay:1.8});
     TweenLite.to('.e3', 1, {autoAlpha:0, delay:1.9});
     TweenLite.to('.l', 1, {autoAlpha:0, delay:2});
@@ -28,7 +28,7 @@ class Welcome extends Component {
     TweenLite.to('.m', 1, {autoAlpha:0, delay:2.3});
     TweenLite.to('.e4', 1, {autoAlpha:0, delay:2.4});
     
-    setTimeout(loadHome, 3000);
+    setTimeout(loadHome, 3600);
   };
 
   render() {
