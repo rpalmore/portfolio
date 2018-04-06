@@ -8,11 +8,9 @@ import './Home.css';
 import About from './About.js';
 import Contact from './Contact.js';
 import Projects from './Projects.js';
-// import $ from "jquery";
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-// import TextPlugin from "gsap/TextPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
@@ -25,27 +23,19 @@ WebFont.load({
   }
 });
 
-// window.jQuery = window.$ = $;
-// require('textillate');
-// require('letteringjs');
-// require('animate.css');
-
 class Home extends Component {
 
+  // To do: Refactor code
   componentDidMount() {
-    TweenLite.to('.nameLink', 2, {autoAlpha:1});
+    TweenLite.to('.r', 2, {autoAlpha:1});
+    TweenLite.to('.e', 2, {autoAlpha:1, delay:.3});
+    TweenLite.to('.b', 2, {autoAlpha:1, delay:.5});
+    TweenLite.to('.e2', 2, {autoAlpha:1, delay:.7});
+    TweenLite.to('.c', 2, {autoAlpha:1, delay:.8});
+    TweenLite.to('.c2', 2, {autoAlpha:1, delay:.9});
+    TweenLite.to('.a', 2, {autoAlpha:1, delay:1});
+    TweenLite.to('.nameLink', 2, {autoAlpha:1, delay:1.2});
   };
-
-  // componentDidMount() {
-  //   let textillate = $.fn.textillate;
-  //   $('.tltHome').textillate({
-  //     loop: false,
-  //     in: { 
-  //       effect: 'flash',  
-  //       shuffle: true
-  //     } 
-  //   })
-  // };
 
   handleClick = () => {
     TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
@@ -66,8 +56,15 @@ class Home extends Component {
               <div className='homeImage'></div>
               <div className='imageLayer1'></div>
       	      <div className='header'>
-      	        <Link className='tltHome nameLink' to='/home'>
-                 rebecca palmore
+      	        <Link to='/home'>
+                 <span className='r'>r</span>
+                 <span className='e'>e</span>
+                 <span className='b'>b</span>
+                 <span className='e2'>e</span>
+                 <span className='c'>c</span>
+                 <span className='c2'>c</span>
+                 <span className='a'>a </span>
+                 <span className='nameLink'>palmore</span>
                 </Link>
                 <div className='socialLinks'>
                   <Link to='https://github.com/rpalmore' target='_blank'>
