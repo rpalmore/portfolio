@@ -28,7 +28,7 @@ class Welcome extends Component {
     TweenLite.to('.m', 1, {autoAlpha:0, delay:2.3});
     TweenLite.to('.e4', 1, {autoAlpha:0, delay:2.4});
     
-    setTimeout(loadHome, 3600);
+    setTimeout(loadHome, 3700);
   };
 
   render() {

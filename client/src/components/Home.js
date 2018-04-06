@@ -15,13 +15,13 @@ import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
 import Footer from './Footer.js';
-import WebFont from 'webfontloader';
+// import WebFont from 'webfontloader';
 
-WebFont.load({
-  google: {
-    families: ['Lato:300,400', 'sans-serif']
-  }
-});
+// WebFont.load({
+//   google: {
+//     families: ['Lato:300,400', 'sans-serif']
+//   }
+// });
 
 class Home extends Component {
 
