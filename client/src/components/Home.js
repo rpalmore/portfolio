@@ -5,7 +5,19 @@ import {
   Link
 } from 'react-router-dom';
 import './Home.css';
-import asyncComponent from "./AsyncComponent";
+// import asyncComponent from "./AsyncComponent";
+
+
+// TRY LAZY-LOADING HERE
+// const AsyncAbout = asyncComponent(() => import("./About.js"));
+// const AsyncContact = asyncComponent(() => import("./Contact.js"));
+// const AsyncProjects = asyncComponent(() => import("./Projects.js"));
+// const AsyncFooter = asyncComponent(() => import("./Footer.js"));
+
+import About from './About.js';
+import Contact from './Contact.js';
+import Projects from './Projects.js';
+import Footer from './Footer.js';
 
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
@@ -13,12 +25,6 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
-
-// LAZY-LOADING 
-const AsyncAbout = asyncComponent(() => import("./About.js"));
-const AsyncContact = asyncComponent(() => import("./Contact.js"));
-const AsyncProjects = asyncComponent(() => import("./Projects.js"));
-const AsyncFooter = asyncComponent(() => import("./Footer.js"));
 
 
 class Home extends Component {
@@ -92,14 +98,14 @@ class Home extends Component {
 	          </div>
 
 	          <div className='mainSectionContainer'>
-		          <Route path="/about" component={AsyncAbout}/>
-		          <Route path="/projects" component={AsyncProjects}/>
-	            <Route path="/contact" component={AsyncContact}/>
+		          <Route path="/about" component={About}/>
+		          <Route path="/projects" component={Projects}/>
+	            <Route path="/contact" component={Contact}/>
             </div>
 
           </div>
           
-          <AsyncFooter />
+          <Footer />
         </div>
       </Router>
 	  );
