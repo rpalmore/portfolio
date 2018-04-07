@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './About.css';
+import SectionImage from './SectionImage.js';
 import Subnav from './Subnav.js';
 import downloadsvg from "../images/fontawesome-5.0.9/advanced-options/raw-svg/solid/download.svg";
-import {TweenLite} from "gsap/TweenLite";
-
 
 // ADD "effect" to about intro for code to work
 function ShowPhoto(props) {
@@ -27,10 +26,6 @@ const componentClasses = ['contentContainerImage'];
 const componentClassesText = ['text'];
 
 class About extends Component {
-
-  componentDidMount() {
-    TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
-  };
 
   constructor () {
     super()
@@ -56,7 +51,7 @@ class About extends Component {
         <Subnav section='about'/>
         <div className='sectionContainer'>
 
-          <div className='sectionImage'></div>
+          <SectionImage />
           <div className='sectionLayer1'></div>
             
           <div className='sectionContainerInner'>

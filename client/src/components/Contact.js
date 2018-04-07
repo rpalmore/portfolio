@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import helpers from '../utils/helpers';
 import './Contact.css';
 import Subnav from './Subnav.js';
-import {TweenLite} from "gsap/TweenLite";
+import SectionImage from './SectionImage.js';
 
 const initialState = {
   name: "",
@@ -11,10 +11,6 @@ const initialState = {
 };
 
 class Contact extends Component {
-
-  componentDidMount() {
-    TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
-  };
   
   constructor(props) {
     super(props);
@@ -40,7 +36,7 @@ class Contact extends Component {
       <div>
         <Subnav section='contact' />
         <div className='sectionContainer'>
-          <div className='sectionImage'></div>
+         <SectionImage />
           <div className='sectionContainerInner'>
             <div className='formBackgroundLayer'></div>
             <div className='formContainer'>

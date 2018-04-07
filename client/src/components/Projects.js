@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import SectionImage from './SectionImage.js';
 import Subnav from './Subnav.js';
 import { Link } from 'react-router-dom';
 import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import videoGladiators from "../images/gladiator.jpg";
-import {TweenLite} from "gsap/TweenLite";
 
 class Projects extends Component {
-
-  componentDidMount() {
-    TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
-  };
 
   render() {
     return (
@@ -19,7 +15,7 @@ class Projects extends Component {
         <Subnav section='projects' />
         <div className='sectionContainer'>
         
-          <div className='sectionImage'></div>
+          <SectionImage />
           
           <div className='sectionContainerInner'>
             <div className='contentContainer'>

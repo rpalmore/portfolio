@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {TweenLite} from "gsap/TweenLite";
-import {Power4} from "gsap/EasePack";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 import './Subnav.css';
-
 
 class Subnav extends Component {
 
   handleClick = () => {
-    TweenLite.to(window, 1, {scrollTo: {y:0, autoKill: false, autoRound: false, force3D: true}, 
-      ease: Power4.easeOut
+    window.TweenLite.to(window, 1, {scrollTo: {y:0, autoKill: false, autoRound: false, force3D: true}, 
+      ease: window.Power4.easeOut
      });
   };
 

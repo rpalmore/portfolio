@@ -4,20 +4,19 @@ import './Header.css';
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
-import {TweenLite} from "gsap/TweenLite";
 
 class Header extends Component {
 
   // To do: Refactor code
   componentDidMount() {
-    TweenLite.to('.r', 2, {autoAlpha:1, delay:.1});
-    TweenLite.to('.e', 2, {autoAlpha:1, delay:.2});
-    TweenLite.to('.b', 2, {autoAlpha:1, delay:.3});
-    TweenLite.to('.e2', 2, {autoAlpha:1, delay:.4});
-    TweenLite.to('.c', 2, {autoAlpha:1, delay:.5});
-    TweenLite.to('.c2', 2, {autoAlpha:1, delay:.6});
-    TweenLite.to('.a', 2, {autoAlpha:1, delay:.7});
-    TweenLite.to('.palmore', 2, {autoAlpha:1, delay:.8});
+    window.TweenLite.to('.r', 2, {autoAlpha:1, delay:.1});
+    window.TweenLite.to('.e', 2, {autoAlpha:1, delay:.2});
+    window.TweenLite.to('.b', 2, {autoAlpha:1, delay:.3});
+    window.TweenLite.to('.e2', 2, {autoAlpha:1, delay:.4});
+    window.TweenLite.to('.c', 2, {autoAlpha:1, delay:.5});
+    window.TweenLite.to('.c2', 2, {autoAlpha:1, delay:.6});
+    window.TweenLite.to('.a', 2, {autoAlpha:1, delay:.7});
+    window.TweenLite.to('.palmore', 2, {autoAlpha:1, delay:.8});
   };
 
   render() {

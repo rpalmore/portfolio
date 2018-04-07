@@ -7,9 +7,6 @@ import {
 import './Home.css';
 import Header from './Header.js';
 import asyncComponent from "./AsyncComponent";
-import {TweenLite} from "gsap/TweenLite";
-import {Power4} from "gsap/EasePack";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 const AsyncAbout = asyncComponent(() => import("./About.js"));
 const AsyncContact = asyncComponent(() => import("./Contact.js"));
@@ -19,12 +16,12 @@ const AsyncFooter = asyncComponent(() => import("./Footer.js"));
 class Home extends Component {
 
   componentDidMount() {
-    TweenLite.to('.wrapper', .8, {autoAlpha:1});
+    window.TweenLite.to('.wrapper', .8, {autoAlpha:1});
   };
 
   handleClick = () => {
-    TweenLite.to(window, 1, {scrollTo: {y:957, x:0, autoKill: false, autoRound: false, force3D: true},
-       ease: Power4.easeOut
+    window.TweenLite.to(window, 1, {scrollTo: {y:957, x:0, autoKill: false, autoRound: false, force3D: true},
+       ease: window.Power4.easeOut
      });
   };
 
