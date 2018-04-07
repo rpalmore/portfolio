@@ -5,8 +5,9 @@ import {
 } from 'react-router-dom'
 import Welcome from './Welcome.js';
 import asyncComponent from "./AsyncComponent";
+// Avoid FOUC by importing css here
+import './Home.css';
 
-// LAZY LOADING
 const AsyncHome = asyncComponent(() => import("./Home.js"));
 
 const App = () => (

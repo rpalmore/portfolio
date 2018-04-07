@@ -6,24 +6,17 @@ import {
 } from 'react-router-dom';
 import './Home.css';
 import asyncComponent from "./AsyncComponent";
-
-// import About from './About.js';
-// import Contact from './Contact.js';
-// import Projects from './Projects.js';
 import Footer from './Footer.js';
-
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
-// TRY LAZY-LOADING HERE
+
 const AsyncAbout = asyncComponent(() => import("./About.js"));
 const AsyncContact = asyncComponent(() => import("./Contact.js"));
 const AsyncProjects = asyncComponent(() => import("./Projects.js"));
-
-
 
 class Home extends Component {
 
@@ -41,11 +34,10 @@ class Home extends Component {
   };
 
   handleClick = () => {
-    TweenLite.to(window, 1, {scrollTo: {y:'.mainSectionContainer', x:0, autoKill: false, autoRound: false, force3D: true},
+    TweenLite.to(window, 1, {scrollTo: {y:957, x:0, autoKill: false, autoRound: false, force3D: true},
        ease: Power4.easeOut
      });
   };
-
 
   render() {
     return (
