@@ -50,8 +50,6 @@
   to { transform: translateY(0); }
 }
 
-/*************** || HEADER || ***************/
-
 .imageLayer1 {
   background-color: #048BA8;
   opacity: 0.6;
@@ -60,47 +58,6 @@
   left: 0;
   height: 100px;
   width: 100%;
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  height: 100px;
-  width: 93%;
-  max-width: 1261px;
-  line-height: 100px;
-  padding-left: 7%;
-}
-
-.nameLink {
-	color: #ffffff;
-  font-size: 2.5rem;
-}
-
-.r, .e, .b, .e2, .c, .c2, .a, .palmore {
-  color: #ffffff;
-  font-size: 2.5rem;
-  visibility: hidden;
-}
-
-.nameLink:hover {
-  color: #ffffff;
-}
-
-.socialLinks {
-  position: absolute;
-  left: 80%;
-  top: 20px;
-}
-
-.socialIcons {
-  height: 45px;
-  width: 45px;
-  border-radius: 50px;
-}
-
-.socialIcons:hover {
-  background-color: #99C24D;
 }
 
 /*************** || NAVIGATION || ***************/

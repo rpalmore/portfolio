@@ -5,33 +5,19 @@ import {
   Link
 } from 'react-router-dom';
 import './Home.css';
+import Header from './Header.js';
 import asyncComponent from "./AsyncComponent";
 import Footer from './Footer.js';
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-import github from "../images/logos/github.png";
-import twitter from "../images/logos/twitter.png";
-import linkedin from "../images/logos/linkedin.png";
+
 
 const AsyncAbout = asyncComponent(() => import("./About.js"));
 const AsyncContact = asyncComponent(() => import("./Contact.js"));
 const AsyncProjects = asyncComponent(() => import("./Projects.js"));
 
 class Home extends Component {
-
-  // To do: Refactor code
-  componentDidMount() {
-    TweenLite.to('.homeImage', 2, {autoAlpha:1, delay:.5});
-    TweenLite.to('.r', 2, {autoAlpha:1});
-    TweenLite.to('.e', 2, {autoAlpha:1, delay:.3});
-    TweenLite.to('.b', 2, {autoAlpha:1, delay:.5});
-    TweenLite.to('.e2', 2, {autoAlpha:1, delay:.7});
-    TweenLite.to('.c', 2, {autoAlpha:1, delay:.8});
-    TweenLite.to('.c2', 2, {autoAlpha:1, delay:.9});
-    TweenLite.to('.a', 2, {autoAlpha:1, delay:1});
-    TweenLite.to('.palmore', 2, {autoAlpha:1, delay:1.2});
-  };
 
   handleClick = () => {
     TweenLite.to(window, 1, {scrollTo: {y:957, x:0, autoKill: false, autoRound: false, force3D: true},
@@ -51,29 +37,7 @@ class Home extends Component {
             <div className='homeContainer'>
               <div className='homeImage'></div>
               <div className='imageLayer1'></div>
-      	      <div className='header'>
-      	        <Link className='nameLink' to='/home'>
-                 <span className='r'>r</span>
-                 <span className='e'>e</span>
-                 <span className='b'>b</span>
-                 <span className='e2'>e</span>
-                 <span className='c'>c</span>
-                 <span className='c2'>c</span>
-                 <span className='a'>a </span>
-                 <span className='palmore'>palmore</span>
-                </Link>
-                <div className='socialLinks'>
-                  <Link to='https://github.com/rpalmore' target='_blank'>
-                    <img className='socialIcons' src={github} alt={"Github"}/>
-                  </Link>
-                  <Link to='https://twitter.com/rebeccapalmore' target='_blank'>
-                    <img className='socialIcons' src={twitter} alt={"Twitter"}/>
-                  </Link>
-                  <Link to='https://linkedin.com/in/rebecca-palmore' target='_blank'>
-                    <img className='socialIcons' src={linkedin} alt={"LinkedIn"}/>
-                  </Link>
-                </div>
-      	      </div>
+              <Header />
             </div>
 
             <div className='menuBlock'></div>
