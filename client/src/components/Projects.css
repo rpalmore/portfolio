@@ -1,3 +1,48 @@
+.sectionContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: calc(100vh - 120px);
+  display: flex;
+}
+
+.sectionContainerInner {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/*************** || IMAGE ANIMATION || ***************/
+
+.sectionImage {
+  background-image: url("../images/treetopsLowRes.jpg");
+  position: absolute;
+  width: 100%;
+  height: 2500px;
+  background-size: contain;
+  overflow: hidden;
+  animation-name: moveAbout;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  visibility: hidden;
+}
+
+@keyframes moveAbout {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+.contentContainer {
+  background: #2E4057;
+  position: relative;
+  width: 68%;
+  max-width: 620px;
+  min-width: 245px;
+  margin: 50px auto 50px auto;
+  box-shadow: 0px 0px 0px 25px rgba(46, 64, 87, 0.6);
+}
+
 .projectItemLayer1, .projectItemLayer2 {
   background-color: #2E4057;
   opacity: 0.2;

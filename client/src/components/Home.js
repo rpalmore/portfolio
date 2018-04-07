@@ -5,18 +5,11 @@ import {
   Link
 } from 'react-router-dom';
 import './Home.css';
-// import asyncComponent from "./AsyncComponent";
+import asyncComponent from "./AsyncComponent";
 
-
-// TRY LAZY-LOADING HERE
-// const AsyncAbout = asyncComponent(() => import("./About.js"));
-// const AsyncContact = asyncComponent(() => import("./Contact.js"));
-// const AsyncProjects = asyncComponent(() => import("./Projects.js"));
-// const AsyncFooter = asyncComponent(() => import("./Footer.js"));
-
-import About from './About.js';
-import Contact from './Contact.js';
-import Projects from './Projects.js';
+// import About from './About.js';
+// import Contact from './Contact.js';
+// import Projects from './Projects.js';
 import Footer from './Footer.js';
 
 import {TweenLite} from "gsap/TweenLite";
@@ -25,12 +18,18 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import github from "../images/logos/github.png";
 import twitter from "../images/logos/twitter.png";
 import linkedin from "../images/logos/linkedin.png";
+// TRY LAZY-LOADING HERE
+const AsyncAbout = asyncComponent(() => import("./About.js"));
+const AsyncContact = asyncComponent(() => import("./Contact.js"));
+const AsyncProjects = asyncComponent(() => import("./Projects.js"));
+
 
 
 class Home extends Component {
 
   // To do: Refactor code
   componentDidMount() {
+    TweenLite.to('.homeImage', 2, {autoAlpha:1, delay:.5});
     TweenLite.to('.r', 2, {autoAlpha:1});
     TweenLite.to('.e', 2, {autoAlpha:1, delay:.3});
     TweenLite.to('.b', 2, {autoAlpha:1, delay:.5});
@@ -46,6 +45,7 @@ class Home extends Component {
        ease: Power4.easeOut
      });
   };
+
 
   render() {
     return (
@@ -98,9 +98,9 @@ class Home extends Component {
 	          </div>
 
 	          <div className='mainSectionContainer'>
-		          <Route path="/about" component={About}/>
-		          <Route path="/projects" component={Projects}/>
-	            <Route path="/contact" component={Contact}/>
+		          <Route path="/about" component={AsyncAbout}/>
+		          <Route path="/projects" component={AsyncProjects}/>
+	            <Route path="/contact" component={AsyncContact}/>
             </div>
 
           </div>

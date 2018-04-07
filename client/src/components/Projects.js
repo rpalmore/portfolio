@@ -5,8 +5,14 @@ import { Link } from 'react-router-dom';
 import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import videoGladiators from "../images/gladiator.jpg";
+import {TweenLite} from "gsap/TweenLite";
 
 class Projects extends Component {
+
+  componentDidMount() {
+    TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
+  };
+
   render() {
     return (
       <div>
@@ -14,7 +20,6 @@ class Projects extends Component {
         <div className='sectionContainer'>
         
           <div className='sectionImage'></div>
-          <div className='sectionImageLayerFull'></div>
           
           <div className='sectionContainerInner'>
             <div className='contentContainer'>
