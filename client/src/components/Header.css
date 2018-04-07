@@ -48,3 +48,33 @@
 .socialIcons:hover {
   background-color: #99C24D;
 }
+
+/*************** || RESPONSIVE DESIGN || ***************/
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .r, .e, .b, .e2, .c, .c2, .a, .palmore {
+    position: relative;
+    top: -20px;
+  }
+  .socialLinks {
+    position: relative;
+    top: -69px;
+    left: 0;
+  }
+  .socialIcons {
+    width: 35px;
+    height: 35px;
+  }
+  .header, .imageLayer1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    height: 110px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .socialLinks {
+    left: 70%;
+  }
+}

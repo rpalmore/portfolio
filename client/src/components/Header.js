@@ -10,15 +10,14 @@ class Header extends Component {
 
   // To do: Refactor code
   componentDidMount() {
-    TweenLite.to('.homeImage', 2, {autoAlpha:1, delay:.5});
     TweenLite.to('.r', 2, {autoAlpha:1, delay:.1});
-    TweenLite.to('.e', 2, {autoAlpha:1, delay:.3});
-    TweenLite.to('.b', 2, {autoAlpha:1, delay:.5});
-    TweenLite.to('.e2', 2, {autoAlpha:1, delay:.7});
-    TweenLite.to('.c', 2, {autoAlpha:1, delay:.8});
-    TweenLite.to('.c2', 2, {autoAlpha:1, delay:.9});
-    TweenLite.to('.a', 2, {autoAlpha:1, delay:1});
-    TweenLite.to('.palmore', 2, {autoAlpha:1, delay:1.2});
+    TweenLite.to('.e', 2, {autoAlpha:1, delay:.2});
+    TweenLite.to('.b', 2, {autoAlpha:1, delay:.3});
+    TweenLite.to('.e2', 2, {autoAlpha:1, delay:.4});
+    TweenLite.to('.c', 2, {autoAlpha:1, delay:.5});
+    TweenLite.to('.c2', 2, {autoAlpha:1, delay:.6});
+    TweenLite.to('.a', 2, {autoAlpha:1, delay:.7});
+    TweenLite.to('.palmore', 2, {autoAlpha:1, delay:.8});
   };
 
   render() {

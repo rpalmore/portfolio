@@ -5,6 +5,7 @@
   margin: auto;
   font-family: 'Lato';
   font-weight: 300;
+  visibility: hidden;
 }
 
 .homeContainer {
@@ -42,7 +43,6 @@
   animation-duration: 43s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  visibility: hidden;
 }
 
 @keyframes move {
@@ -95,41 +95,3 @@
 	font-weight: bold;
 }
 
-/*************** || RESPONSIVE DESIGN || ***************/
-
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-  .r, .e, .b, .e2, .c, .c2, .a, .palmore {
-    position: relative;
-    top: -20px;
-  }
-  .socialLinks {
-    position: relative;
-    top: -69px;
-    left: 0;
-  }
-  .socialIcons {
-    width: 35px;
-    height: 35px;
-  }
-  .header {
-    text-align: center;
-    width: 100%;
-    padding-left: 0;
-    height: 110px;
-  }
-  .imageLayer1 {
-    height: 110px;
-  }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 767px) {
-  .socialLinks {
-    left: 70%;
-  }
-}
-
-@media only screen and (min-width: 1925px) {
-  .headerImage {
-    background-size: cover;
-  }
-}

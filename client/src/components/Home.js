@@ -7,17 +7,20 @@ import {
 import './Home.css';
 import Header from './Header.js';
 import asyncComponent from "./AsyncComponent";
-import Footer from './Footer.js';
 import {TweenLite} from "gsap/TweenLite";
 import {Power4} from "gsap/EasePack";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
-
 const AsyncAbout = asyncComponent(() => import("./About.js"));
 const AsyncContact = asyncComponent(() => import("./Contact.js"));
 const AsyncProjects = asyncComponent(() => import("./Projects.js"));
+const AsyncFooter = asyncComponent(() => import("./Footer.js"));
 
 class Home extends Component {
+
+  componentDidMount() {
+    TweenLite.to('.wrapper', .8, {autoAlpha:1});
+  };
 
   handleClick = () => {
     TweenLite.to(window, 1, {scrollTo: {y:957, x:0, autoKill: false, autoRound: false, force3D: true},
@@ -61,7 +64,7 @@ class Home extends Component {
 
           </div>
           
-          <Footer />
+          <AsyncFooter />
         </div>
       </Router>
 	  );

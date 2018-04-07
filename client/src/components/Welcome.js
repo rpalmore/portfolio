@@ -27,12 +27,12 @@ class Welcome extends Component {
     TweenLite.to('.o', 1, {autoAlpha:0, delay:2.2});
     TweenLite.to('.m', 1, {autoAlpha:0, delay:2.3});
     TweenLite.to('.e4', 1, {autoAlpha:0, delay:2.4});
-    
-    setTimeout(loadHome, 3700);
+    setTimeout(loadHome, 3800);
   };
 
   render() {
     return (
+     <div>
      <div className='welcomeBackground'>
        <div className='welcomeLayer'></div>
        <div className='welcomeText'>
@@ -44,6 +44,7 @@ class Welcome extends Component {
           <span className='m'>m</span>
           <span className='e4'>e</span>
        </div>
+     </div>
      </div>
     );
   }
