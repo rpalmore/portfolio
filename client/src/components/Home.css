@@ -141,7 +141,7 @@
 /*************** || RESPONSIVE DESIGN || ***************/
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
-  .nameLink {
+  .r, .e, .b, .e2, .c, .c2, .a, .palmore {
     position: relative;
     top: -20px;
   }
