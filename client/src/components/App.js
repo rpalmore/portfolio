@@ -3,17 +3,20 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
-import Home from './Home.js';
 import Welcome from './Welcome.js';
+import asyncComponent from "./AsyncComponent";
+
+// LAZY LOADING
+const AsyncHome = asyncComponent(() => import("./Home.js"));
 
 const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={Welcome}/>
-      <Route path="/home" component={Home}/>
-      <Route path="/about" component={Home}/>
-      <Route path="/projects" component={Home}/>
-      <Route path="/contact" component={Home}/>
+      <Route path="/home" component={AsyncHome}/>
+      <Route path="/about" component={AsyncHome}/>
+      <Route path="/projects" component={AsyncHome}/>
+      <Route path="/contact" component={AsyncHome}/>
     </div>
   </Router>
   )
