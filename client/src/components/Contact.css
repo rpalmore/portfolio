@@ -1,17 +1,3 @@
-.sectionContainer {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  min-height: calc(100vh - 120px);
-  display: flex;
-}
-
-.sectionContainerInner {
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-
 .formBackgroundLayer {
   background-color: #2e4057;
   opacity: .6;
@@ -108,9 +94,8 @@ button:hover, button:focus {
  }
   .formBackgroundLayer {
  	  width: 90%;
-/*    height: 93%;*/
  }
   .submitButton {
-    width: 40%;
+    width: 30%;
  }
 }

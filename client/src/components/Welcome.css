@@ -29,6 +29,6 @@
   font-family: sans-serif;
 }
 
-.w, .e3, .l, .c3, .o, .m, .e4 {
+span {
   visibility: hidden;
 }

@@ -23,7 +23,7 @@
   font-size: 2.5rem;
 }
 
-.r, .e, .b, .e2, .c, .c2, .a, .palmore {
+span {
   color: #ffffff;
   font-size: 2.5rem;
   visibility: hidden;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import SectionImage from './SectionImage.js';
 import Subnav from './Subnav.js';
 import { Link } from 'react-router-dom';
 import plaudit from "../images/plaudit.jpg";
@@ -9,13 +8,17 @@ import videoGladiators from "../images/gladiator.jpg";
 
 class Projects extends Component {
 
+  componentDidMount() {
+    window.TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
+  };
+
   render() {
     return (
       <div>
         <Subnav section='projects' />
         <div className='sectionContainer'>
         
-          <SectionImage />
+          <div className='sectionImage'></div>
           
           <div className='sectionContainerInner'>
             <div className='contentContainer'>

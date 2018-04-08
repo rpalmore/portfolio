@@ -33,7 +33,7 @@ class Welcome extends Component {
   render() {
     return (
      <div>
-     <div className='welcomeBackground'>
+      <div className='welcomeBackground'>
        <div className='welcomeLayer'></div>
        <div className='welcomeText'>
           <span className='w'>W</span>
@@ -44,7 +44,7 @@ class Welcome extends Component {
           <span className='m'>m</span>
           <span className='e4'>e</span>
        </div>
-     </div>
+      </div>
      </div>
     );
   }

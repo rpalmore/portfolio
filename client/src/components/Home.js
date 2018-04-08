@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 import './Home.css';
+import './SectionGeneral.css';
 import Header from './Header.js';
 import asyncComponent from "./AsyncComponent";
 
