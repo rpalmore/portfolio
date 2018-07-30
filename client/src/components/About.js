@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './About.css';
+import './SectionGeneral.css';
 import Subnav from './Subnav.js';
 import downloadsvg from "../images/fontawesome-5.0.9/advanced-options/raw-svg/solid/download.svg";
 
