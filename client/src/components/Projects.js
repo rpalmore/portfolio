@@ -34,12 +34,12 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://plauditlive.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://plauditlive.herokuapp.com/' rel='noreferrer' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
                     </a>
-                    <a className='projectLinkGithub' href='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' target='_blank'>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' rel='noreferrer' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>
@@ -60,12 +60,12 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://booklovelive.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://booklovelive.herokuapp.com/' rel='noreferrer' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
                     </a>
-                    <a className='projectLinkGithub' href='https://github.com/rpalmore/BookLove/blob/master/README.md' target='_blank'>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/BookLove/blob/master/README.md' rel='noreferrer' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>
@@ -86,12 +86,12 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://warm-shore-89552.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://warm-shore-89552.herokuapp.com/' rel='noreferrer' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
                     </a>
-                    <a className='projectLinkGithub' href='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' target='_blank'>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' rel='noreferrer' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>

@@ -10,7 +10,7 @@ class Footer extends Component {
     return (  
       <footer>
         <div className='footerLayer'></div>
-        <a href='https://github.com/rpalmore/portfolio' target='_blank'>
+        <a href='https://github.com/rpalmore/portfolio' rel='noreferrer' target='_blank'>
           <img className='portfolioGithub' src={github} alt={"Github"}/>
         </a>
         <div className='copyright'>
