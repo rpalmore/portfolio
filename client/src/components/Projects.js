@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.css';
 import Subnav from './Subnav.js';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import videoGladiators from "../images/gladiator.jpg";
@@ -34,16 +34,16 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <Link className='projectLinkLive' to='https://plauditlive.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://plauditlive.herokuapp.com/' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
-                    </Link>
-                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' target='_blank'>
+                    </a>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <img className="projectImage" src={plaudit} alt={"Plaudit"}/>
@@ -60,16 +60,16 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <Link className='projectLinkLive' to='https://booklovelive.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://booklovelive.herokuapp.com/' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
-                    </Link>
-                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/BookLove/blob/master/README.md' target='_blank'>
+                    </a>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/BookLove/blob/master/README.md' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <img className="projectImage" src={bookLove} alt={"Book Love"}/>
@@ -86,16 +86,16 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <Link className='projectLinkLive' to='https://warm-shore-89552.herokuapp.com/' target='_blank'>
+                    <a className='projectLinkLive' href='https://warm-shore-89552.herokuapp.com/' target='_blank'>
                       <div className='boxLeft'>
                         Live
                       </div>
-                    </Link>
-                    <Link className='projectLinkGithub' to='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' target='_blank'>
+                    </a>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/Video-Gladiators/blob/master/README.md' target='_blank'>
                       <div className='boxRight'>
                         Github
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <img className="projectImage" src={videoGladiators} alt={"Video Gladiators"}/>

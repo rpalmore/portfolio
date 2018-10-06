@@ -33,15 +33,15 @@ class Header extends Component {
           <span className='palmore'>palmore</span>
         </Link>
         <div className='socialLinks'>
-          <Link to='https://github.com/rpalmore' target='_blank'>
+          <a href='https://github.com/rpalmore' target='_blank'>
             <img className='socialIcons' src={github} alt={"Github"}/>
-          </Link>
-          <Link to='https://twitter.com/rebeccapalmore' target='_blank'>
+          </a>
+          <a href='https://twitter.com/rebeccapalmore' target='_blank'>
             <img className='socialIcons' src={twitter} alt={"Twitter"}/>
-          </Link>
-          <Link to='https://linkedin.com/in/rebecca-palmore' target='_blank'>
+          </a>
+          <a href='https://linkedin.com/in/rebecca-palmore' target='_blank'>
             <img className='socialIcons' src={linkedin} alt={"LinkedIn"}/>
-          </Link>
+          </a>
         </div>
       </div>
     );
