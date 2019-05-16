@@ -36,7 +36,7 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post('/api/sendemail', function(req, res) {
-	var email = req.body.email;
+    var email = req.body.email;
     var name = req.body.name;
     var message = req.body.message;
     var mailOptions = {
