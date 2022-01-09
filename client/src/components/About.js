@@ -63,31 +63,21 @@ class About extends Component {
              <div className={componentClasses.join(' ')}></div>
       	      <div className={componentClassesText.join(' ')}>
                 <div className='resume'>
-                  <a href="/RebeccaPalmore_Resume.pdf" className='resumeDownload' download>Resume
+                  <a href="/Palmore_Rebecca_Resume.pdf" className='resumeDownload' download>Resume
                     <img className="fas" src={downloadsvg} alt={"Download"}/>
                   </a>
                 </div>
                 <p onClick={this.toggleShow.bind(this)} className='aboutIntro'><PhotoDisplay isShowingPhoto={this.state.message} />
                 </p>
-                <p>I’m a full-stack web developer with a journalism background at the Chicago Tribune and now at <a className='effect' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>.
+                <p>I am inspired by the power of stories, the people who share them and the digital tools that bring them to life.
                 </p>
-
-	              <p>In 2017 I spent six months studying web development at <a className='effect' href="https://codingbootcamp.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University</a>, learning how to create and design websites, work with data and servers, develop apps and meet individual and group project milestones. 
+                <p>My career in digital media started nearly 20 years ago at the Chicago Tribune. As a manager of news websites and the editorial teams behind them, I’ve learned how to deeply focus on the task at hand so I can meet deadlines while handling copy with care. Speed without accuracy is misdirected energy.
                 </p>
-
-	              <p>Since 2002 I’ve worked extensively on news websites in Chicago. I was always interested in the technology behind the page, but a full-on computer science education seemed out of reach.
+                <p>In 2017, while leading the digital news team at <a className='effect' href="http://chicagotonight.wttw.com/" target="_blank" rel="noopener noreferrer">WTTW-Channel 11</a>, I completed my first full-stack coding bootcamp at <a className='effect' href="https://bootcamp.northwestern.edu/coding/" target="_blank" rel="noopener noreferrer">Northwestern University</a>, learning how to write programs using JavaScript, Node.js, React.js, MySQL, Express.js, APIs and more. Hello world! I was hooked.
                 </p>
-
-                <p>Enter the age of bootcamps. Suddenly it seemed like a not-so-crazy pursuit.
+                <p>Now, I’m brushing up on programming fundamentals and learning new skills at <a className='effect' href="https://www.techelevator.com/" target="_blank" rel="noopener noreferrer">Tech Elevator</a> as I plan for a career in software development. I am so excited to see where this path leads, and I’m thrilled to have an opportunity to get back in the classroom first. I look forward to collaborating with other developers in a professional setting and continuing to grow as a technologist.
                 </p>
-
-                <p>What I now know is that newsrooms and web development have a lot in common. Both require intense attention to detail, efficient communication and quick problem-solving skills. Bootcamp opened up a new world to me, and graduating the program was a personal and professional boost.
-                </p>
-
-	              <p>Here, you’ll find class projects from the 24-week full-stack coding bootcamp at Northwestern&mdash;I’m still tinkering with most of them&mdash;and new projects as I tackle them.
-                </p>
-
-                <p>Thanks for visiting!
+                <p>Thank you for visiting!
                 </p>
 
               </div>
