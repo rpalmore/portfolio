@@ -59,6 +59,17 @@ div[class^=box] {
   text-align: center;
 }
 
+.gitOnly {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.gitOnly:hover {
+  background: #99C24D;
+  color: #2E4057;
+}
+
 .boxLeft {
 	border-right: 1px solid #048BA8;
 }
