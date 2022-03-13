@@ -10,7 +10,7 @@ import birdnerds from "../images/birdnerds.png";
 class Projects extends Component {
 
   componentDidMount() {
-    window.TweenLite.to('.sectionImage', 2, {autoAlpha:1, delay:.3});
+    window.TweenLite.to('.sectionImage', 2, { autoAlpha: 1, delay: .3 });
   };
 
   render() {
@@ -18,9 +18,9 @@ class Projects extends Component {
       <div>
         <Subnav section='projects' />
         <div className='sectionContainer'>
-        
+
           <div className='sectionImage'></div>
-          
+
           <div className='sectionContainerInner'>
             <div className='contentContainer'>
 
@@ -47,10 +47,10 @@ class Projects extends Component {
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={birdnerds} alt={"Bird Nerds"}/>
+                <img className="projectImage" src={birdnerds} alt={"Bird Nerds"} />
               </div>
 
-            {/* === PROJECT TWO === */}
+              {/* === PROJECT TWO === */}
 
               <div className='projectItem'>
                 <div className='projectItemLayer1'></div>
@@ -68,7 +68,7 @@ class Projects extends Component {
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={tenmo} alt={"TEnmo"}/>
+                <img className="projectImage" src={tenmo} alt={"TEnmo"} />
               </div>
 
               {/* === PROJECT THREE === */}
@@ -94,7 +94,7 @@ class Projects extends Component {
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={plaudit} alt={"Plaudit"}/>
+                <img className="projectImage" src={plaudit} alt={"Plaudit"} />
               </div>
 
               {/* === PROJECT FOUR === */}
@@ -120,7 +120,7 @@ class Projects extends Component {
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={bookLove} alt={"Book Love"}/>
+                <img className="projectImage" src={bookLove} alt={"Book Love"} />
               </div>
 
             </div>
