@@ -5,7 +5,7 @@ const helpers = {
     var emailObject = { name: name, email: email, message: message };
     return axios.post("/api/sendemail", emailObject)
     .then(function(response) {
-      console.log("axios response", response);
+      // console.log("axios response", response);
     })
     .catch(function (error) {
       console.log("axios error", error);
