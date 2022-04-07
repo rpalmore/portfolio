@@ -6,6 +6,7 @@ import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import tenmo from "../images/tenmo.jpg";
 import birdnerds from "../images/birdnerds.png";
+import babygreen from "../images/babygreen.webp";
 
 class Projects extends Component {
 
@@ -31,6 +32,27 @@ class Projects extends Component {
                 <div className='projectItemLayer2'>
                   <div className='projectDetails'>
                     <div className='projectName'>
+                      baby green: <em>in progress</em>
+                    </div>
+                  </div>
+                  <div className='projectLinks'>
+                    <a className='projectLinkGithub' href='https://github.com/rpalmore/babygreen' rel='noopener noreferrer' target='_blank'>
+                      <div className='gitOnly'>
+                        Github
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <img className="projectImage" src={babygreen} alt={"baby green"} />
+              </div>
+
+              {/* === PROJECT TWO === */}
+
+              <div className='projectItem'>
+                <div className='projectItemLayer1'></div>
+                <div className='projectItemLayer2'>
+                  <div className='projectDetails'>
+                    <div className='projectName'>
                       Bird Nerds
                     </div>
                   </div>
@@ -50,7 +72,7 @@ class Projects extends Component {
                 <img className="projectImage" src={birdnerds} alt={"Bird Nerds"} />
               </div>
 
-              {/* === PROJECT TWO === */}
+              {/* === PROJECT THREE === */}
 
               <div className='projectItem'>
                 <div className='projectItemLayer1'></div>
@@ -71,7 +93,7 @@ class Projects extends Component {
                 <img className="projectImage" src={tenmo} alt={"TEnmo"} />
               </div>
 
-              {/* === PROJECT THREE === */}
+              {/* === PROJECT FOUR === */}
 
               <div className='projectItem'>
                 <div className='projectItemLayer1'></div>
@@ -97,7 +119,7 @@ class Projects extends Component {
                 <img className="projectImage" src={plaudit} alt={"Plaudit"} />
               </div>
 
-              {/* === PROJECT FOUR === */}
+              {/* === PROJECT FIVE === */}
 
               <div className='projectItem'>
                 <div className='projectItemLayer1'></div>
