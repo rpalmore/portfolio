@@ -6,7 +6,7 @@ import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import tenmo from "../images/tenmo.jpg";
 import birdnerds from "../images/birdnerds.webp";
-import babyGreen from "../images/babyGreen.webp";
+import babygreen from "../images/babygreen.webp";
 
 class Projects extends Component {
 
@@ -48,7 +48,7 @@ class Projects extends Component {
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={babyGreen} alt={"baby green"} />
+                <img className="projectImage" src={babygreen} alt={"baby green"} />
               </div>
 
               {/* === PROJECT TWO === */}
