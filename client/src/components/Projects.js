@@ -5,8 +5,8 @@ import Subnav from './Subnav.js';
 import plaudit from "../images/plaudit.jpg";
 import bookLove from "../images/booklove.png";
 import tenmo from "../images/tenmo.jpg";
-import birdnerds from "../images/birdnerds.png";
-import babygreen from "../images/babygreen.webp";
+import birdnerds from "../images/birdnerds.webp";
+import babyGreen from "../images/babyGreen.webp";
 
 class Projects extends Component {
 
@@ -32,18 +32,23 @@ class Projects extends Component {
                 <div className='projectItemLayer2'>
                   <div className='projectDetails'>
                     <div className='projectName'>
-                      baby green: <em>in progress</em>
+                      baby green
                     </div>
                   </div>
                   <div className='projectLinks'>
+                    <a className='projectLinkLive' href='https://babygreen.netlify.app/' rel='noopener noreferrer' target='_blank'>
+                      <div className='boxLeft'>
+                        Live
+                      </div>
+                    </a>
                     <a className='projectLinkGithub' href='https://github.com/rpalmore/babygreen' rel='noopener noreferrer' target='_blank'>
-                      <div className='gitOnly'>
+                      <div className='boxRight'>
                         Github
                       </div>
                     </a>
                   </div>
                 </div>
-                <img className="projectImage" src={babygreen} alt={"baby green"} />
+                <img className="projectImage" src={babyGreen} alt={"baby green"} />
               </div>
 
               {/* === PROJECT TWO === */}
