@@ -40,8 +40,8 @@ app.post('/api/sendemail', function(req, res) {
     var name = req.body.name;
     var message = req.body.message;
     var mailOptions = {
-        to: "rkpalmore@gmail.com",
-        subject: "Hey! Saw Your Website",
+        to: keys.emailTo,
+        subject: keys.subject,
         text: message,
         html: "<b>Sender: </b>" + name + "<br> <b>Email: </b>" + email + "<p>" + "<hr />" + message + "</p>"
     }
