@@ -62,13 +62,8 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://bird-nerds.netlify.app/' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxLeft'>
-                        Live
-                      </div>
-                    </a>
                     <a className='projectLinkGithub' href='https://github.com/rpalmore/te-capstone-bird-nerds' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxRight'>
+                      <div className='gitOnly'>
                         Github
                       </div>
                     </a>
@@ -109,13 +104,8 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://plauditlive.herokuapp.com/' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxLeft'>
-                        Live
-                      </div>
-                    </a>
                     <a className='projectLinkGithub' href='https://github.com/rpalmore/TeamAllCaps/blob/master/README.md' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxRight'>
+                      <div className='gitOnly'>
                         Github
                       </div>
                     </a>
@@ -135,13 +125,8 @@ class Projects extends Component {
                     </div>
                   </div>
                   <div className='projectLinks'>
-                    <a className='projectLinkLive' href='https://booklovelive.herokuapp.com/' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxLeft'>
-                        Live
-                      </div>
-                    </a>
                     <a className='projectLinkGithub' href='https://github.com/rpalmore/BookLove/blob/master/README.md' rel='noopener noreferrer' target='_blank'>
-                      <div className='boxRight'>
+                      <div className='gitOnly'>
                         Github
                       </div>
                     </a>
