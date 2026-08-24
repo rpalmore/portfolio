@@ -85,7 +85,7 @@ class About extends Component {
                 <p>Now that I’ve landed my first job, I want to encourage other bootcamp students to take that leap of faith. To trust their instincts. To make that bet on themselves.
                 </p>
                 <p>
-                I’m so grateful for the support I’ve received&mdash;in this profession. I will always have a lot to learn, but I know one thing with certainty: I made the right decision.
+                I’m so grateful for all the support I’ve received after switching careers. I will always have a lot to learn, but I know one thing with certainty: I made the right decision.
                 </p>
                 <p>Thank you for visiting my site.
                 </p>
